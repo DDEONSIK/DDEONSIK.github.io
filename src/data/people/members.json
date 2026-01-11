@@ -1,0 +1,161 @@
+[
+    {
+        "id": 21,
+        "nameKo": "최경훈",
+        "nameEn": "Keong-hun Choi",
+        "role": "Ph.D. Student",
+        "email": "keonghun6612@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "M.S.",
+                "school": "서울과학기술대학교",
+                "year": 2019,
+                "thesis": ""
+            },
+            {
+                "degree": "B.S.",
+                "school": "서울과학기술대학교",
+                "year": 2021,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "Ph.D.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "Dense Semantic SLAM",
+                    "객체 인식"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "nameKo": "전현식",
+        "nameEn": "Hyun-sik Jeon",
+        "role": "M.S. Student",
+        "email": "engineer0104@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "B.S.",
+                "school": "신한대학교",
+                "year": 2024,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "M.S.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "자율 주행",
+                    "공간인지"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "nameKo": "정병찬",
+        "nameEn": "Byung-chan Jeong",
+        "role": "M.S. Student",
+        "email": "bottlefull@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "B.S.",
+                "school": "숭실대학교",
+                "year": 2017,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "M.S.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "HD Map",
+                    "자율주행 인프라"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "nameKo": "최현성",
+        "nameEn": "Hyeon-sung Choi",
+        "role": "M.S. Student",
+        "email": "snoopy1959@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "B.S.",
+                "school": "인천대학교",
+                "year": 2022,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "M.S.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "3D Reconstruction"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "nameKo": "드엉 득 팅",
+        "nameEn": "Duong Duc Thinh",
+        "role": "M.S. Student",
+        "email": "ducthinh@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "B.S.",
+                "school": "서울과학기술대학교",
+                "year": 2025,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "M.S.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "Dense Semantic SLAM"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "nameKo": "강성희",
+        "nameEn": "Seong-hui Kang",
+        "role": "M.S. Student",
+        "email": "cws06099@seoultech.ac.kr",
+        "academicBackground": [
+            {
+                "degree": "B.S.",
+                "school": "신한대학교",
+                "year": 2025,
+                "thesis": ""
+            }
+        ],
+        "category": "Member",
+        "course": "M.S.",
+        "description": [
+            {
+                "title": "Research Interests",
+                "contents": [
+                    "3D 공간 인식"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme (Default) */
+    --background: 248 250 252; /* slate-50 */
+    --foreground: 15 23 42;    /* slate-900 */
+    
+    --card: 255 255 255;       /* white */
+    --card-foreground: 15 23 42; /* slate-900 */
+    
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+    
+    --primary: 37 99 235;      /* blue-600 */
+    --primary-foreground: 255 255 255; /* white */
+    
+    --secondary: 241 245 249;  /* slate-100 */
+    --secondary-foreground: 15 23 42;
+    
+    --muted: 241 245 249;      /* slate-100 */
+    --muted-foreground: 100 116 139; /* slate-500 */
+    
+    --accent: 241 245 249;     /* slate-100 */
+    --accent-foreground: 15 23 42;
+    
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 226 232 240;     /* slate-200 */
+    --input: 226 232 240;
+    --ring: 37 99 235;         /* blue-600 */
+    
+    /* Custom Building Colors for Animation */
+    --building: 226 232 240;   /* slate-200 */
+    --road: 248 250 252;       /* slate-50 */
+    --road-line: 226 232 240;  /* slate-200 */
+  }
+
+  .dark {
+    /* Dark Theme */
+    --background: 2 6 23;      /* slate-950 */
+    --foreground: 248 250 252; /* slate-50 */
+    
+    --card: 15 23 42;          /* slate-900 */
+    --card-foreground: 248 250 252;
+    
+    --popover: 15 23 42;
+    --popover-foreground: 248 250 252;
+    
+    --primary: 59 130 246;     /* blue-500 (Slightly lighter for dark mode) */
+    --primary-foreground: 255 255 255;
+    
+    --secondary: 30 41 59;     /* slate-800 */
+    --secondary-foreground: 248 250 252;
+    
+    --muted: 30 41 59;         /* slate-800 */
+    --muted-foreground: 148 163 184; /* slate-400 */
+    
+    --accent: 30 41 59;        /* slate-800 */
+    --accent-foreground: 248 250 252;
+    
+    --destructive: 127 29 29;
+    --destructive-foreground: 248 250 252;
+    
+    --border: 30 41 59;        /* slate-800 */
+    --input: 30 41 59;
+    --ring: 59 130 246;        /* blue-500 */
+
+    /* Custom Building Colors for Animation */
+    --building: 30 41 59;      /* slate-800 */
+    --road: 15 23 42;          /* slate-900 */
+    --road-line: 51 65 85;     /* slate-700 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-underline {
+    @apply relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+}
+
+/* Prevent text selection and image dragging globally */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

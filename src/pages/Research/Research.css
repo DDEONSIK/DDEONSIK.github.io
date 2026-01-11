@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .research-page {
+        @apply min-h-screen bg-slate-50 dark:bg-slate-950 pt-32 pb-20 transition-colors duration-300;
+    }
+
+    .research-container {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    /* Header */
+    .research-header {
+        @apply mb-12 text-center;
+    }
+
+    .research-title {
+        @apply text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 mb-6 tracking-tight transition-colors duration-300;
+    }
+
+    .research-subtitle {
+        @apply text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed transition-colors duration-300;
+    }
+
+    /* Content Card */
+    .research-content-card {
+        @apply bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col transition-all duration-300;
+    }
+
+    .research-hero-image-container {
+        @apply bg-slate-100 dark:bg-slate-800 relative w-full overflow-hidden transition-colors duration-300;
+    }
+
+    .research-hero-image {
+        @apply w-full h-auto object-cover transition-transform duration-700 hover:scale-105 animate-fade-in-up;
+        max-height: 600px;
+    }
+
+    .research-content-body {
+        @apply p-8 md:p-12;
+    }
+
+    .research-area-title {
+        @apply text-3xl font-bold text-slate-900 dark:text-slate-100 mb-6 transition-colors duration-300;
+    }
+
+    .research-description-wrapper {
+        @apply text-slate-600 dark:text-slate-300 leading-relaxed text-lg mb-8 transition-colors duration-300;
+    }
+
+    /* Description Renderer Styles */
+    .description-block {
+        @apply mb-6;
+    }
+
+    .description-block-nested {
+        @apply ml-0 md:ml-4;
+    }
+
+    .description-title-l0 {
+        @apply text-xl border-l-4 border-blue-600 dark:border-blue-500 pl-3 font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors duration-300;
+    }
+
+    .description-title-l1 {
+        @apply text-lg text-slate-800 dark:text-slate-200 font-bold mb-3 transition-colors duration-300;
+    }
+
+    .description-title-base {
+        @apply text-base text-slate-700 dark:text-slate-300 font-bold mb-3 transition-colors duration-300;
+    }
+
+    .description-image-container {
+        @apply my-4;
+    }
+
+    .description-image {
+        @apply w-full max-w-3xl h-auto rounded-xl shadow-md object-cover border border-slate-100 dark:border-slate-700 transition-colors duration-300;
+    }
+
+    .description-image-caption {
+        @apply mt-2 text-sm text-slate-500 dark:text-slate-400 italic transition-colors duration-300;
+    }
+
+    .description-text {
+        @apply text-slate-600 dark:text-slate-300 leading-relaxed text-lg mb-4 transition-colors duration-300;
+    }
+
+    .description-list {
+        @apply list-disc pl-5 space-y-2 mb-4 text-slate-600 dark:text-slate-300 transition-colors duration-300;
+    }
+
+    .description-list-item {
+        @apply leading-relaxed;
+    }
+
+    .description-nested-container {
+        @apply space-y-4;
+    }
+
+    /* Info Sections */
+    .info-section {
+        @apply mb-8;
+    }
+
+    .info-title {
+        @apply text-xl font-bold text-slate-800 dark:text-slate-200 mb-4 border-l-4 border-blue-600 dark:border-blue-500 pl-3 transition-colors duration-300;
+    }
+
+    .publications-list {
+        @apply space-y-3;
+    }
+
+    .publication-item {
+        @apply flex items-start text-slate-600 dark:text-slate-300 transition-colors duration-300;
+    }
+
+    .publication-bullet {
+        @apply mr-3 text-blue-500 dark:text-blue-400 mt-1.5 transition-colors duration-300;
+    }
+
+    .publication-text {
+        @apply text-sm md:text-base leading-relaxed;
+    }
+}

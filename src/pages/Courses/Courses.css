@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .courses-wrapper {
+    @apply min-h-screen bg-background pt-24 pb-12;
+  }
+
+  .courses-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Header */
+  .courses-header {
+    @apply text-center mb-16;
+  }
+
+  .courses-title {
+    @apply text-4xl md:text-5xl font-extrabold text-foreground mb-6 tracking-tight;
+  }
+
+  .courses-divider {
+    @apply w-24 h-1 bg-primary mx-auto rounded-full;
+  }
+
+  /* Content Area */
+  .courses-content {
+    @apply animate-fade-in-up;
+  }
+
+  /* Cards */
+  .course-card-wrapper {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .course-card-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12;
+  }
+
+  .course-card {
+    @apply bg-card rounded-3xl p-8 shadow-sm border border-border relative overflow-hidden hover:shadow-md transition-all;
+  }
+
+  .course-card-bg-icon {
+    @apply absolute top-0 right-0 p-8 opacity-10 transition-opacity;
+  }
+
+  .course-card-inner {
+    @apply relative z-10;
+  }
+
+  .course-card-header {
+    @apply flex items-center mb-8;
+  }
+
+  .course-card-icon-wrapper {
+    @apply w-10 h-10 rounded-full flex items-center justify-center mr-4;
+  }
+
+  .course-card-title {
+    @apply text-2xl font-bold text-card-foreground;
+  }
+
+  .course-list {
+    @apply space-y-4;
+  }
+
+  .course-item {
+    @apply flex items-center p-4 rounded-xl hover:bg-accent transition-colors border border-transparent hover:border-border;
+  }
+
+  .course-dot {
+    @apply w-2 h-2 rounded-full mr-4;
+  }
+
+  .course-name {
+    @apply font-medium text-foreground text-lg;
+  }
+
+  .course-note {
+    @apply text-center text-muted-foreground mt-12 text-sm;
+  }
+
+  /* Capstone Section */
+  .capstone-images-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8 mb-20;
+  }
+
+  .capstone-image-card {
+    @apply rounded-2xl overflow-hidden shadow-lg border-2 border-border bg-card;
+  }
+
+  .capstone-image-wrapper {
+    @apply overflow-hidden;
+  }
+
+  .capstone-image {
+    @apply w-full h-auto object-contain transition-transform duration-500;
+  }
+
+  .capstone-image-caption {
+    @apply p-4 bg-muted border-t border-border text-center;
+  }
+
+  .capstone-image-title {
+    @apply text-xl font-bold text-foreground;
+  }
+
+  /* History Table */
+  .history-table-wrapper {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .history-title {
+    @apply text-3xl font-extrabold text-foreground text-center mb-10 flex items-center justify-center gap-3;
+  }
+
+  .history-table-container {
+    @apply bg-card rounded-2xl shadow-sm border border-border overflow-hidden;
+  }
+
+  .history-table-overflow {
+    @apply overflow-x-auto;
+  }
+
+  .history-table {
+    @apply w-full text-left border-collapse;
+  }
+
+  .history-th {
+    @apply py-4 px-6 text-sm font-bold text-muted-foreground uppercase tracking-wider;
+  }
+
+  .history-tr {
+    @apply hover:bg-muted/50 transition-colors;
+  }
+
+  .history-td-year {
+    @apply py-6 px-6 border-r border-border align-top text-center;
+  }
+
+  .history-year-badge {
+    @apply inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-base font-bold shadow-sm;
+  }
+
+  .history-td-content {
+    @apply py-5 px-6 border-r border-border align-top;
+  }
+  
+  .history-td-last {
+    @apply py-5 px-6 align-top;
+  }
+
+  .history-cell-content {
+    @apply flex items-start;
+  }
+
+  .history-mobile-icon {
+    @apply text-muted-foreground mr-2 mt-0.5 flex-shrink-0 md:hidden;
+  }
+
+  .history-text-primary {
+    @apply text-foreground font-medium leading-relaxed;
+  }
+
+  .history-text-secondary {
+    @apply text-muted-foreground font-medium leading-relaxed;
+  }
+}

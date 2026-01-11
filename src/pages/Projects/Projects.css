@@ -1,0 +1,102 @@
+.projects-page {
+    @apply min-h-screen bg-slate-50 dark:bg-slate-950 pt-24 pb-20 transition-colors duration-300;
+}
+
+.projects-header {
+    @apply text-center mb-16;
+}
+
+.projects-header__title {
+    @apply text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 mb-6 tracking-tight transition-colors duration-300;
+}
+
+.projects-header__underline {
+    @apply w-24 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full transition-colors duration-300;
+}
+
+/* Table Section */
+.projects-content {
+    @apply max-w-7xl mx-auto min-h-[500px] animate-fade-in-up;
+}
+
+.projects-card {
+    @apply bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden transition-all duration-300;
+}
+
+.projects-table-wrapper {
+    @apply overflow-x-auto;
+}
+
+.projects-table {
+    @apply w-full text-left border-collapse;
+}
+
+.projects-table__thead {
+    @apply bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider transition-colors duration-300;
+}
+
+.projects-table__th {
+    @apply py-4 px-6;
+}
+
+.projects-table__tbody {
+    @apply divide-y divide-slate-100 dark:divide-slate-800 transition-colors duration-300;
+}
+
+.projects-table__row {
+    @apply hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors duration-300;
+}
+
+.projects-table__cell {
+    @apply py-5 px-6;
+}
+
+.projects-table__cell-title {
+    @apply text-slate-900 dark:text-slate-100 font-semibold text-base mb-1 transition-colors duration-300;
+}
+
+.projects-table__cell-content {
+    @apply text-slate-600 dark:text-slate-400 transition-colors duration-300;
+}
+
+.projects-table__cell-funding {
+    @apply text-slate-600 dark:text-slate-400 font-medium transition-colors duration-300;
+}
+
+.projects-table__cell-period {
+    @apply text-center text-slate-500 dark:text-slate-400 text-sm font-medium whitespace-nowrap transition-colors duration-300;
+}
+
+/* Empty State */
+.projects-empty {
+    @apply flex flex-col items-center justify-center py-20 text-slate-400 dark:text-slate-500;
+}
+
+/* Pagination */
+.pagination-container {
+    @apply flex justify-center items-center space-x-2 mt-12 mb-8 select-none;
+}
+
+.pagination-btn {
+    @apply p-2 rounded-lg border transition-all duration-300;
+}
+
+.pagination-btn--disabled {
+    @apply bg-slate-50 dark:bg-slate-900 text-slate-300 dark:text-slate-700 border-slate-200 dark:border-slate-800 cursor-not-allowed;
+}
+
+.pagination-btn--active {
+    @apply bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-blue-600 dark:hover:text-blue-400;
+}
+
+.pagination-number {
+    @apply w-10 h-10 rounded-lg text-sm font-bold border transition-all duration-300;
+}
+
+.pagination-number--current {
+    @apply bg-blue-600 dark:bg-blue-500 text-white border-blue-600 dark:border-blue-500 shadow-md transform scale-105;
+}
+
+.pagination-number--other {
+    @apply bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-blue-600 dark:hover:text-blue-400;
+}

@@ -1,0 +1,306 @@
+[
+    {
+        "id": 1,
+        "title": "전을 이용한 TPA 이물 검사 시스템 개발",
+        "funding": "삼양석유화학",
+        "startDate": {
+            "year": 1994,
+            "month": 1,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 2,
+        "title": "Color 정보를 이용한 동화상 Estimation 기술에 관한 연구",
+        "funding": "삼성전자",
+        "startDate": {
+            "year": 1994,
+            "month": 5,
+            "day": 1
+        },
+        "endDate": {
+            "year": 1995,
+            "month": 5,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 3,
+        "title": "Image Checker 시스템을 위한 비전 Library 개발",
+        "funding": "삼성전자",
+        "startDate": {
+            "year": 1994,
+            "month": 1,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 4,
+        "title": "전력량계 자동인식 시스템에 관한 연구",
+        "funding": "기인시스템",
+        "startDate": {
+            "year": 1996,
+            "month": 8,
+            "day": 1
+        },
+        "endDate": {
+            "year": 1997,
+            "month": 7,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 5,
+        "title": "지능형 차량제어 시스템을 위한 센서퓨전 기술 개발에 관한 연구",
+        "funding": "삼성종합기술원",
+        "startDate": {
+            "year": 1997,
+            "month": 1,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 6,
+        "title": "기포 측정 시스템 개발",
+        "funding": "삼성코닝",
+        "startDate": {
+            "year": 2000,
+            "month": 2,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2001,
+            "month": 2,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 7,
+        "title": "TFT-LCD 원판 유리 실시간 두께 측정 시스템 개발 I",
+        "funding": "삼성코닝",
+        "startDate": {
+            "year": 2001,
+            "month": 2,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2002,
+            "month": 2,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 8,
+        "title": "CRT 패널 자동 검사기 개발",
+        "funding": "삼성코닝",
+        "startDate": {
+            "year": 2001,
+            "month": 7,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2002,
+            "month": 7,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 9,
+        "title": "BOW 측정 시스템 개발 - I",
+        "funding": "삼성코닝정밀유리",
+        "startDate": {
+            "year": 2003,
+            "month": 6,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2003,
+            "month": 12,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 10,
+        "title": "BOW 측정 시스템 개발 - II",
+        "funding": "삼성코닝정밀유리",
+        "startDate": {
+            "year": 2004,
+            "month": 6,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2004,
+            "month": 12,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 11,
+        "title": "도로표지 전산시스템 개발을 위한 패턴인식모듈 개발",
+        "funding": "(주)한국공간정보통신",
+        "startDate": {
+            "year": 2007,
+            "month": 1,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    },
+    {
+        "id": 12,
+        "title": "도로차선 영상 D/B 구축 및 영상처리기술 개발",
+        "funding": "(주)엔지비",
+        "startDate": {
+            "year": 2008,
+            "month": 3,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2008,
+            "month": 10,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "공동연구"
+    },
+    {
+        "id": 13,
+        "title": "로봇 비전 가이던스 시스템 분석 기법",
+        "funding": "현대엔지비 주식회사",
+        "startDate": {
+            "year": 2011,
+            "month": 4,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2012,
+            "month": 1,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "-"
+    },
+    {
+        "id": 14,
+        "title": "차량 주행중 AVM 합성영역의 정합성 자동보정 기술 개발",
+        "funding": "(주)현대엔지비",
+        "startDate": {
+            "year": 2012,
+            "month": 11,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2013,
+            "month": 4,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    },
+    {
+        "id": 15,
+        "title": "AVM 정합성능 향상 목적 자동보정 기술 개발",
+        "funding": "(주)현대엔지비",
+        "startDate": {
+            "year": 2013,
+            "month": 9,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2014,
+            "month": 8,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    },
+    {
+        "id": 16,
+        "title": "외부 노이즈에 강건한 AVM 자동보정 알고리즘 개발",
+        "funding": "(주)현대엔지비",
+        "startDate": {
+            "year": 2015,
+            "month": 7,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2016,
+            "month": 6,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    },
+    {
+        "id": 17,
+        "title": "MMS 데이터 기반 차선 추출을 위한 카메라 및 LiDAR 보정 정합 알고리즘 개발",
+        "funding": "(주)현대엠엔소프트",
+        "startDate": {
+            "year": 2017,
+            "month": 6,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2017,
+            "month": 12,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    },
+    {
+        "id": 18,
+        "title": "거리 센서를 이용한 로봇의 물체 조작 알고리즘 개발",
+        "funding": "(주)에이앤지테크놀로지",
+        "startDate": {
+            "year": 2017,
+            "month": 6,
+            "day": 1
+        },
+        "endDate": {
+            "year": 2018,
+            "month": 2,
+            "day": 1
+        },
+        "isCompleted": true,
+        "type": "industry",
+        "content": "연구책임"
+    }
+]

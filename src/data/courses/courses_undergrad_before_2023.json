@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ug-lang-old-1",
+    "title": "컴퓨터언어 (Computer Language)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "C/C++ 프로그래밍 기초"
+  },
+  {
+    "id": "ug-lang-app-old-1",
+    "title": "컴퓨터언어응용 (Applied Computer Language)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "심화 프로그래밍"
+  },
+  {
+    "id": "ug-hydro-pneu-1",
+    "title": "유공압제어 (Hydraulic and Pneumatic Control)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "유압 및 공압 시스템 제어"
+  },
+  {
+    "id": "ug-auto-exp-old-2",
+    "title": "자동차공학실험(2) (Automotive Engineering Experiment 2)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "자동차 실험"
+  },
+  {
+    "id": "ug-capstone-old-1",
+    "title": "Capstone Design(1)",
+    "category": "capstone",
+    "gradeLevel": "Undergraduate",
+    "contents": "졸업 작품 설계"
+  },
+  {
+    "id": "ug-capstone-old-2",
+    "title": "Capstone Design(2)",
+    "category": "capstone",
+    "gradeLevel": "Undergraduate",
+    "contents": "졸업 작품 구현"
+  }
+]

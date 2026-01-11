@@ -1,0 +1,202 @@
+[
+    {
+        "id": "20000003952",
+        "title": "3D Spatial Perception & Autonomous Navigation",
+        "icon": "Brain",
+        "description": [
+            {
+                "title": "Overview",
+                "contents": "We conduct core 3D vision technology research to enable autonomous vehicles and robots to localize themselves and plan paths in complex environments. Our focus lies on Multi-modal Sensor Fusion (LiDAR, Camera, etc.) and 3D Point Cloud Processing."
+            },
+            {
+                "title": "Core Projects",
+                "contents": [
+                    {
+                        "title": "1. Point Cloud Semantic Segmentation",
+                        "contents": [
+                            {
+                                "title": "Goal",
+                                "contents": "Detect objects in surrounding environments from robots/vehicles and segment them at the point cloud level to infer relationships."
+                            },
+                            {
+                                "title": "Approach",
+                                "contents": [
+                                    "Optimized structure design through various 3D data processing techniques (Point-based, Voxelization, Spherical Projection).",
+                                    "Development of robust models fusing 3D Deep Learning structures (2D CNN, 3D CNN, MLP) with distance, color, and reflectance information."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "2. Autonomous Navigation & SLAM",
+                        "contents": [
+                            "SLAM (Simultaneous Localization And Mapping) for mapping and autonomous driving.",
+                            "Understanding environments for autonomous agents.",
+                            "AVM (Around View Monitor) system autonomous calibration."
+                        ]
+                    },
+                    {
+                        "title": "3. Sensor Fusion & Calibration",
+                        "contents": [
+                            "Multi-modal Sensor Fusion: Combining Camera, LiDAR, and RGB-D sensors.",
+                            "Self-calibration: Autonomous calibration using environmental information."
+                        ]
+                    },
+                    {
+                        "title": "4. Intelligent Vehicle Vision",
+                        "contents": [
+                            "Multi-lane detection for ADAS and autonomous driving.",
+                            "Object extraction for robot manipulation."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "imageUrl": "/assets/images/AIS_logo.png"
+    },
+    {
+        "id": "20000003950",
+        "title": "Video Understanding & Robust Surveillance",
+        "icon": "ScanEye",
+        "description": [
+            {
+                "title": "Overview",
+                "contents": "We analyze temporal flows and spatial features simultaneously in continuous video sequences, going beyond single images. We specifically research surveillance systems that operate robustly even in extreme environments like severe weather or camera instability."
+            },
+            {
+                "title": "Core Projects",
+                "contents": [
+                    {
+                        "title": "1. Robust Unmanned Surveillance",
+                        "contents": [
+                            {
+                                "title": "Goal",
+                                "contents": "Robust foreground object detection in dynamic environments (snow, rain, camera shake)."
+                            },
+                            {
+                                "title": "Approach",
+                                "contents": [
+                                    "Spatio-temporal Network: Separating/combining spatial and temporal networks to increase computational efficiency.",
+                                    "Background Transformation: Using classical techniques to transform background images before deep learning input for data augmentation and performance improvement."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "2. Scene & Situation Understanding",
+                        "contents": [
+                            {
+                                "title": "Goal",
+                                "contents": "Beyond object detection, inferring Relationships between objects to understand the situation."
+                            },
+                            {
+                                "title": "Challenges",
+                                "contents": "Solving the problem of exponential increase in relationships with more objects; Algorithms to determine the number and degree of ambiguous relationships."
+                            },
+                            {
+                                "title": "Related Research",
+                                "contents": "Unmanned surveillance using Environment Graphs."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "3. Environmental Understanding",
+                        "contents": [
+                            "Continuous video-based environment understanding.",
+                            "Robust unmanned surveillance technology using multi-deep learning structures."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "imageUrl": "/assets/images/AIS_logo.png"
+    },
+    {
+        "id": "20000003951",
+        "title": "Vision-based Deep Reinforcement Learning",
+        "icon": "Network",
+        "description": [
+            {
+                "title": "Overview",
+                "contents": "Beyond the limits of traditional Supervised Learning, we research methodological innovations where Reinforcement Learning (RL) agents independently process images and find optimal algorithm parameters."
+            },
+            {
+                "title": "Core Projects",
+                "contents": [
+                    {
+                        "title": "1. RL-based Image Processing",
+                        "contents": [
+                            {
+                                "title": "Goal",
+                                "contents": "Automating and enhancing existing image processing algorithms by applying reinforcement learning."
+                            },
+                            {
+                                "title": "Approach",
+                                "contents": [
+                                    "Defining image processing as a 'One-step Action' to construct the algorithm.",
+                                    "Replacing the Next State with random image inputs to increase training efficiency.",
+                                    "Unsupervised / Reward Decision: Researching techniques to determine rewards using evaluation models even in environments without label data."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "2. Hyperparameter Optimization",
+                        "contents": "Auto-tuning of optimal parameters based on Deep Reinforcement Learning."
+                    }
+                ]
+            }
+        ],
+        "imageUrl": "/assets/images/AIS_logo.png"
+    },
+    {
+        "id": "20000005461",
+        "title": "Pattern Recognition & Industrial AI",
+        "icon": "Cpu",
+        "description": [
+            {
+                "title": "Overview",
+                "contents": "We research applied AI technologies that recognize and generate specific patterns, such as Unstructured Scene Text Recognition (STR) and Defect Detection in manufacturing sites."
+            },
+            {
+                "title": "Core Projects",
+                "contents": [
+                    {
+                        "title": "1. Scene Text Recognition (STR)",
+                        "contents": [
+                            {
+                                "title": "Goal",
+                                "contents": "Improving recognition performance for unstructured text (Curved, Blurred, Perspective)."
+                            },
+                            {
+                                "title": "Approach",
+                                "contents": [
+                                    "Feature Extraction Optimization: Utilizing CTC, Attention techniques, and GNN (Graph Neural Network).",
+                                    "Image Restoration & Generation: Improving recognition rates by regularizing unstructured text using GAN and Unsupervised methods."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "2. Industrial Machine Vision",
+                        "contents": [
+                            "2D/3D Inspection and Defect Detection/Recognition.",
+                            "3D Measurements based on environmental information."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "imageUrl": "/assets/images/AIS_logo.png"
+    },
+    {
+        "id": "20000005465",
+        "title": "Research Equipment",
+        "icon": "Microscope",
+        "description": [
+            {
+                "contents": "Details about research equipment will be updated."
+            }
+        ]
+    }
+]

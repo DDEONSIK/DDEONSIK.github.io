@@ -1,0 +1,65 @@
+.footer-root {
+  @apply bg-card border-t border-border py-4 transition-colors duration-300;
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.footer-inner {
+  @apply flex flex-col md:flex-row justify-between items-center gap-4 text-muted-foreground;
+}
+
+/* Left Section */
+.footer-left {
+  @apply text-left flex flex-col items-start;
+}
+
+.footer-title {
+  @apply text-foreground font-bold text-lg mb-1;
+}
+
+.footer-info-wrapper {
+  @apply flex flex-wrap items-center gap-x-6 gap-y-1 text-sm;
+}
+
+.footer-contact-group {
+  @apply flex items-center space-x-4;
+}
+
+.footer-contact-item {
+  @apply flex items-center space-x-1.5;
+}
+
+.footer-divider {
+  @apply hidden sm:block h-3 w-px bg-border;
+}
+
+.footer-legal-group {
+  @apply flex items-center space-x-3 text-muted-foreground;
+}
+
+.footer-legal-link {
+  @apply text-muted-foreground font-medium hover:text-primary transition-colors;
+}
+
+/* Right Section */
+.footer-right {
+  @apply flex items-center space-x-4;
+}
+
+.footer-theme-btn {
+  @apply p-2 rounded-full hover:bg-secondary text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+.footer-logo-container {
+  @apply flex items-center space-x-3 bg-white/90 p-1.5 rounded;
+}
+
+.footer-logo {
+  @apply h-8 w-auto object-contain;
+}
+
+.footer-logo-divider {
+  @apply w-px h-6 bg-slate-200;
+}

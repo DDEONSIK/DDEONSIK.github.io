@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ug-lang-1",
+    "title": "컴퓨터언어 (Computer Language)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "C/C++ 프로그래밍 기초"
+  },
+  {
+    "id": "ug-lang-app-1",
+    "title": "컴퓨터언어응용 (Applied Computer Language)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "심화 프로그래밍 및 알고리즘"
+  },
+  {
+    "id": "ug-dl-rl-1",
+    "title": "딥러닝과 딥강화학습 (Deep Learning and Deep Reinforcement Learning)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "딥러닝 및 강화학습의 이론과 응용"
+  },
+  {
+    "id": "ug-auto-exp-2",
+    "title": "자동차공학실험(2) (Automotive Engineering Experiment 2)",
+    "category": "undergraduate",
+    "gradeLevel": "Undergraduate",
+    "contents": "자동차 시스템 실험 및 분석"
+  },
+  {
+    "id": "ug-capstone-1",
+    "title": "Capstone Design(1)",
+    "category": "capstone",
+    "gradeLevel": "Undergraduate",
+    "contents": "졸업 작품 설계 및 기획"
+  },
+  {
+    "id": "ug-capstone-2",
+    "title": "Capstone Design(2)",
+    "category": "capstone",
+    "gradeLevel": "Undergraduate",
+    "contents": "졸업 작품 구현 및 발표"
+  }
+]

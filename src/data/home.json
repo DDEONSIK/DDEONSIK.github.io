@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "welcomeLabel": "Welcome to",
+        "title": "Autonomous Intelligent",
+        "highlightedTitle": "Systems",
+        "contents": "We are dedicated to achieving state-of-the-art performance in AI by unifying visual perception, language understanding, and autonomous decision-making."
+    },
+    "researchSummary": {
+        "title": "Core Research Areas"
+    },
+    "cta": {
+        "title": "Always Open to New Researchers",
+        "contents": "Our lab is always open to prospective students (M.S. / Ph.D.) who possess a deep passion for AI research. We welcome anyone ready to acquire new knowledge and take on challenges.",
+        "buttonLabel": "Join Our Lab"
+    }
+}

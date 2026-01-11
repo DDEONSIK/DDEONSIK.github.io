@@ -1,0 +1,16 @@
+[
+  {
+    "id": "grad-is-1",
+    "title": "지능시스템 (Intelligent Systems)",
+    "category": "graduate",
+    "gradeLevel": "Graduate",
+    "contents": "지능형 시스템 설계"
+  },
+  {
+    "id": "grad-mv-1",
+    "title": "머신비전 (Machine Vision)",
+    "category": "graduate",
+    "gradeLevel": "Graduate",
+    "contents": "영상 처리 및 컴퓨터 비전"
+  }
+]

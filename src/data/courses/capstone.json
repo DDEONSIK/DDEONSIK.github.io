@@ -1,0 +1,84 @@
+[
+  {
+    "year": 2019,
+    "projects": [
+      {
+        "members": "김창용, 염상식, 박정덕",
+        "topic": "Deep Reinforcement Learning을 이용한 자율주행 RC Car"
+      },
+      {
+        "members": "김환주, 이정호, 강윤구",
+        "topic": "딥러닝 기반 드론 비행 중 객체 식별 및 위치 확인"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "projects": [
+      {
+        "members": "전준영, 정기현, 김건태",
+        "topic": "자율 주행을 위한 딥러닝 기반 주행 환경 분석"
+      },
+      {
+        "members": "안도현, 임현섭, 정경진",
+        "topic": "딥러닝을 이용한 운전자 모니터링"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "projects": [
+      {
+        "members": "최지수, 고은정",
+        "topic": "Distilled semantics for comprehensive scene understanding from videos"
+      },
+      {
+        "members": "이병연, 최성훈, 김병주",
+        "topic": "ORB-SLAM3"
+      },
+      {
+        "members": "장민성, 김연서",
+        "topic": "EfficientDet 을 이용한 도로 환경의 객체 검출"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "projects": [
+      {
+        "members": "김보슬, 조원근, 르민황",
+        "topic": "Transformer를 이용한 차선 인지"
+      },
+      {
+        "members": "김성우, 안정현, 응웬녹홍",
+        "topic": "Isaac Gym을 이용한 딥강화학습"
+      },
+      {
+        "members": "응웬쭝남, 황홍관",
+        "topic": "딥강화학습 기반 자율 주행"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "projects": [
+      {
+        "members": "나성민, 전태양, 하승현, 팜태안",
+        "topic": "NeRF를 이용한 NICE-SLAM 활용"
+      },
+      {
+        "members": "응웬쭝남, 황홍관",
+        "topic": "딥강화학습 기반 자율 주행"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "projects": [
+      {
+        "members": "갱신 중 (Updating...)",
+        "topic": "TBD"
+      }
+    ]
+  }
+]

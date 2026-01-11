@@ -1,0 +1,5594 @@
+[
+    {
+        "id": "choi2025adaptive",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    11,
+                    24
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2025adaptive",
+        "container-title": "Applied Sciences",
+        "DOI": "10.3390/app152212158",
+        "ISSN": "2076-3417",
+        "issue": "22",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    1
+                ]
+            ]
+        },
+        "license": "http://creativecommons.org/licenses/by/3.0/",
+        "page": "12158",
+        "publisher": "Multidisciplinary Digital Publishing Institute",
+        "source": "www.mdpi.com",
+        "title": "An Adaptive Threshold for the Canny Edge with Weak Label",
+        "type": "article-journal",
+        "URL": "https://www.mdpi.com/2076-3417/15/22/12158",
+        "volume": "15",
+        "category": "international-journal",
+        "year": 2025,
+        "venue": "Applied Sciences",
+        "doi": "10.3390/app152212158"
+    },
+    {
+        "id": "gimyumin2025ois",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "김유민, 하종은",
+        "citation-key": "gimyumin2025ois",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2025.25.0144",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    9
+                ]
+            ]
+        },
+        "page": "985–989",
+        "source": "www.dbpia.co.kr",
+        "title": "OIS 검사 장치의 CPU 와 GPU 기반 영상 처리 성능 비교",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12341925",
+        "volume": "31",
+        "category": "domestic-journal",
+        "year": 2025,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2025.25.0144"
+    },
+    {
+        "id": "jeonhyeonsig2025uniad",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    5
+                ]
+            ]
+        },
+        "author": "전현식, 박상민, 하종은",
+        "citation-key": "jeonhyeonsig2025uniad",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2025.24.0249",
+        "ISSN": "1976-5622",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    4
+                ]
+            ]
+        },
+        "page": "256–264",
+        "source": "www.dbpia.co.kr",
+        "title": "UniAD 모델 경량화 및 성능 비교",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12125019",
+        "volume": "31",
+        "category": "domestic-journal",
+        "year": 2025,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2025.24.0249"
+    },
+    {
+        "id": "jeonhyeonsig2025viewformer",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    5
+                ]
+            ]
+        },
+        "author": "전현식, 김유민, 하종은",
+        "citation-key": "jeonhyeonsig2025viewformer",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2025.25.0168",
+        "ISSN": "1976-5622",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    10
+                ]
+            ]
+        },
+        "page": "1160–1168",
+        "source": "www.dbpia.co.kr",
+        "title": "ViewFormer 기반 다중 시점 3D 점유 인지 성능 향상을 위한 객체 마스크 모듈",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12406310",
+        "volume": "31",
+        "category": "domestic-journal",
+        "year": 2025,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2025.25.0168"
+    },
+    {
+        "id": "kim2025endtoend",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Kim, Jin-Woo, Ha, Jong-Eun, Kim, Jin-Woo, Ha, Jong-Eun",
+        "citation-key": "kim2025endtoend",
+        "container-title": "Electronics",
+        "DOI": "10.3390/electronics14234624",
+        "ISSN": "2079-9292",
+        "issue": "23",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    11,
+                    25
+                ]
+            ]
+        },
+        "license": "http://creativecommons.org/licenses/by/3.0/",
+        "publisher": "publisher",
+        "source": "www.mdpi.com",
+        "title": "End-to-End Camera Pose Estimation with Camera Ray Token",
+        "type": "article-journal",
+        "URL": "https://www.mdpi.com/2079-9292/14/23/4624",
+        "volume": "14",
+        "category": "international-journal",
+        "year": 2025,
+        "venue": "Electronics",
+        "doi": "10.3390/electronics14234624"
+    },
+    {
+        "id": "coehyeonseong2025noposplateul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    10
+                ]
+            ]
+        },
+        "author": "최현성, Wang, Yao, 하종은",
+        "citation-key": "coehyeonseong2025noposplateul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2025 제40회 제어로봇시스템학회 학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    6
+                ]
+            ]
+        },
+        "page": "394–395",
+        "source": "www.dbpia.co.kr",
+        "title": "NoPoSplat을 이용한 야외 환경의 조밀한 3D 복원",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12313334",
+        "category": "domestic-conference",
+        "year": 2025,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "deueongdeugting2025dust3rreul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "드엉 득 팅, 최경훈, 하종은",
+        "citation-key": "deueongdeugting2025dust3rreul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2025 제40회 제어로봇시스템학회 학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2025",
+                    6
+                ]
+            ]
+        },
+        "page": "398–399",
+        "source": "www.dbpia.co.kr",
+        "title": "DUST3R를 이용한 야외 환경의 조밀한 3D 복원",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12313336",
+        "category": "domestic-conference",
+        "year": 2025,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "bagceolhong2024imijiwa",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "박철홍, 하종은",
+        "citation-key": "bagceolhong2024imijiwa",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2024.24.0103",
+        "ISSN": "1976-5622",
+        "issue": "8",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    8
+                ]
+            ]
+        },
+        "page": "804–809",
+        "source": "www.dbpia.co.kr",
+        "title": "이미지와 점군을 이용한 CenterFormer 개선",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11862680",
+        "volume": "30",
+        "category": "domestic-journal",
+        "year": 2024,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2024.24.0103"
+    },
+    {
+        "id": "choi2024object",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    10
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2024object",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2024.3452728",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024"
+                ]
+            ]
+        },
+        "page": "121915–121931",
+        "source": "IEEE Xplore",
+        "title": "Object Detection Method Using Image and Number of Objects on Image as Label",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/10662893/",
+        "volume": "12",
+        "category": "international-journal",
+        "year": 2024,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2024.3452728"
+    },
+    {
+        "id": "park2024semantic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Park, Sang-Min, Ha, Jong-Eun",
+        "citation-key": "park2024semantic",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2024.3470754",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024"
+                ]
+            ]
+        },
+        "page": "141594–141603",
+        "source": "IEEE Xplore",
+        "title": "Semantic Scene Completion With 2D and 3D Feature Fusion",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/10699323",
+        "volume": "12",
+        "category": "international-journal",
+        "year": 2024,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2024.3470754"
+    },
+    {
+        "id": "wang2024improved",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "wang2024improved",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2024.3458461",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024"
+                ]
+            ]
+        },
+        "page": "129498–129510",
+        "source": "IEEE Xplore",
+        "title": "Improved DETR With Class Tokens in an Encoder",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/10676965",
+        "volume": "12",
+        "category": "international-journal",
+        "year": 2024,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2024.3458461"
+    },
+    {
+        "id": "wang2024improveda",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Wang, Yao, Ha, Jong-Eun, Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "wang2024improveda",
+        "container-title": "Remote Sensing",
+        "DOI": "10.3390/rs16020353",
+        "ISSN": "2072-4292",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    1,
+                    16
+                ]
+            ]
+        },
+        "license": "http://creativecommons.org/licenses/by/3.0/",
+        "publisher": "publisher",
+        "source": "www.mdpi.com",
+        "title": "Improved Object Detection with Content and Position Separation in Transformer",
+        "type": "article-journal",
+        "URL": "https://www.mdpi.com/2072-4292/16/2/353",
+        "volume": "16",
+        "category": "international-journal",
+        "year": 2024,
+        "venue": "Remote Sensing",
+        "doi": "10.3390/rs16020353"
+    },
+    {
+        "id": "gimyumin2024gpureul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "김유민, 하종은",
+        "citation-key": "gimyumin2024gpureul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2024 제39회 제어로봇시스템학회 학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7
+                ]
+            ]
+        },
+        "page": "691–692",
+        "source": "www.dbpia.co.kr",
+        "title": "GPU를 이용한 OIS 검사 이미지 영상처리",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11909061",
+        "category": "domestic-conference",
+        "year": 2024,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "bagceolhong2023mask2former",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "박철홍, 하종은",
+        "citation-key": "bagceolhong2023mask2former",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2023.23.0145",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    12
+                ]
+            ]
+        },
+        "page": "1039–1045",
+        "source": "www.dbpia.co.kr",
+        "title": "Mask2Former 를 이용한 크랙 시맨틱 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11621150",
+        "volume": "29",
+        "category": "domestic-journal",
+        "year": 2023,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2023.23.0145"
+    },
+    {
+        "id": "bagsangmin2023dajung",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "박상민, 하종은",
+        "citation-key": "bagsangmin2023dajung",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2023.23.0143",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    12
+                ]
+            ]
+        },
+        "page": "966–972",
+        "source": "www.dbpia.co.kr",
+        "title": "다중 특징치 맵과 마스크드 오토인코드를 이용한 3D 시맨틱 장면 완성",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11621140",
+        "volume": "29",
+        "category": "domestic-journal",
+        "year": 2023,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2023.23.0143"
+    },
+    {
+        "id": "choi2023adaptive",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2023adaptive",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2023.3291593",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023"
+                ]
+            ]
+        },
+        "page": "67058–67069",
+        "source": "IEEE Xplore",
+        "title": "An Adaptive Threshold for the Canny Edge With Actor-Critic Algorithm",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/10171361",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2023.3291593"
+    },
+    {
+        "id": "choi2023improved",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Kim, Jin-Woo, Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "choi2023improved",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2023.3291597",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023"
+                ]
+            ]
+        },
+        "page": "67460–67467",
+        "source": "IEEE Xplore",
+        "title": "Improved Image Classification With Token Fusion",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/10171338",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2023.3291597"
+    },
+    {
+        "id": "kim2023automatic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2023automatic",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2023.3298055",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023"
+                ]
+            ]
+        },
+        "page": "76904–76912",
+        "source": "IEEE Xplore",
+        "title": "Automatic Extrinsic Calibration of a Camera and a 2D LiDAR With Point-Line Correspondences",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/10190560",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2023.3298055"
+    },
+    {
+        "id": "kim2023msfnet",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2023msfnet",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2023.3345842",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023"
+                ]
+            ]
+        },
+        "page": "145551–145565",
+        "source": "IEEE Xplore",
+        "title": "MSF-NET: Foreground Objects Detection With Fusion of Motion and Semantic Features",
+        "title-short": "MSF-NET",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/10371296",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2023.3345842"
+    },
+    {
+        "id": "wang2023gaeyi",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Wang, Yao, 하종은",
+        "citation-key": "wang2023gaeyi",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2023.23.0146",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    12
+                ]
+            ]
+        },
+        "page": "973–979",
+        "source": "www.dbpia.co.kr",
+        "title": "두 개의 인코더를 이용한 장면 텍스트 인식",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11621141",
+        "volume": "29",
+        "category": "domestic-journal",
+        "year": 2023,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2023.23.0146"
+    },
+    {
+        "id": "choi2023object",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2023object",
+        "container-title": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS59377.2023.10316786",
+        "event-title": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    10
+                ]
+            ]
+        },
+        "page": "235–237",
+        "source": "IEEE Xplore",
+        "title": "Object Detection Using Policy-Based Reinforcement Learning",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/10316786",
+        "category": "international-conference",
+        "year": 2023,
+        "venue": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS59377.2023.10316786"
+    },
+    {
+        "id": "wang2023detr",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "wang2023detr",
+        "container-title": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS59377.2023.10316851",
+        "event-title": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    10
+                ]
+            ]
+        },
+        "page": "238–240",
+        "source": "IEEE Xplore",
+        "title": "DETR with Additional Object Instance-Specific Features for Encoder",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/10316851",
+        "category": "international-conference",
+        "year": 2023,
+        "venue": "2023 23rd International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS59377.2023.10316851"
+    },
+    {
+        "id": "coegyeonghun2022gaegce",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2022gaegce",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2022.22.0106",
+        "ISSN": "1976-5622",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    10
+                ]
+            ]
+        },
+        "page": "848–854",
+        "source": "www.dbpia.co.kr",
+        "title": "객체 검출과 객체 분할 방법의 무인 감시 데이터셋 적용 결과 비교",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11142002",
+        "volume": "28",
+        "category": "domestic-journal",
+        "year": 2022,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2022.22.0106"
+    },
+    {
+        "id": "gimjinu2022teugjingci",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "김진우, 하종은",
+        "citation-key": "gimjinu2022teugjingci",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2022.22.0108",
+        "ISSN": "1976-5622",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    10
+                ]
+            ]
+        },
+        "page": "903–909",
+        "source": "www.dbpia.co.kr",
+        "title": "특징치 플립을 이용한 이미지 분류 모델",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11142010",
+        "volume": "28",
+        "category": "domestic-journal",
+        "year": 2022,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2022.22.0108"
+    },
+    {
+        "id": "kim2022foreground",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2022foreground",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2022.3224063",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022"
+                ]
+            ]
+        },
+        "page": "122857–122869",
+        "source": "IEEE Xplore",
+        "title": "Foreground Object Detection in Visual Surveillance With Spatio-Temporal Fusion Network",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9957072",
+        "volume": "10",
+        "category": "international-journal",
+        "year": 2022,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2022.3224063"
+    },
+    {
+        "id": "kim2022weakly",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2022weakly",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2022.3211987",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022"
+                ]
+            ]
+        },
+        "page": "105726–105733",
+        "source": "IEEE Xplore",
+        "title": "Weakly Supervised Foreground Object Detection Network Using Background Model Image",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9910159",
+        "volume": "10",
+        "category": "international-journal",
+        "year": 2022,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2022.3211987"
+    },
+    {
+        "id": "wang2022dajung",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Wang, Yao, 하종은",
+        "citation-key": "wang2022dajung",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2022.22.0107",
+        "ISSN": "1976-5622",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    10
+                ]
+            ]
+        },
+        "page": "862–867",
+        "source": "www.dbpia.co.kr",
+        "title": "다중 패치를 이용한 트랜스포머 기반 장면 텍스트 인식",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11142004",
+        "volume": "28",
+        "category": "domestic-journal",
+        "year": 2022,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2022.22.0107"
+    },
+    {
+        "id": "choi2022random",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2022random",
+        "container-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS55662.2022.10003789",
+        "event-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    1
+                ]
+            ]
+        },
+        "page": "1611–1614",
+        "source": "IEEE Xplore",
+        "title": "Random Swin Transformer",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/10003789",
+        "category": "international-conference",
+        "year": 2022,
+        "venue": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS55662.2022.10003789"
+    },
+    {
+        "id": "choi2022semantic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2022semantic",
+        "container-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS55662.2022.10003862",
+        "event-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    1
+                ]
+            ]
+        },
+        "page": "1607–1610",
+        "source": "IEEE Xplore",
+        "title": "Semantic Segmentation with Perceiver IO",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/10003862",
+        "category": "international-conference",
+        "year": 2022,
+        "venue": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS55662.2022.10003862"
+    },
+    {
+        "id": "wang2022scene",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "wang2022scene",
+        "container-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS55662.2022.10003838",
+        "event-title": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    1
+                ]
+            ]
+        },
+        "page": "1615–1620",
+        "source": "IEEE Xplore",
+        "title": "Scene Text Recognition with Multi-Encoders",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/10003838",
+        "category": "international-conference",
+        "year": 2022,
+        "venue": "2022 22nd International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS55662.2022.10003838"
+    },
+    {
+        "id": "choi2021adaptive",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2021adaptive",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2021.3130132",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021"
+                ]
+            ]
+        },
+        "page": "156846–156856",
+        "source": "IEEE Xplore",
+        "title": "An Adaptive Threshold for the Canny Algorithm With Deep Reinforcement Learning",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9624973",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2021,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2021.3130132"
+    },
+    {
+        "id": "coegyeonghun2021muin",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2021muin",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2021.21.0143",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    12
+                ]
+            ]
+        },
+        "page": "972–977",
+        "source": "www.dbpia.co.kr",
+        "title": "무인 감시 Transformer",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10671834",
+        "volume": "27",
+        "category": "domestic-journal",
+        "year": 2021,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2021.21.0143"
+    },
+    {
+        "id": "coegyeonghun2021taegeu",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2021taegeu",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2021.21.0153",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    12
+                ]
+            ]
+        },
+        "page": "1023–1028",
+        "source": "www.dbpia.co.kr",
+        "title": "태그 라벨과 트랜스포머를 이용한 시맨틱 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10671841",
+        "volume": "27",
+        "category": "domestic-journal",
+        "year": 2021,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2021.21.0153"
+    },
+    {
+        "id": "kim2021foreground",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2021foreground",
+        "container-title": "Applied Sciences",
+        "DOI": "10.3390/app11041807",
+        "ISSN": "2076-3417",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    1
+                ]
+            ]
+        },
+        "license": "http://creativecommons.org/licenses/by/3.0/",
+        "page": "1807",
+        "publisher": "Multidisciplinary Digital Publishing Institute",
+        "source": "www.mdpi.com",
+        "title": "Foreground Objects Detection by U-Net with Multiple Difference Images",
+        "type": "article-journal",
+        "URL": "https://www.mdpi.com/2076-3417/11/4/1807",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2021,
+        "venue": "Applied Sciences",
+        "doi": "10.3390/app11041807"
+    },
+    {
+        "id": "kim2021generation",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2021generation",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2021.3111686",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021"
+                ]
+            ]
+        },
+        "page": "127515–127530",
+        "source": "IEEE Xplore",
+        "title": "Generation of Background Model Image Using Foreground Model",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9535139",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2021,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2021.3111686"
+    },
+    {
+        "id": "kim2021spatiotemporal",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2021spatiotemporal",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2021.3135505",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021"
+                ]
+            ]
+        },
+        "page": "165014–165033",
+        "source": "IEEE Xplore",
+        "title": "Spatio-Temporal Data Augmentation for Visual Surveillance",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9650910/",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2021,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2021.3135505"
+    },
+    {
+        "id": "yeomsangsig2021imijiwa",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    3
+                ]
+            ]
+        },
+        "author": "염상식, 하종은",
+        "citation-key": "yeomsangsig2021imijiwa",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2021.21.0142",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    12
+                ]
+            ]
+        },
+        "page": "1000–1007",
+        "source": "www.dbpia.co.kr",
+        "title": "이미지와 Voxel 을 이용한 3D 실내 점군 시맨틱 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10671838",
+        "volume": "27",
+        "category": "domestic-journal",
+        "year": 2021,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2021.21.0142"
+    },
+    {
+        "id": "keonghun2021segmentation",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Keonghun, Choi, Ha, Jong–Eun",
+        "citation-key": "keonghun2021segmentation",
+        "container-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS52745.2021.9650042",
+        "event-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    10
+                ]
+            ]
+        },
+        "page": "1519–1522",
+        "source": "IEEE Xplore",
+        "title": "Segmentation applying TAG type label data and Transformer",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9650042",
+        "category": "international-conference",
+        "year": 2021,
+        "venue": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS52745.2021.9650042"
+    },
+    {
+        "id": "keonghun2021visual",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Keonghun, Choi, Ha, Jong-Eun",
+        "citation-key": "keonghun2021visual",
+        "container-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS52745.2021.9649823",
+        "event-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    10
+                ]
+            ]
+        },
+        "page": "1516–1518",
+        "source": "IEEE Xplore",
+        "title": "Visual surveillance transformer",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9649823",
+        "category": "international-conference",
+        "year": 2021,
+        "venue": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS52745.2021.9649823"
+    },
+    {
+        "id": "wang2021scene",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Wang, Yao, Ha, Jong-Eun",
+        "citation-key": "wang2021scene",
+        "container-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS52745.2021.9649998",
+        "event-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    10
+                ]
+            ]
+        },
+        "page": "1523–1528",
+        "source": "IEEE Xplore",
+        "title": "Scene Text Recognition with Multi-decoders",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9649998",
+        "category": "international-conference",
+        "year": 2021,
+        "venue": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS52745.2021.9649998"
+    },
+    {
+        "id": "yeom2021hybridnet",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Yeom, Sangsik, Ha, JongEun",
+        "citation-key": "yeom2021hybridnet",
+        "container-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS52745.2021.9649914",
+        "event-title": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    10
+                ]
+            ]
+        },
+        "page": "1509–1515",
+        "source": "IEEE Xplore",
+        "title": "HybridNet: Indoor segmentation with range and voxel fusion",
+        "title-short": "HybridNet",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9649914",
+        "category": "international-conference",
+        "year": 2021,
+        "venue": "2021 21st International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS52745.2021.9649914"
+    },
+    {
+        "id": "coegyeonghun2020cnn",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2020cnn",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2020.20.0090",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    12
+                ]
+            ]
+        },
+        "page": "1093–1098",
+        "source": "www.dbpia.co.kr",
+        "title": "CNN 을 이용한 태양전지 불량 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10498168",
+        "volume": "26",
+        "category": "domestic-journal",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2020.20.0090"
+    },
+    {
+        "id": "coegyeonghun2020ejia",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2020ejia",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2020.20.0119",
+        "ISSN": "1976-5622",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    11
+                ]
+            ]
+        },
+        "page": "916–921",
+        "source": "www.dbpia.co.kr",
+        "title": "에지 비용 함수를 이용한 시맨틱 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10485606",
+        "volume": "26",
+        "category": "domestic-journal",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2020.20.0119"
+    },
+    {
+        "id": "gimjaeyeol2020vaero",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김재열, 하종은",
+        "citation-key": "gimjaeyeol2020vaero",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2020.20.0118",
+        "ISSN": "1976-5622",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    11
+                ]
+            ]
+        },
+        "page": "964–970",
+        "source": "www.dbpia.co.kr",
+        "title": "VAE로 생성한 배경 이미지를 이용한 전경 물체 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10485612",
+        "volume": "26",
+        "category": "domestic-journal",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2020.20.0118"
+    },
+    {
+        "id": "hajongeun2020habseong",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2020habseong",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2020.20.0070",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    9
+                ]
+            ]
+        },
+        "page": "778–783",
+        "source": "www.dbpia.co.kr",
+        "title": "합성 이미지를 이용한 Mask R-CNN 기반 한국 번호판 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09873221",
+        "volume": "26",
+        "category": "domestic-journal",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2020.20.0070"
+    },
+    {
+        "id": "kim2020extrinsic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2020extrinsic",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2020.3029267",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020"
+                ]
+            ]
+        },
+        "page": "183071–183079",
+        "source": "IEEE Xplore",
+        "title": "Extrinsic Calibration of a Camera and a 2D LiDAR Using a Dummy Camera With IR Cut Filter Removed",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/document/9216096",
+        "volume": "8",
+        "category": "international-journal",
+        "year": 2020,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2020.3029267"
+    },
+    {
+        "id": "kim2020foreground",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2020foreground",
+        "container-title": "IEEE Access",
+        "DOI": "10.1109/ACCESS.2020.3020818",
+        "ISSN": "2169-3536",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020"
+                ]
+            ]
+        },
+        "page": "159864–159878",
+        "source": "IEEE Xplore",
+        "title": "Foreground Objects Detection Using a Fully Convolutional Network With a Background Model Image and Multiple Original Images",
+        "type": "article-journal",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/9183919",
+        "volume": "8",
+        "category": "international-journal",
+        "year": 2020,
+        "venue": "IEEE Access",
+        "doi": "10.1109/ACCESS.2020.3020818"
+    },
+    {
+        "id": "yeomsangsig20202d",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "염상식, 하종은",
+        "citation-key": "yeomsangsig20202d",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2020.20.0120",
+        "ISSN": "1976-5622",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    11
+                ]
+            ]
+        },
+        "page": "949–954",
+        "source": "www.dbpia.co.kr",
+        "title": "2D 시맨틱 분할 프로젝션을 이용한 3D 실내 공간 시맨틱 분할",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10485610",
+        "volume": "26",
+        "category": "domestic-journal",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2020.20.0120"
+    },
+    {
+        "id": "choi2020visual",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2020visual",
+        "container-title": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS50221.2020.9268429",
+        "event-title": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    10
+                ]
+            ]
+        },
+        "page": "289–291",
+        "source": "IEEE Xplore",
+        "title": "Visual Surveillance using Deep Reinforcement Learning",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9268429",
+        "category": "international-conference",
+        "year": 2020,
+        "venue": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS50221.2020.9268429"
+    },
+    {
+        "id": "coegyeonghun2020eji",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2020eji",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2020 제35회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    7
+                ]
+            ]
+        },
+        "page": "357–358",
+        "source": "www.dbpia.co.kr",
+        "title": "에지 비용 함수를 이용한 시맨틱 분할 **[Poster]**",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410475",
+        "category": "domestic-conference",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "gimjaeyeol2020vae",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김재열, 하종은",
+        "citation-key": "gimjaeyeol2020vae",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2020 제35회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    7
+                ]
+            ]
+        },
+        "page": "355–356",
+        "source": "www.dbpia.co.kr",
+        "title": "VAE 로 생성한 배경 이미지를 이용한 무인감시",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410474",
+        "category": "domestic-conference",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "kim2020visual",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2020visual",
+        "container-title": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "DOI": "10.23919/ICCAS50221.2020.9268373",
+        "event-title": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "ISSN": "2642-3901",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    10
+                ]
+            ]
+        },
+        "page": "292–295",
+        "source": "IEEE Xplore",
+        "title": "Visual Surveillance using Background Model Image Generated by GAN",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/9268373",
+        "category": "international-conference",
+        "year": 2020,
+        "venue": "2020 20th International Conference on Control, Automation and Systems (ICCAS)",
+        "doi": "10.23919/ICCAS50221.2020.9268373"
+    },
+    {
+        "id": "yaowang2020simceung",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Yao Wang, 하종은",
+        "citation-key": "yaowang2020simceung",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2020 제35회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    7
+                ]
+            ]
+        },
+        "page": "410–411",
+        "source": "www.dbpia.co.kr",
+        "title": "심층 신경망을 이용한 장면 텍스트 추출 및 인식",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410500",
+        "category": "domestic-conference",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "yeomsangsig20203d",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "염상식, 하종은",
+        "citation-key": "yeomsangsig20203d",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2020 제35회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    7
+                ]
+            ]
+        },
+        "page": "408–409",
+        "source": "www.dbpia.co.kr",
+        "title": "3D 공간 정보를 이용한 시맨틱 분할",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410499",
+        "category": "domestic-conference",
+        "year": 2020,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "coegyeonghun2019eji",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "최경훈, 하종은",
+        "citation-key": "coegyeonghun2019eji",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2019.19.0119",
+        "ISSN": "1976-5622",
+        "issue": "8",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8
+                ]
+            ]
+        },
+        "page": "684–689",
+        "source": "www.dbpia.co.kr",
+        "title": "에지 분류 CNN 을 이용한 U-Net 기반 에지 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08760749",
+        "volume": "25",
+        "category": "domestic-journal",
+        "year": 2019,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2019.19.0119"
+    },
+    {
+        "id": "gimdaehun2019gaeyi",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2019gaeyi",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2019.19.0110",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9
+                ]
+            ]
+        },
+        "page": "753–759",
+        "source": "www.dbpia.co.kr",
+        "title": "두 개의 이종 CNN 융합을 이용한 차선 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08769075",
+        "volume": "25",
+        "category": "domestic-journal",
+        "year": 2019,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2019.19.0110"
+    },
+    {
+        "id": "gimjaeyeol2019jeogoeseon",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김재열, 하종은",
+        "citation-key": "gimjaeyeol2019jeogoeseon",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2019.19.0080",
+        "ISSN": "1976-5622",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    7
+                ]
+            ]
+        },
+        "page": "597–602",
+        "source": "www.dbpia.co.kr",
+        "title": "적외선 차단 필터를 제거한 더미 카메라를 이용한 카메라와 라이다 외부 보정 방법 평가",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08748940",
+        "volume": "25",
+        "category": "domestic-journal",
+        "year": 2019,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2019.19.0080"
+    },
+    {
+        "id": "hajongeun2019sayeong",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2019sayeong",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2019.19.0117",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9
+                ]
+            ]
+        },
+        "page": "770–774",
+        "source": "www.dbpia.co.kr",
+        "title": "사영 변환하의 합성 이미지를 이용한 Mask R-CNN 기반 QR 코드 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08769077",
+        "volume": "25",
+        "category": "domestic-journal",
+        "year": 2019,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2019.19.0117"
+    },
+    {
+        "id": "janggyeongseog2019kalra",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "장경석, 하종은",
+        "citation-key": "janggyeongseog2019kalra",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2019.18.0172",
+        "ISSN": "1976-5622",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    1
+                ]
+            ]
+        },
+        "page": "63–68",
+        "source": "www.dbpia.co.kr",
+        "title": "칼라 체스보드를 이용한 RGB-D 센서와 로봇의 외부보정",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07591600",
+        "volume": "25",
+        "category": "domestic-journal",
+        "year": 2019,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2019.18.0172"
+    },
+    {
+        "id": "kim2019one",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Kim, Nam-Hun, Ha, Jong-Eun",
+        "citation-key": "kim2019one",
+        "container-title": "Journal of Electrical Engineering & Technology",
+        "container-title-short": "J. Electr. Eng. Technol.",
+        "DOI": "10.1007/s42835-019-00087-z",
+        "ISSN": "2093-7423",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    3,
+                    1
+                ]
+            ]
+        },
+        "page": "917–922",
+        "source": "Springer Link",
+        "title": "One Shot Extrinsic Calibration of a Camera and Laser Range Finder Using Vertical Planes",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s42835-019-00087-z",
+        "volume": "14",
+        "category": "international-journal",
+        "year": 2019,
+        "venue": "Journal of Electrical Engineering & Technology",
+        "doi": "10.1007/s42835-019-00087-z"
+    },
+    {
+        "id": "choi2019edge",
+        "author": "Choi, Keong-Hun, Ha, Jong-Eun",
+        "citation-key": "choi2019edge",
+        "container-title": "2019 19th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2019 19th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019"
+                ]
+            ]
+        },
+        "page": "97–98",
+        "title": "Edge detection using deep reinforcement learning",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2019,
+        "venue": "2019 19th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "kim2019automatic",
+        "author": "Kim, Jae-Yeul, Ha, Jong-Eun",
+        "citation-key": "kim2019automatic",
+        "container-title": "2019 19th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2019 19th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019"
+                ]
+            ]
+        },
+        "page": "317–318",
+        "title": "Automatic extrinsic calibration of a camera and laser range finder using constraints fusion",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2019,
+        "venue": "2019 19th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "gimdaehun2018cnn",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2018cnn",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2018.18.0111",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    9
+                ]
+            ]
+        },
+        "page": "851–856",
+        "source": "www.dbpia.co.kr",
+        "title": "CNN 소실점 검출을 이용한 차선 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07528736",
+        "volume": "24",
+        "category": "domestic-journal",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2018.18.0111"
+    },
+    {
+        "id": "gimdaehun2018robos",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2018robos",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2018.18.0101",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    9
+                ]
+            ]
+        },
+        "page": "802–808",
+        "source": "www.dbpia.co.kr",
+        "title": "로봇 물체 조작을 위한 딥러닝 시맨틱 분할을 이용한 물체 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07528729",
+        "volume": "24",
+        "category": "domestic-journal",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2018.18.0101"
+    },
+    {
+        "id": "ha2018calibration",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong Eun",
+        "citation-key": "ha2018calibration",
+        "container-title": "Journal of Electrical Engineering & Technology",
+        "ISSN": "1975-0102",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    1
+                ]
+            ]
+        },
+        "page": "438–444",
+        "source": "www.dbpia.co.kr",
+        "title": "Calibration of Structured Light Vision System using Multiple Vertical Planes",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07286486",
+        "volume": "13",
+        "category": "international-journal",
+        "year": 2018,
+        "venue": "Journal of Electrical Engineering & Technology"
+    },
+    {
+        "id": "hajongeun2018sayeong",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2018sayeong",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2018.18.0171",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    12
+                ]
+            ]
+        },
+        "page": "1117–1122",
+        "source": "www.dbpia.co.kr",
+        "title": "사영 변환하의 데이터 매트릭스 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07571063",
+        "volume": "24",
+        "category": "domestic-journal",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2018.18.0171"
+    },
+    {
+        "id": "janggyeongseog2018kalra",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "장경석, 하종은",
+        "citation-key": "janggyeongseog2018kalra",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2018.18.0177",
+        "ISSN": "1976-5622",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    12
+                ]
+            ]
+        },
+        "page": "1123–1127",
+        "source": "www.dbpia.co.kr",
+        "title": "칼라 정보를 이용한 스키 기문 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07571064",
+        "volume": "24",
+        "category": "domestic-journal",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2018.18.0177"
+    },
+    {
+        "id": "gimdaehun2018gaeyi",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2018gaeyi",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2018 제33회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    5
+                ]
+            ]
+        },
+        "page": "418–419",
+        "source": "www.dbpia.co.kr",
+        "title": "두 개의 이종 CNN 융합을 이용한 차선 검출 **[Poster]**",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07450009",
+        "category": "domestic-conference",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "jang2018extrinsic",
+        "author": "Jang, Kyeong-Seock, Ha, Jong-Eun",
+        "citation-key": "jang2018extrinsic",
+        "container-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018"
+                ]
+            ]
+        },
+        "page": "1457–1458",
+        "title": "Extrinsic calibration of camera and laser range finder using dummy camera without IR cut-filter",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2018,
+        "venue": "2018 18th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "jang2018extrinsica",
+        "author": "Jang, Kyeong-Seock, Ha, Jong-Eun",
+        "citation-key": "jang2018extrinsica",
+        "container-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018"
+                ]
+            ]
+        },
+        "page": "1455–1456",
+        "title": "Extrinsic calibration of RGB-D sensor and robot using color chessboard",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2018,
+        "venue": "2018 18th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "janggyeongseog2018rgbd",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "장경석, 하종은",
+        "citation-key": "janggyeongseog2018rgbd",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2018 제33회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    5
+                ]
+            ]
+        },
+        "page": "426–427",
+        "source": "www.dbpia.co.kr",
+        "title": "RGB-D 센서를 이용한 로봇의 물체 조작",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07450013",
+        "category": "domestic-conference",
+        "year": 2018,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "kim2018lane",
+        "author": "Kim, Dae-Hun, Ha, Jong-Eun",
+        "citation-key": "kim2018lane",
+        "container-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2018 18th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018"
+                ]
+            ]
+        },
+        "page": "1459–1460",
+        "title": "Lane detection using deep learning semantic segmentation",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2018,
+        "venue": "2018 18th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "gimdaehun2017cnn",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2017cnn",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2017.17.0107",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    9
+                ]
+            ]
+        },
+        "page": "718–724",
+        "source": "www.dbpia.co.kr",
+        "title": "CNN 과 전이 학습을 이용한 다차선 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07230996",
+        "volume": "23",
+        "category": "domestic-journal",
+        "year": 2017,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2017.17.0107"
+    },
+    {
+        "id": "gimjinu2017danan",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김진우, 하종은",
+        "citation-key": "gimjinu2017danan",
+        "container-title": "한국전자통신학회 논문지",
+        "ISSN": "1975-8170",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    1
+                ]
+            ]
+        },
+        "page": "123–128",
+        "source": "www.dbpia.co.kr",
+        "title": "단안 카메라를 이용한 소형 자동차의 임무 수행",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08825024",
+        "volume": "12",
+        "category": "domestic-journal",
+        "year": 2017,
+        "venue": "한국전자통신학회 논문지"
+    },
+    {
+        "id": "hajongeun2017ijinhwa",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2017ijinhwa",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2017.17.0030",
+        "ISSN": "1976-5622",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    6
+                ]
+            ]
+        },
+        "page": "469–473",
+        "source": "www.dbpia.co.kr",
+        "title": "이진화 및 블랍 처리를 이용한 코일 돌출 검사",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07185783",
+        "volume": "23",
+        "category": "domestic-journal",
+        "year": 2017,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2017.17.0030"
+    },
+    {
+        "id": "gimdaehun2017dibreoningeul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김대훈, 하종은",
+        "citation-key": "gimdaehun2017dibreoningeul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2017 제32회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    5
+                ]
+            ]
+        },
+        "page": "310–311",
+        "source": "www.dbpia.co.kr",
+        "title": "딥러닝을 이용한 다차선 검출",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07186211",
+        "category": "domestic-conference",
+        "year": 2017,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "gimnamhun2017sujig",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김남훈, 하종은",
+        "citation-key": "gimnamhun2017sujig",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2017 제32회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    5
+                ]
+            ]
+        },
+        "page": "308–309",
+        "source": "www.dbpia.co.kr",
+        "title": "수직 구조물을 이용한 카메라와 라이다 외부 보정",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07186210",
+        "category": "domestic-conference",
+        "year": 2017,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "kim2017multilane",
+        "author": "Kim, D. H., Ha, J. E.",
+        "citation-key": "kim2017multilane",
+        "container-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017"
+                ]
+            ]
+        },
+        "title": "Multi-lane detection by finding epipole using convolutional neural network",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2017,
+        "venue": "2017 17th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "kim2017zooming",
+        "author": "Kim, N. H., Ha, J. E.",
+        "citation-key": "kim2017zooming",
+        "container-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017"
+                ]
+            ]
+        },
+        "title": "Zooming multiple objects using wide-angle camera and PTZ camera in visual surveillance",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2017,
+        "venue": "2017 17th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "lee20173d",
+        "author": "Lee, W. H., Ha, J. E., Oh, K. W.",
+        "citation-key": "lee20173d",
+        "container-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2017 17th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2017"
+                ]
+            ]
+        },
+        "title": "3D space recognition for indoor drone navigation using multiple cameras",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2017,
+        "venue": "2017 17th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "gimnamhun2016yeongsang",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김남훈, 하종은",
+        "citation-key": "gimnamhun2016yeongsang",
+        "container-title": "한국전자통신학회 논문지",
+        "ISSN": "1975-8170",
+        "issue": "12",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    12
+                ]
+            ]
+        },
+        "page": "1225–1230",
+        "source": "www.dbpia.co.kr",
+        "title": "영상 처리를 이용한 소형 이족 보행 로봇의 임무 수행",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11377433",
+        "volume": "11",
+        "category": "domestic-journal",
+        "year": 2016,
+        "venue": "한국전자통신학회 논문지"
+    },
+    {
+        "id": "hajongeun2016gyeonggye",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2016gyeonggye",
+        "container-title": "제어로봇시스템학회 논문지",
+        "DOI": "10.5302/J.ICROS.2016.16.0147",
+        "ISSN": "1976-5622",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    11
+                ]
+            ]
+        },
+        "page": "932–936",
+        "source": "www.dbpia.co.kr",
+        "title": "경계 추출 및 처리를 통한 다이아몬드 휠 검사",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07045246",
+        "volume": "22",
+        "category": "domestic-journal",
+        "year": 2016,
+        "venue": "제어로봇시스템학회 논문지",
+        "doi": "10.5302/J.ICROS.2016.16.0147"
+    },
+    {
+        "id": "hajongeun2016kalra",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은, 송태훈",
+        "citation-key": "hajongeun2016kalra",
+        "container-title": "한국전자통신학회 논문지",
+        "ISSN": "1975-8170",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    1
+                ]
+            ]
+        },
+        "page": "107–112",
+        "source": "www.dbpia.co.kr",
+        "title": "칼라 나사 검사를 위한 표면 영역 자동 검출",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08825103",
+        "volume": "11",
+        "category": "domestic-journal",
+        "year": 2016,
+        "venue": "한국전자통신학회 논문지"
+    },
+    {
+        "id": "hajongeun2016makeowa",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "하종은",
+        "citation-key": "hajongeun2016makeowa",
+        "container-title": "한국전자통신학회 논문지",
+        "ISSN": "1975-8170",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    1
+                ]
+            ]
+        },
+        "page": "185–190",
+        "source": "www.dbpia.co.kr",
+        "title": "마커와 카메라를 이용한 스키드 구동 이동 로봇의 회전 운동 분석",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08824973",
+        "volume": "11",
+        "category": "domestic-journal",
+        "year": 2016,
+        "venue": "한국전자통신학회 논문지"
+    },
+    {
+        "id": "song2016visual",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Song, T.-H., Ha, J.-E.",
+        "citation-key": "song2016visual",
+        "container-title": "Electronics Letters",
+        "DOI": "10.1049/el.2016.0022",
+        "ISSN": "1350-911X",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016"
+                ]
+            ]
+        },
+        "license": "© 2020 The Institution of Engineering and Technology",
+        "page": "445–447",
+        "source": "Wiley Online Library",
+        "title": "Visual surveillance using wide-angle camera and laser range finder",
+        "type": "article-journal",
+        "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1049/el.2016.0022",
+        "volume": "52",
+        "category": "international-journal",
+        "year": 2016,
+        "venue": "Electronics Letters",
+        "doi": "10.1049/el.2016.0022"
+    },
+    {
+        "id": "gimjinu2016seutereo",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김진우, 하종은",
+        "citation-key": "gimjinu2016seutereo",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2016 제31회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    3
+                ]
+            ]
+        },
+        "page": "51–52",
+        "source": "www.dbpia.co.kr",
+        "title": "스테레오 시스템을 이용한 SLAM",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06649459",
+        "category": "domestic-conference",
+        "year": 2016,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "gimnamhun2016yeongsangceorireul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김남훈, 하종은",
+        "citation-key": "gimnamhun2016yeongsangceorireul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2016 제31회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    3
+                ]
+            ]
+        },
+        "page": "327–328",
+        "source": "www.dbpia.co.kr",
+        "title": "영상처리를 통한 소형 휴머노이드의 임무 수행",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06649342",
+        "category": "domestic-conference",
+        "year": 2016,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "kim2016extrinsic",
+        "author": "Kim, Nam-Hun, Ha, Jong-Eun",
+        "citation-key": "kim2016extrinsic",
+        "container-title": "2016 16th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2016 16th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016"
+                ]
+            ]
+        },
+        "title": "Extrinsic calibration of a camera and laser range finder",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2016,
+        "venue": "2016 16th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "kim2016mapping",
+        "author": "Kim, Jin-Woo, Lee, Wang-Heon, Ha, Jong-Eun",
+        "citation-key": "kim2016mapping",
+        "container-title": "2016 16th International Conference on Control, Automation and Systems (ICCAS)",
+        "event-title": "2016 16th International Conference on Control, Automation and Systems (ICCAS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2016"
+                ]
+            ]
+        },
+        "title": "Mapping using stereo system",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2016,
+        "venue": "2016 16th International Conference on Control, Automation and Systems (ICCAS)"
+    },
+    {
+        "id": "gimjinu2015measurement",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "김진우, 송태훈, 하종은",
+        "citation-key": "gimjinu2015measurement",
+        "container-title": "Journal of the Korean Society for Precision Engineering",
+        "ISSN": "1225-9071",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    6
+                ]
+            ]
+        },
+        "page": "537–542",
+        "source": "www.dbpia.co.kr",
+        "title": "Measurement of 3D Shape of Fastener using Camera and Slit Laser",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06334857",
+        "volume": "32",
+        "category": "international-journal",
+        "year": 2015,
+        "venue": "Journal of the Korean Society for Precision Engineering"
+    },
+    {
+        "id": "ha2015automatic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2015automatic",
+        "container-title": "Journal of Electrical Engineering & Technology",
+        "ISSN": "1975-0102",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    7
+                ]
+            ]
+        },
+        "page": "1830–1835",
+        "source": "www.dbpia.co.kr",
+        "title": "Automatic Registration of Two Parts using Robot with Multiple 3D Sensor Systems",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06362272",
+        "volume": "10",
+        "category": "international-journal",
+        "year": 2015,
+        "venue": "Journal of Electrical Engineering & Technology"
+    },
+    {
+        "id": "ha2015improved",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2015improved",
+        "container-title": "International Journal of Control, Automation and Systems",
+        "container-title-short": "Int. J. Control Autom. Syst.",
+        "DOI": "10.1007/s12555-013-0528-4",
+        "ISSN": "2005-4092",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    10,
+                    1
+                ]
+            ]
+        },
+        "page": "1272–1276",
+        "source": "Springer Link",
+        "title": "Improved algorithm for the extrinsic calibration of a camera and laser range finder using 3D-3D correspondences",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s12555-013-0528-4",
+        "volume": "13",
+        "category": "international-journal",
+        "year": 2015,
+        "venue": "International Journal of Control, Automation and Systems",
+        "doi": "10.1007/s12555-013-0528-4"
+    },
+    {
+        "id": "heogeon2015dongjaginsigeul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "허건, 하종은",
+        "citation-key": "heogeon2015dongjaginsigeul",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    1
+                ]
+            ]
+        },
+        "page": "40–45",
+        "source": "www.dbpia.co.kr",
+        "title": "동작인식을 이용한 탁구 스윙 분석",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06072149",
+        "volume": "21",
+        "category": "domestic-journal",
+        "year": 2015,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "gimjinu2015oebu",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "김진우, 송태훈, 하종은",
+        "citation-key": "gimjinu2015oebu",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2015 제30회 제어로봇시스템학회 학술대회 (ICROS)",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    5
+                ]
+            ]
+        },
+        "page": "167–168",
+        "source": "www.dbpia.co.kr",
+        "title": "외부 보정을 이용한 PTZ 카메라 보정",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06358163",
+        "category": "domestic-conference",
+        "year": 2015,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "gimjinu2015seulris",
+        "author": "김진우, 하종은",
+        "citation-key": "gimjinu2015seulris",
+        "container-title": "한국정밀공학회 2015년도 춘계학술대회 논문집",
+        "event-title": "한국정밀공학회 2015년도 춘계학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2015",
+                    5
+                ]
+            ]
+        },
+        "page": "1221–1222",
+        "source": "www.dbpia.co.kr",
+        "title": "슬릿 레이저를 이용한 나사 3D 형상 측정",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06364840",
+        "category": "domestic-conference",
+        "year": 2015,
+        "venue": "한국정밀공학회 2015년도 춘계학술대회 논문집"
+    },
+    {
+        "id": "ha2014automatic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Lee, Wang-Heon",
+        "citation-key": "ha2014automatic",
+        "container-title": "Journal of Electrical Engineering & Technology",
+        "ISSN": "1975-0102",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2014",
+                    11
+                ]
+            ]
+        },
+        "page": "2162–2167",
+        "source": "www.dbpia.co.kr",
+        "title": "Automatic Manipulation of Tie Rod using Robot with 3D Sensing System",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02491750",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2014,
+        "venue": "Journal of Electrical Engineering & Technology"
+    },
+    {
+        "id": "gimjinu2014kalra",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "김진우, 하종은",
+        "citation-key": "gimjinu2014kalra",
+        "container-title": "한국정밀공학회 학술발표대회 논문집",
+        "event-title": "한국정밀공학회 2014년도 추계학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2014",
+                    10
+                ]
+            ]
+        },
+        "page": "812–812",
+        "source": "www.dbpia.co.kr",
+        "title": "칼라 나사 검사 알고리듬",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE06141484",
+        "category": "domestic-conference",
+        "year": 2014,
+        "venue": "한국정밀공학회 학술발표대회 논문집"
+    },
+    {
+        "id": "hajongeun2014torx",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "하종은, 나승우",
+        "citation-key": "hajongeun2014torx",
+        "container-title": "대한기계학회 2014년도 생산 및 설계공학부문 춘계학술대회 논문집",
+        "event-title": "대한기계학회 2014년도 생산 및 설계공학부문 춘계학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2014",
+                    4
+                ]
+            ]
+        },
+        "page": "3–4",
+        "source": "www.dbpia.co.kr",
+        "title": "Torx 형상 나사머리 검사 알고리듬",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02405777",
+        "category": "domestic-conference",
+        "year": 2014,
+        "venue": "대한기계학회 2014년도 생산 및 설계공학부문 춘계학술대회 논문집"
+    },
+    {
+        "id": "ha2013calibration",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Her, Kang-Wook",
+        "citation-key": "ha2013calibration",
+        "container-title": "Optical Engineering",
+        "container-title-short": "OE",
+        "DOI": "10.1117/1.OE.52.1.013602",
+        "ISSN": "0091-3286, 1560-2303",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2013",
+                    1
+                ]
+            ]
+        },
+        "page": "013602",
+        "publisher": "SPIE",
+        "source": "www.spiedigitallibrary.org",
+        "title": "Calibration of structured light stripe system using plane with slits",
+        "type": "article-journal",
+        "URL": "https://www.spiedigitallibrary.org/journals/optical-engineering/volume-52/issue-1/013602/Calibration-of-structured-light-stripe-system-using-plane-with-slits/10.1117/1.OE.52.1.013602.full",
+        "volume": "52",
+        "category": "international-journal",
+        "year": 2013,
+        "venue": "Optical Engineering",
+        "doi": "10.1117/1.OE.52.1.013602"
+    },
+    {
+        "id": "ha2013image",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2013image",
+        "container-title": "International Journal of Control, Automation and Systems",
+        "container-title-short": "Int. J. Control Autom. Syst.",
+        "DOI": "10.1007/s12555-012-0545-8",
+        "ISSN": "2005-4092",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2013",
+                    10,
+                    1
+                ]
+            ]
+        },
+        "page": "984–990",
+        "source": "Springer Link",
+        "title": "An image processing algorithm for the automatic manipulation of tie rod",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s12555-012-0545-8",
+        "volume": "11",
+        "category": "international-journal",
+        "year": 2013,
+        "venue": "International Journal of Control, Automation and Systems",
+        "doi": "10.1007/s12555-012-0545-8"
+    },
+    {
+        "id": "gimdonghwan2013nasa",
+        "author": "김동환, 김진우, 하종은",
+        "citation-key": "gimdonghwan2013nasa",
+        "container-title": "대한기계학회 2013년도 학술대회",
+        "event-title": "대한기계학회 춘추학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2013"
+                ]
+            ]
+        },
+        "title": "나사 머리부 불량 검출 알고리듬",
+        "type": "paper-conference",
+        "category": "domestic-conference",
+        "year": 2013,
+        "venue": "대한기계학회 2013년도 학술대회"
+    },
+    {
+        "id": "ha2012extrinsic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2012extrinsic",
+        "container-title": "International Journal of Control, Automation and Systems",
+        "container-title-short": "Int. J. Control Autom. Syst.",
+        "DOI": "10.1007/s12555-012-0619-7",
+        "ISSN": "2005-4092",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2012",
+                    12,
+                    1
+                ]
+            ]
+        },
+        "page": "1240–1244",
+        "source": "Springer Link",
+        "title": "Extrinsic calibration of a camera and laser range finder using a new calibration structure of a plane with a triangular hole",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s12555-012-0619-7",
+        "volume": "10",
+        "category": "international-journal",
+        "year": 2012,
+        "venue": "International Journal of Control, Automation and Systems",
+        "doi": "10.1007/s12555-012-0619-7"
+    },
+    {
+        "id": "gimdonghwan2012robospaleul",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김동환, 허강욱, 최이삭, 하종은",
+        "citation-key": "gimdonghwan2012robospaleul",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2012 제27회 ICROS 학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2012",
+                    4
+                ]
+            ]
+        },
+        "page": "117–118",
+        "source": "www.dbpia.co.kr",
+        "title": "로봇팔을 이용한 삼차원 기반 물체 조작",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02036375",
+        "category": "domestic-conference",
+        "year": 2012,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "her2012localization",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Her, Kang-Wook, Kim, Dong-Hwan, Ha, Jong-Eun",
+        "citation-key": "her2012localization",
+        "container-title": "2012 12th International Conference on Control, Automation and Systems",
+        "event-title": "2012 12th International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2012",
+                    10
+                ]
+            ]
+        },
+        "page": "459–461",
+        "source": "IEEE Xplore",
+        "title": "Localization of mobile robot using laser range finder and IR landmark",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/6393484",
+        "category": "international-conference",
+        "year": 2012,
+        "venue": "2012 12th International Conference on Control, Automation and Systems"
+    },
+    {
+        "id": "vavilin2012automatic",
+        "author": "Vavilin, Andrey, Jo, Kang-Hyun, Jeong, Moon-Ho, Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "vavilin2012automatic",
+        "container-title": "Advanced Intelligent Computing",
+        "DOI": "10.1007/978-3-642-24728-6_51",
+        "editor": [
+            {
+                "family": "Huang",
+                "given": "De-Shuang"
+            },
+            {
+                "family": "Gan",
+                "given": "Yong"
+            },
+            {
+                "family": "Bevilacqua",
+                "given": "Vitoantonio"
+            },
+            {
+                "family": "Figueroa",
+                "given": "Juan Carlos"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-642-24728-6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2012"
+                ]
+            ]
+        },
+        "page": "377–382",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Automatic Context Analysis for Image Classification and Retrieval",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2012,
+        "venue": "Advanced Intelligent Computing",
+        "doi": "10.1007/978-3-642-24728-6_51"
+    },
+    {
+        "id": "aninmo2011eji",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "안인모, 하종은",
+        "citation-key": "aninmo2011eji",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    5
+                ]
+            ]
+        },
+        "page": "479–483",
+        "source": "www.dbpia.co.kr",
+        "title": "에지 투영과 PCA를 이용한 차대 번호 인식",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01922266",
+        "volume": "17",
+        "category": "domestic-journal",
+        "year": 2011,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "coeisag2011sogdo",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "최이삭, 하종은",
+        "citation-key": "coeisag2011sogdo",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    4
+                ]
+            ]
+        },
+        "page": "375–381",
+        "source": "www.dbpia.co.kr",
+        "title": "속도 가변을 통한 영상교시 기반 주행 알고리듬 성능 향상",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01922283",
+        "volume": "17",
+        "category": "domestic-journal",
+        "year": 2011,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "coeisag2011yeongsang",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "최이삭, 하종은",
+        "citation-key": "coeisag2011yeongsang",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "9",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    9
+                ]
+            ]
+        },
+        "page": "902–907",
+        "source": "www.dbpia.co.kr",
+        "title": "영상 교시기반 주행 알고리듬 성능 평가",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01928894",
+        "volume": "17",
+        "category": "domestic-journal",
+        "year": 2011,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "ha2011grouping",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2011grouping",
+        "container-title": "International Journal of Control, Automation and Systems",
+        "container-title-short": "Int. J. Control Autom. Syst.",
+        "DOI": "10.1007/s12555-011-0620-6",
+        "ISSN": "2005-4092",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    12,
+                    1
+                ]
+            ]
+        },
+        "page": "1187–1193",
+        "source": "Springer Link",
+        "title": "Grouping contents on Korean road signs",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s12555-011-0620-6",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2011,
+        "venue": "International Journal of Control, Automation and Systems",
+        "doi": "10.1007/s12555-011-0620-6"
+    },
+    {
+        "id": "ha2011new",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2011new",
+        "container-title": "International Journal of Control, Automation and Systems",
+        "container-title-short": "Int. J. Control Autom. Syst.",
+        "DOI": "10.1007/s12555-011-0415-9",
+        "ISSN": "2005-4092",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    8,
+                    1
+                ]
+            ]
+        },
+        "page": "737–741",
+        "source": "Springer Link",
+        "title": "A new method for detecting data matrix under similarity transform for machine vision applications",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1007/s12555-011-0415-9",
+        "volume": "9",
+        "category": "international-journal",
+        "year": 2011,
+        "venue": "International Journal of Control, Automation and Systems",
+        "doi": "10.1007/s12555-011-0415-9"
+    },
+    {
+        "id": "ha2011simple",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Choi, I.-Sak",
+        "citation-key": "ha2011simple",
+        "container-title": "Optical Engineering",
+        "container-title-short": "OE",
+        "DOI": "10.1117/1.3567070",
+        "ISSN": "0091-3286, 1560-2303",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    4
+                ]
+            ]
+        },
+        "page": "043608",
+        "publisher": "SPIE",
+        "source": "www.spiedigitallibrary.org",
+        "title": "Simple method for calibrating omnidirectional stereo with multiple cameras",
+        "type": "article-journal",
+        "URL": "https://www.spiedigitallibrary.org/journals/optical-engineering/volume-50/issue-4/043608/Simple-method-for-calibrating-omnidirectional-stereo-with-multiple-cameras/10.1117/1.3567070.full",
+        "volume": "50",
+        "category": "international-journal",
+        "year": 2011,
+        "venue": "Optical Engineering",
+        "doi": "10.1117/1.3567070"
+    },
+    {
+        "id": "choi2011visual",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "Choi, I-Sak, Ha, Jong-Eun",
+        "citation-key": "choi2011visual",
+        "container-title": "2011 11th International Conference on Control, Automation and Systems",
+        "event-title": "2011 11th International Conference on Control, Automation and Systems",
+        "ISSN": "2093-7121",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    10
+                ]
+            ]
+        },
+        "page": "1137–1138",
+        "source": "IEEE Xplore",
+        "title": "Visual place recognition using single camera",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/6106097",
+        "category": "international-conference",
+        "year": 2011,
+        "venue": "2011 11th International Conference on Control, Automation and Systems"
+    },
+    {
+        "id": "coeisag20112d",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "최이삭, 하종은",
+        "citation-key": "coeisag20112d",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "2011 제26회 제어로봇시스템학회 학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    5
+                ]
+            ]
+        },
+        "page": "275–280",
+        "source": "www.dbpia.co.kr",
+        "title": "2D 와 3D 정보를 이용한 영상 교시기반 주행 알고리듬 성능 비교",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02034037",
+        "category": "domestic-conference",
+        "year": 2011,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "hajongeun2011jeonjabim",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "하종은, 최이삭, 허강욱",
+        "citation-key": "hajongeun2011jeonjabim",
+        "container-title": "한국정밀공학회 학술발표대회 논문집",
+        "event-title": "한국정밀공학회 2011년도 춘계학술대회",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    6
+                ]
+            ]
+        },
+        "page": "781–782",
+        "source": "www.dbpia.co.kr",
+        "title": "전자빔 가공 패턴 정밀 측정 알고리듬",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01659813",
+        "category": "domestic-conference",
+        "year": 2011,
+        "venue": "한국정밀공학회 학술발표대회 논문집"
+    },
+    {
+        "id": "heogangug2011sayeong",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "허강욱, 최이삭, 하종은",
+        "citation-key": "heogangug2011sayeong",
+        "container-title": "한국정밀공학회 학술발표대회 논문집",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    10
+                ]
+            ]
+        },
+        "page": "455–456",
+        "source": "www.dbpia.co.kr",
+        "title": "사영 모델 기반 SEM 보정",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01753438",
+        "category": "domestic-conference",
+        "year": 2011,
+        "venue": "한국정밀공학회 학술발표대회 논문집"
+    },
+    {
+        "id": "her2011steering",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    6
+                ]
+            ]
+        },
+        "author": "Her, Kang-Wook, Ha, Jong-Eun, Lee, Wang-Heon",
+        "citation-key": "her2011steering",
+        "container-title": "2011 11th International Conference on Control, Automation and Systems",
+        "event-title": "2011 11th International Conference on Control, Automation and Systems",
+        "ISSN": "2093-7121",
+        "issued": {
+            "date-parts": [
+                [
+                    "2011",
+                    10
+                ]
+            ]
+        },
+        "page": "1139–1141",
+        "source": "IEEE Xplore",
+        "title": "Steering angle determination using CART and voting",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/document/6106098",
+        "category": "international-conference",
+        "year": 2011,
+        "venue": "2011 11th International Conference on Control, Automation and Systems"
+    },
+    {
+        "id": "ha2010foreground",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Lee, Wangheon",
+        "citation-key": "ha2010foreground",
+        "container-title": "Optical Engineering",
+        "container-title-short": "OE",
+        "DOI": "10.1117/1.3374043",
+        "ISSN": "0091-3286, 1560-2303",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    4
+                ]
+            ]
+        },
+        "page": "047201",
+        "publisher": "SPIE",
+        "source": "www.spiedigitallibrary.org",
+        "title": "Foreground objects detection using multiple difference images",
+        "type": "article-journal",
+        "URL": "https://www.spiedigitallibrary.org/journals/optical-engineering/volume-49/issue-4/047201/Foreground-objects-detection-using-multiple-difference-images/10.1117/1.3374043.full",
+        "volume": "49",
+        "category": "international-journal",
+        "year": 2010,
+        "venue": "Optical Engineering",
+        "doi": "10.1117/1.3374043"
+    },
+    {
+        "id": "kang2010specimen",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kang, Dong-Joong, Park, Jun-Hyub, Shin, Myung-Soo, Ha, Jong-Eun, Lee, Hak-Joo",
+        "citation-key": "kang2010specimen",
+        "container-title": "Journal of Micromechanics and Microengineering",
+        "container-title-short": "J. Micromech. Microeng.",
+        "DOI": "10.1088/0960-1317/20/8/085001",
+        "ISSN": "0960-1317",
+        "issue": "8",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    6
+                ]
+            ]
+        },
+        "page": "085001",
+        "source": "Institute of Physics",
+        "title": "Specimen alignment in an axial tensile test of thin films using direct imaging and its influence on the mechanical properties of BeCu",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1088/0960-1317/20/8/085001",
+        "volume": "20",
+        "category": "international-journal",
+        "year": 2010,
+        "venue": "Journal of Micromechanics and Microengineering",
+        "doi": "10.1088/0960-1317/20/8/085001"
+    },
+    {
+        "id": "park2010improvement",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Park, Jun-Hyub, Shin, Myung-Soo, Kang, Dong-Joong, Lim, Sung-Jo, Ha, Jong-Eun",
+        "citation-key": "park2010improvement",
+        "container-title": "International Journal of Modern Physics B",
+        "container-title-short": "Int. J. Mod. Phys. B",
+        "DOI": "10.1142/S021797921006615X",
+        "ISSN": "0217-9792",
+        "issue": "15n16",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    6,
+                    30
+                ]
+            ]
+        },
+        "page": "3101–3106",
+        "publisher": "World Scientific Publishing Co.",
+        "source": "worldscientific.com (Atypon)",
+        "title": "Improvement of measurement accuracy of strain of thin film by ccd camera with a template matching method using the 2nd-order polynomial interpolation",
+        "type": "article-journal",
+        "URL": "https://www.worldscientific.com/doi/10.1142/S021797921006615X",
+        "volume": "24",
+        "category": "international-journal",
+        "year": 2010,
+        "venue": "International Journal of Modern Physics B",
+        "doi": "10.1142/S021797921006615X"
+    },
+    {
+        "id": "choi2010easy",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Choi, I-Sak, Ha, Jong-Eun",
+        "citation-key": "choi2010easy",
+        "container-title": "ICCAS 2010",
+        "DOI": "10.1109/ICCAS.2010.5669912",
+        "event-title": "2010 10th International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    10
+                ]
+            ]
+        },
+        "page": "2315–2317",
+        "source": "IEEE Xplore",
+        "title": "Easy calibration method for omni-stereo camera system",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/5669912",
+        "category": "international-conference",
+        "year": 2010,
+        "venue": "ICCAS 2010",
+        "doi": "10.1109/ICCAS.2010.5669912"
+    },
+    {
+        "id": "coeisag2010yeongsanggibanyi",
+        "author": "최이삭, 하종은",
+        "citation-key": "coeisag2010yeongsanggibanyi",
+        "container-title": "제 5 회 한국로봇종합학술대회 논문집",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        },
+        "title": "영상기반의 경로추종로봇 제어",
+        "type": "paper-conference",
+        "category": "domestic-conference",
+        "year": 2010,
+        "venue": "제 5 회 한국로봇종합학술대회 논문집"
+    },
+    {
+        "id": "ha2010learningbased",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong, Lee, Wang-Heon",
+        "citation-key": "ha2010learningbased",
+        "container-title": "ICCAS 2010",
+        "DOI": "10.1109/ICCAS.2010.5669917",
+        "event-title": "2010 10th International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    10
+                ]
+            ]
+        },
+        "page": "2318–2319",
+        "source": "IEEE Xplore",
+        "title": "Learning-based human detection using difference image in visual surveillance",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/5669917",
+        "category": "international-conference",
+        "year": 2010,
+        "venue": "ICCAS 2010",
+        "doi": "10.1109/ICCAS.2010.5669917"
+    },
+    {
+        "id": "gimseseon2009seutereo",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "김세선, 김현수, 하종은",
+        "citation-key": "gimseseon2009seutereo",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009",
+                    1
+                ]
+            ]
+        },
+        "page": "89–93",
+        "source": "www.dbpia.co.kr",
+        "title": "스테레오 기반의 장애물 회피 알고리듬",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01961253",
+        "volume": "15",
+        "category": "domestic-journal",
+        "year": 2009,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "ha2009automatic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2009automatic",
+        "container-title": "Optical Engineering",
+        "container-title-short": "OE",
+        "DOI": "10.1117/1.3156053",
+        "ISSN": "0091-3286, 1560-2303",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009",
+                    6
+                ]
+            ]
+        },
+        "page": "067205",
+        "publisher": "SPIE",
+        "source": "www.spiedigitallibrary.org",
+        "title": "Automatic detection of chessboard and its applications",
+        "type": "article-journal",
+        "URL": "https://www.spiedigitallibrary.org/journals/optical-engineering/volume-48/issue-6/067205/Automatic-detection-of-chessboard-and-its-applications/10.1117/1.3156053.full",
+        "volume": "48",
+        "category": "international-journal",
+        "year": 2009,
+        "venue": "Optical Engineering",
+        "doi": "10.1117/1.3156053"
+    },
+    {
+        "id": "kang2009detection",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kang, Dong-Joong, Lim, Sung-Jo, Ha, Jong-Eun, Jeong, Mun-Ho",
+        "citation-key": "kang2009detection",
+        "container-title": "Pattern Recognition Letters",
+        "container-title-short": "Pattern Recognition Letters",
+        "DOI": "10.1016/j.patrec.2008.11.011",
+        "ISSN": "0167-8655",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009",
+                    4,
+                    1
+                ]
+            ]
+        },
+        "page": "486–493",
+        "source": "ScienceDirect",
+        "title": "A detection cell using multiple points of a rotating triangle to find local planar regions from stereo depth data",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S0167865508003528",
+        "volume": "30",
+        "category": "international-journal",
+        "year": 2009,
+        "venue": "Pattern Recognition Letters",
+        "doi": "10.1016/j.patrec.2008.11.011"
+    },
+    {
+        "id": "park2009easy",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Park, Jun-Hyub, Kang, Dong-Joong, Shin, Myung-Soo, Lim, Sung-Jo, Yu, Son-Cheol, Lee, Kwang-Soo, Ha, Jong-Eun, Choa, Sung-Hoon",
+        "citation-key": "park2009easy",
+        "container-title": "Transactions of Nonferrous Metals Society of China",
+        "container-title-short": "Transactions of Nonferrous Metals Society of China",
+        "DOI": "10.1016/S1003-6326(10)60278-6",
+        "ISSN": "1003-6326",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009",
+                    9,
+                    1
+                ]
+            ]
+        },
+        "page": "s243-s249",
+        "source": "ScienceDirect",
+        "title": "Easy calibration method of vision system for in-situ measurement of strain of thin films",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S1003632610602786",
+        "volume": "19",
+        "category": "international-journal",
+        "year": 2009,
+        "venue": "Transactions of Nonferrous Metals Society of China",
+        "doi": "10.1016/S1003-6326(10)60278-6"
+    },
+    {
+        "id": "cho2009visual",
+        "author": "Cho, Y. T., Ha, J. E.",
+        "citation-key": "cho2009visual",
+        "container-title": "International conference on mechatronics and information technology",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009"
+                ]
+            ]
+        },
+        "title": "Visual odometry using cameras parallel to ground plane",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2009,
+        "venue": "International conference on mechatronics and information technology"
+    },
+    {
+        "id": "joyongtae2009makeo",
+        "author": "조용태, 하종은",
+        "citation-key": "joyongtae2009makeo",
+        "container-title": "제 4 회 한국로봇 공학회 하계종합 학술대회 논문집",
+        "issued": {
+            "date-parts": [
+                [
+                    "2009"
+                ]
+            ]
+        },
+        "title": "마커 및 카메라를 이용한 로봇 모니터링 시스템",
+        "type": "paper-conference",
+        "category": "domestic-conference",
+        "year": 2009,
+        "venue": "제 4 회 한국로봇 공학회 하계종합 학술대회 논문집"
+    },
+    {
+        "id": "ha2008new",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Park, Jun-Hyub, Kang, Dong-Joong",
+        "citation-key": "ha2008new",
+        "container-title": "Journal of Physics D: Applied Physics",
+        "container-title-short": "J. Phys. D: Appl. Phys.",
+        "DOI": "10.1088/0022-3727/41/17/175406",
+        "ISSN": "0022-3727",
+        "issue": "17",
+        "issued": {
+            "date-parts": [
+                [
+                    "2008",
+                    8
+                ]
+            ]
+        },
+        "page": "175406",
+        "source": "Institute of Physics",
+        "title": "New strain measurement method at axial tensile test of thin films through direct imaging",
+        "type": "article-journal",
+        "URL": "https://doi.org/10.1088/0022-3727/41/17/175406",
+        "volume": "41",
+        "category": "international-journal",
+        "year": 2008,
+        "venue": "Journal of Physics D: Applied Physics",
+        "doi": "10.1088/0022-3727/41/17/175406"
+    },
+    {
+        "id": "kang2008detection",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Jeong, Mun-Ho",
+        "citation-key": "kang2008detection",
+        "container-title": "International Journal of Control Automation and Systems",
+        "ISSN": "1598-6446",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2008",
+                    10
+                ]
+            ]
+        },
+        "page": "746–754",
+        "source": "www.dbpia.co.kr",
+        "title": "Detection of Calibration Patterns for Camera Calibration with Irregular Lighting and Complicated Backgrounds",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01327508",
+        "volume": "6",
+        "category": "international-journal",
+        "year": 2008,
+        "venue": "International Journal of Control Automation and Systems"
+    },
+    {
+        "id": "ha2008retrieval",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Shim, Jin-Bum, Choi, Keun-Ho",
+        "citation-key": "ha2008retrieval",
+        "container-title": "2008 International Conference on Control, Automation and Systems",
+        "DOI": "10.1109/ICCAS.2008.4694512",
+        "event-title": "2008 International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2008",
+                    10
+                ]
+            ]
+        },
+        "page": "1753–1756",
+        "source": "IEEE Xplore",
+        "title": "Retrieval of contextual information on Korean road sign",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/4694512",
+        "category": "international-conference",
+        "year": 2008,
+        "venue": "2008 International Conference on Control, Automation and Systems",
+        "doi": "10.1109/ICCAS.2008.4694512"
+    },
+    {
+        "id": "ha2008robust",
+        "author": "Ha, Jong Eun",
+        "citation-key": "ha2008robust",
+        "container-title": "39th international symposium on robotics, ISR 2008",
+        "issued": {
+            "date-parts": [
+                [
+                    "2008"
+                ]
+            ]
+        },
+        "title": "Robust detection of calibration markers using one circle",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2008,
+        "venue": "39th international symposium on robotics, ISR 2008"
+    },
+    {
+        "id": "gimseseon2007seutereo",
+        "author": "김세선, 김현수, 하종은",
+        "citation-key": "gimseseon2007seutereo",
+        "container-title": "한국자동차공학회 춘 추계 학술대회 논문집",
+        "issued": {
+            "date-parts": [
+                [
+                    "2007"
+                ]
+            ]
+        },
+        "page": "2122–2127",
+        "title": "스테레오 기반의 무인 자동차를 위한 장애물 회피",
+        "type": "article-journal",
+        "category": "domestic-journal",
+        "year": 2007,
+        "venue": "한국자동차공학회 춘 추계 학술대회 논문집"
+    },
+    {
+        "id": "ha2007automatic",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun",
+        "citation-key": "ha2007automatic",
+        "container-title": "Optical Engineering",
+        "container-title-short": "OE",
+        "DOI": "10.1117/1.2789620",
+        "ISSN": "0091-3286, 1560-2303",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    "2007",
+                    10
+                ]
+            ]
+        },
+        "page": "107203",
+        "publisher": "SPIE",
+        "source": "www.spiedigitallibrary.org",
+        "title": "Automatic detection of calibration markers on a chessboard",
+        "type": "article-journal",
+        "URL": "https://www.spiedigitallibrary.org/journals/optical-engineering/volume-46/issue-10/107203/Automatic-detection-of-calibration-markers-on-a-chessboard/10.1117/1.2789620.full",
+        "volume": "46",
+        "category": "international-journal",
+        "year": 2007,
+        "venue": "Optical Engineering",
+        "doi": "10.1117/1.2789620"
+    },
+    {
+        "id": "ha2007imagebased",
+        "author": "Ha, Jong-Eun, Park, Jun-Hyub, An, Joong-Hyok, Kim, Yun-Jae",
+        "citation-key": "ha2007imagebased",
+        "container-title": "International conference on integration and commercialization of micro and nanosystems",
+        "DOI": "10.1115/MNC2007-21570",
+        "event-title": "International conference on integration and commercialization of micro and nanosystems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2007"
+                ]
+            ]
+        },
+        "page": "1649–1653",
+        "source": "asmedigitalcollection.asme.org",
+        "title": "Image-Based Displacement Measurement System for the Characterization of Mechanical Properties of Thin Films",
+        "type": "paper-conference",
+        "URL": "https://dx.doi.org/10.1115/MNC2007-21570",
+        "volume": "42657",
+        "category": "international-conference",
+        "year": 2007,
+        "venue": "International conference on integration and commercialization of micro and nanosystems",
+        "doi": "10.1115/MNC2007-21570"
+    },
+    {
+        "id": "ha2007large",
+        "author": "Ha, J. E., Park, J. H., An, J. H., Kim, Y. J.",
+        "citation-key": "ha2007large",
+        "container-title": "International conference on advanced computational engineering and experiments",
+        "issued": {
+            "date-parts": [
+                [
+                    "2007"
+                ]
+            ]
+        },
+        "title": "Large displacement measurement through the synchronization of capacitance-based and image-based system for tensile test of thin films",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2007,
+        "venue": "International conference on advanced computational engineering and experiments"
+    },
+    {
+        "id": "lee2007robust",
+        "author": "Lee, Yoon-Hyung, Jeong, Mun-Ho, Ha, Jong-Eun, Kang, Dong-Joong, You, Bum-Jae",
+        "citation-key": "lee2007robust",
+        "container-title": "Advanced Intelligent Computing Theories and Applications. With Aspects of Contemporary Intelligent Computing Techniques",
+        "DOI": "10.1007/978-3-540-74282-1_102",
+        "editor": [
+            {
+                "family": "Huang",
+                "given": "De-Shuang"
+            },
+            {
+                "family": "Heutte",
+                "given": "Laurent"
+            },
+            {
+                "family": "Loog",
+                "given": "Marco"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "event-title": "Advanced Intelligent Computing Theories and Applications. With Aspects of Contemporary Intelligent Computing Techniques",
+        "ISBN": "978-3-540-74282-1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2007"
+                ]
+            ]
+        },
+        "page": "911–919",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "A Robust Approach Toward Face Tracking",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2007,
+        "venue": "Advanced Intelligent Computing Theories and Applications. With Aspects of Contemporary Intelligent Computing Techniques",
+        "doi": "10.1007/978-3-540-74282-1_102"
+    },
+    {
+        "id": "ha2006robust",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong, Jeong, Mun-Ho, Lee, Wang-Heon",
+        "citation-key": "ha2006robust",
+        "container-title": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "DOI": "10.1007/978-3-540-37258-5_49",
+        "editor": [
+            {
+                "family": "Huang",
+                "given": "De-Shuang"
+            },
+            {
+                "family": "Li",
+                "given": "Kang"
+            },
+            {
+                "family": "Irwin",
+                "given": "George William"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "event-title": "International Conference on Intelligent Computing, ICIC 2006",
+        "ISBN": "978-3-540-37258-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        },
+        "page": "478–487",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Robust Segmentation of Characters Marked on Surface",
+        "type": "paper-conference",
+        "URL": "https://doi.org/10.1007/978-3-540-37258-5_49",
+        "category": "international-conference",
+        "year": 2006,
+        "venue": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "doi": "10.1007/978-3-540-37258-5_49"
+    },
+    {
+        "id": "kang2006fast",
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Lho, Tae-Jung",
+        "citation-key": "kang2006fast",
+        "container-title": "Computational Science and Its Applications - ICCSA 2006",
+        "DOI": "10.1007/11751595_122",
+        "editor": [
+            {
+                "family": "Gavrilova",
+                "given": "Marina"
+            },
+            {
+                "family": "Gervasi",
+                "given": "Osvaldo"
+            },
+            {
+                "family": "Kumar",
+                "given": "Vipin"
+            },
+            {
+                "family": "Tan",
+                "given": "C. J. Kenneth"
+            },
+            {
+                "family": "Taniar",
+                "given": "David"
+            },
+            {
+                "family": "Laganá",
+                "given": "Antonio"
+            },
+            {
+                "family": "Mun",
+                "given": "Youngsong"
+            },
+            {
+                "family": "Choo",
+                "given": "Hyunseung"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-34076-8",
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        },
+        "page": "1163–1171",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "A Fast Method for Detecting Moving Vehicles Using Plane Constraint of Geometric Invariance",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2006,
+        "venue": "Computational Science and Its Applications - ICCSA 2006",
+        "doi": "10.1007/11751595_122"
+    },
+    {
+        "id": "kang2006method",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Jeong, Mun-Ho",
+        "citation-key": "kang2006method",
+        "container-title": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "DOI": "10.1007/978-3-540-37258-5_64",
+        "editor": [
+            {
+                "family": "Huang",
+                "given": "De-Shuang"
+            },
+            {
+                "family": "Li",
+                "given": "Kang"
+            },
+            {
+                "family": "Irwin",
+                "given": "George William"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "event-title": "International Conference on Intelligent Computing, ICIC 2006",
+        "ISBN": "978-3-540-37258-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        },
+        "page": "606–613",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "A Method for Camera Pose Estimation from Object of a Known Shape",
+        "type": "paper-conference",
+        "URL": "https://doi.org/10.1007/978-3-540-37258-5_64",
+        "category": "international-conference",
+        "year": 2006,
+        "venue": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "doi": "10.1007/978-3-540-37258-5_64"
+    },
+    {
+        "id": "uwamahoro2006attentive",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Uwamahoro, Diane Rurangirwa, Jeong, Mun-Ho, You, Bum-Jae, Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "uwamahoro2006attentive",
+        "container-title": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "DOI": "10.1007/978-3-540-37258-5_83",
+        "editor": [
+            {
+                "family": "Huang",
+                "given": "De-Shuang"
+            },
+            {
+                "family": "Li",
+                "given": "Kang"
+            },
+            {
+                "family": "Irwin",
+                "given": "George William"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-37258-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        },
+        "page": "728–734",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Attentive Person Selection for Human-Robot Interaction",
+        "type": "paper-conference",
+        "URL": "https://doi.org/10.1007/978-3-540-37258-5_83",
+        "category": "international-conference",
+        "year": 2006,
+        "venue": "Intelligent Computing in Signal Processing and Pattern Recognition: International Conference on Intelligent Computing, ICIC 2006 Kunming, China, August 16–19, 2006",
+        "doi": "10.1007/978-3-540-37258-5_83"
+    },
+    {
+        "id": "ha2005initialization",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "ha2005initialization",
+        "container-title": "Pattern Recognition",
+        "container-title-short": "Pattern Recognition",
+        "DOI": "10.1016/j.patcog.2004.05.005",
+        "ISSN": "0031-3203",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005",
+                    1,
+                    1
+                ]
+            ]
+        },
+        "page": "143–150",
+        "source": "ScienceDirect",
+        "title": "Initialization method for self-calibration using 2-views",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S0031320304001931",
+        "volume": "38",
+        "category": "international-journal",
+        "year": 2005,
+        "venue": "Pattern Recognition",
+        "doi": "10.1016/j.patcog.2004.05.005"
+    },
+    {
+        "id": "ha2005fast",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "ha2005fast",
+        "container-title": "AI 2005: Advances in Artificial Intelligence",
+        "DOI": "10.1007/11589990_184",
+        "editor": [
+            {
+                "family": "Zhang",
+                "given": "Shichao"
+            },
+            {
+                "family": "Jarvis",
+                "given": "Ray"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-31652-7",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        },
+        "page": "1267–1271",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Fast Candidate Generation for Template Matching Using Two 1-D Edge Projections",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2005,
+        "venue": "AI 2005: Advances in Artificial Intelligence",
+        "doi": "10.1007/11589990_184"
+    },
+    {
+        "id": "ha2005fasta",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong, Kim, Jin-Young, Kim, Min-Sung",
+        "citation-key": "ha2005fasta",
+        "container-title": "제어로봇시스템학회 국제학술대회 논문집",
+        "event-title": "2005 International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        },
+        "page": "2389–2392",
+        "title": "Fast stereo matching algorithm using edge projection",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2005,
+        "venue": "제어로봇시스템학회 국제학술대회 논문집"
+    },
+    {
+        "id": "kang2005moving",
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Kim, Jin-Young, Kim, Min-Sung, Lho, Tae-Jung",
+        "citation-key": "kang2005moving",
+        "container-title": "제어로봇시스템학회 국제학술대회 논문집",
+        "event-title": "2005 International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        },
+        "page": "2393–2396",
+        "title": "Moving vehicle segmentation from plane constraint",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2005,
+        "venue": "제어로봇시스템학회 국제학술대회 논문집"
+    },
+    {
+        "id": "kim2005application",
+        "author": "Kim, Min-Sung, Han, Young-Geun, Kang, Dong-Joong, Ha, Jong-Eun, Kim, Jin-Young, Lho, Tae-Jung",
+        "citation-key": "kim2005application",
+        "container-title": "제어로봇시스템학회 국제학술대회 논문집",
+        "event-title": "2005 International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        },
+        "page": "2496–2498",
+        "title": "Application passband filter of multiply cascaded phase-shifted long-period fiber gratings",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2005,
+        "venue": "제어로봇시스템학회 국제학술대회 논문집"
+    },
+    {
+        "id": "kim2005pyramidal",
+        "author": "Kim, JY, Kang, DJ, Kim, MS, Ha, JE, Lho, TJ, Yoon, JS",
+        "citation-key": "kim2005pyramidal",
+        "container-title": "제어로봇시스템학회 국제학술대회 논문집",
+        "event-title": "2005 International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        },
+        "page": "2435–2439",
+        "title": "A pyramidal mirror system calibration method for robotic assembly",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2005,
+        "venue": "제어로봇시스템학회 국제학술대회 논문집"
+    },
+    {
+        "id": "hajongeun2004crt",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "하종은, 차준혁, 권인소",
+        "citation-key": "hajongeun2004crt",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "6",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004",
+                    6
+                ]
+            ]
+        },
+        "page": "487–493",
+        "source": "www.dbpia.co.kr",
+        "title": "CRT 판넬의 첵 불량 검출을 위한 새로운 조명 시스템",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01968489",
+        "volume": "10",
+        "category": "domestic-journal",
+        "year": 2004,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "hajongeun2004gagdo",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "하종은, 권인소",
+        "citation-key": "hajongeun2004gagdo",
+        "container-title": "제어로봇시스템학회 논문지",
+        "ISSN": "1976-5622",
+        "issue": "5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004",
+                    5
+                ]
+            ]
+        },
+        "page": "415–420",
+        "source": "dbpia.co.kr",
+        "title": "각도 정보를 이용한 카메라 보정 알고리듬",
+        "type": "article-journal",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01968504",
+        "volume": "10",
+        "category": "domestic-journal",
+        "year": 2004,
+        "venue": "제어로봇시스템학회 논문지"
+    },
+    {
+        "id": "ha2004initialization",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "ha2004initialization",
+        "container-title": "Computational Science and Its Applications – ICCSA 2004",
+        "DOI": "10.1007/978-3-540-24768-5_98",
+        "editor": [
+            {
+                "family": "Laganá",
+                "given": "Antonio"
+            },
+            {
+                "family": "Gavrilova",
+                "given": "Marina L."
+            },
+            {
+                "family": "Kumar",
+                "given": "Vipin"
+            },
+            {
+                "family": "Mun",
+                "given": "Youngsong"
+            },
+            {
+                "family": "Tan",
+                "given": "C. J. Kenneth"
+            },
+            {
+                "family": "Gervasi",
+                "given": "Osvaldo"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-24768-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "915–923",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Initialization Method for the Self-Calibration Using Minimal Two Images",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Computational Science and Its Applications – ICCSA 2004",
+        "doi": "10.1007/978-3-540-24768-5_98"
+    },
+    {
+        "id": "ha2004motion",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong, Kweon, In-So",
+        "citation-key": "ha2004motion",
+        "event-title": "Asian Conference on Computer Vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "pp.330-335",
+        "title": "Motion segmentation using robust direct motion estimation considering discontinuity",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Asian Conference on Computer Vision"
+    },
+    {
+        "id": "ha2004sequential",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong, Jeong, Muh-Ho",
+        "citation-key": "ha2004sequential",
+        "container-title": "Advances in Multimedia Information Processing - PCM 2004",
+        "DOI": "10.1007/978-3-540-30541-5_27",
+        "editor": [
+            {
+                "family": "Aizawa",
+                "given": "Kiyoharu"
+            },
+            {
+                "family": "Nakamura",
+                "given": "Yuichi"
+            },
+            {
+                "family": "Satoh",
+                "given": "Shin’ichi"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-30541-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "214–221",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Sequential Robust Direct Motion Estimation with Equal Projective Basis",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Advances in Multimedia Information Processing - PCM 2004",
+        "doi": "10.1007/978-3-540-30541-5_27"
+    },
+    {
+        "id": "kang2004object",
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Ahn, In-Mo",
+        "citation-key": "kang2004object",
+        "container-title": "Computational Science and Its Applications – ICCSA 2004",
+        "DOI": "10.1007/978-3-540-24768-5_96",
+        "editor": [
+            {
+                "family": "Laganá",
+                "given": "Antonio"
+            },
+            {
+                "family": "Gavrilova",
+                "given": "Marina L."
+            },
+            {
+                "family": "Kumar",
+                "given": "Vipin"
+            },
+            {
+                "family": "Mun",
+                "given": "Youngsong"
+            },
+            {
+                "family": "Tan",
+                "given": "C. J. Kenneth"
+            },
+            {
+                "family": "Gervasi",
+                "given": "Osvaldo"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-24768-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "896–905",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "Object Mark Segmentation Algorithm Using Dynamic Programming for Poor Quality Images in Automated Inspection Process",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Computational Science and Its Applications – ICCSA 2004",
+        "doi": "10.1007/978-3-540-24768-5_96"
+    },
+    {
+        "id": "kang2004polyhedral",
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun, Jeong, Muh-Ho",
+        "citation-key": "kang2004polyhedral",
+        "container-title": "Advances in Multimedia Information Processing - PCM 2004",
+        "DOI": "10.1007/978-3-540-30541-5_50",
+        "editor": [
+            {
+                "family": "Aizawa",
+                "given": "Kiyoharu"
+            },
+            {
+                "family": "Nakamura",
+                "given": "Yuichi"
+            },
+            {
+                "family": "Satoh",
+                "given": "Shin’ichi"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-30541-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "402–409",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "A Polyhedral Object Recognition Algorithm for Augmented Reality",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Advances in Multimedia Information Processing - PCM 2004",
+        "doi": "10.1007/978-3-540-30541-5_50"
+    },
+    {
+        "id": "kweon20043d",
+        "author": "Kweon, In-So",
+        "citation-key": "kweon20043d",
+        "container-title": "Asian conference on computer vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "title": "3-D pose estimation algorithm for model based vision",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Asian conference on computer vision"
+    },
+    {
+        "id": "lho2004linebased",
+        "author": "Lho, Tae-Jung, Kang, Dong-Joong, Ha, Jong-Eun",
+        "citation-key": "lho2004linebased",
+        "container-title": "Computational Science and Its Applications – ICCSA 2004",
+        "DOI": "10.1007/978-3-540-24768-5_97",
+        "editor": [
+            {
+                "family": "Laganá",
+                "given": "Antonio"
+            },
+            {
+                "family": "Gavrilova",
+                "given": "Marina L."
+            },
+            {
+                "family": "Kumar",
+                "given": "Vipin"
+            },
+            {
+                "family": "Mun",
+                "given": "Youngsong"
+            },
+            {
+                "family": "Tan",
+                "given": "C. J. Kenneth"
+            },
+            {
+                "family": "Gervasi",
+                "given": "Osvaldo"
+            }
+        ],
+        "event-place": "Berlin, Heidelberg",
+        "ISBN": "978-3-540-24768-5",
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        },
+        "page": "906–914",
+        "publisher": "Springer",
+        "publisher-place": "Berlin, Heidelberg",
+        "source": "Springer Link",
+        "title": "A Line-Based Pose Estimation Algorithm for 3-D Polyhedral Object Recognition",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2004,
+        "venue": "Computational Science and Its Applications – ICCSA 2004",
+        "doi": "10.1007/978-3-540-24768-5_97"
+    },
+    {
+        "id": "kang2003fast",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Kang, Dong Joong, Ha, Jong Eun, Kweon, In So",
+        "citation-key": "kang2003fast",
+        "container-title": "Pattern Recognition",
+        "container-title-short": "Pattern Recognition",
+        "DOI": "10.1016/S0031-3203(02)00046-8",
+        "ISSN": "0031-3203",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2003",
+                    1,
+                    1
+                ]
+            ]
+        },
+        "page": "79–90",
+        "source": "ScienceDirect",
+        "title": "Fast object recognition using dynamic programming from combination of salient line groups",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S0031320302000468",
+        "volume": "36",
+        "category": "international-journal",
+        "year": 2003,
+        "venue": "Pattern Recognition",
+        "doi": "10.1016/S0031-3203(02)00046-8"
+    },
+    {
+        "id": "ha2003new",
+        "author": "Ha, Jong-Eun, Kang, Dong-Joong",
+        "citation-key": "ha2003new",
+        "container-title": "제어로봇시스템학회 국제학술대회논문집",
+        "event-title": "International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2003"
+                ]
+            ]
+        },
+        "page": "752–757",
+        "publisher": "Institute of Control, Robotics and Systems",
+        "title": "New Initialization method for the robust self-calibration of the camera",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2003,
+        "venue": "제어로봇시스템학회 국제학술대회논문집"
+    },
+    {
+        "id": "kang2003modelbased",
+        "author": "Kang, Dong-Joong, Ha, Jong-Eun",
+        "citation-key": "kang2003modelbased",
+        "container-title": "제어로봇시스템학회 국제학술대회논문집",
+        "event-title": "International Conference on Control, Automation and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "2003"
+                ]
+            ]
+        },
+        "page": "762–766",
+        "publisher": "Institute of Control, Robotics and Systems",
+        "title": "A model-based 3-D pose estimation method from line correspondences of polyhedral objects",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2003,
+        "venue": "제어로봇시스템학회 국제학술대회논문집"
+    },
+    {
+        "id": "ha20013d",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Kweon, In-So",
+        "citation-key": "ha20013d",
+        "container-title": "Pattern Recognition",
+        "container-title-short": "Pattern Recognition",
+        "DOI": "10.1016/S0031-3203(99)00229-0",
+        "ISSN": "0031-3203",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2001",
+                    2,
+                    1
+                ]
+            ]
+        },
+        "page": "351–359",
+        "source": "ScienceDirect",
+        "title": "3D structure recovery and calibration under varying intrinsic parameters using known angles",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S0031320399002290",
+        "volume": "34",
+        "category": "international-journal",
+        "year": 2001,
+        "venue": "Pattern Recognition",
+        "doi": "10.1016/S0031-3203(99)00229-0"
+    },
+    {
+        "id": "ha2000new",
+        "author": "Ha, J. E., Kweon, I. S.",
+        "citation-key": "ha2000new",
+        "container-title": "Electronics Letters",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000"
+                ]
+            ]
+        },
+        "page": "20–22",
+        "title": "A new calibration algorithm using known angles",
+        "type": "article-journal",
+        "volume": "36",
+        "category": "international-journal",
+        "year": 2000,
+        "venue": "Electronics Letters"
+    },
+    {
+        "id": "ha2000robust",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2025",
+                    10,
+                    5
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Kweon, In-So",
+        "citation-key": "ha2000robust",
+        "container-title": "Pattern Recognition Letters",
+        "container-title-short": "Pattern Recognition Letters",
+        "DOI": "10.1016/S0167-8655(00)00059-3",
+        "ISSN": "0167-8655",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000",
+                    10,
+                    1
+                ]
+            ]
+        },
+        "page": "999–1011",
+        "source": "ScienceDirect",
+        "title": "Robust direct motion estimation considering discontinuity",
+        "type": "article-journal",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S0167865500000593",
+        "volume": "21",
+        "category": "international-journal",
+        "year": 2000,
+        "venue": "Pattern Recognition Letters",
+        "doi": "10.1016/S0167-8655(00)00059-3"
+    },
+    {
+        "id": "ha20003d",
+        "author": "Ha, J. E., Kweon, I. S.",
+        "citation-key": "ha20003d",
+        "container-title": "Asian conference on computer vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000"
+                ]
+            ]
+        },
+        "title": "3D Structure recovery and calibration under varying intrinsic parameters using known angles",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2000,
+        "venue": "Asian conference on computer vision"
+    },
+    {
+        "id": "ha2000robusta",
+        "author": "Ha, J. E., Kweon, I. S.",
+        "citation-key": "ha2000robusta",
+        "container-title": "Asian conference on computer vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000"
+                ]
+            ]
+        },
+        "title": "Robust direct motion estimation considering discontinuity",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2000,
+        "venue": "Asian conference on computer vision"
+    },
+    {
+        "id": "ha2000selfcalibration",
+        "author": "Ha, Jong-Eun, Kweon, In-So",
+        "citation-key": "ha2000selfcalibration",
+        "container-title": "Asian conference on computer vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000"
+                ]
+            ]
+        },
+        "publisher": "Asian Conference on Computer Vision",
+        "title": "Self-calibration algorithm under varying cameras using the linear projective reconstruction method",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 2000,
+        "venue": "Asian conference on computer vision"
+    },
+    {
+        "id": "ha2000selfcalibrationa",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Ha, Jong-Eun, Yang, Jin-Young, Yoon, Kuk-Jin, Kweon, In-So",
+        "citation-key": "ha2000selfcalibrationa",
+        "container-title": "Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065)",
+        "DOI": "10.1109/ROBOT.2000.844161",
+        "event-title": "IEEE International Conference on Robotics and Automation (ICRA)",
+        "ISSN": "1050-4729",
+        "issued": {
+            "date-parts": [
+                [
+                    "2000",
+                    4
+                ]
+            ]
+        },
+        "page": "885-890 vol.1",
+        "source": "IEEE Xplore",
+        "title": "Self-calibration using the linear projective reconstruction",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/844161",
+        "volume": "1",
+        "category": "international-conference",
+        "year": 2000,
+        "venue": "Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065)",
+        "doi": "10.1109/ROBOT.2000.844161"
+    },
+    {
+        "id": "ha1999calibration",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "Ha, Jong Eun, Kweon, In So",
+        "citation-key": "ha1999calibration",
+        "container-title": "Proceedings 1999 IEEE/RSJ International Conference on Intelligent Robots and Systems. Human and Environment Friendly Robots with High Intelligence and Emotional Quotients",
+        "DOI": "10.1109/IROS.1999.812769",
+        "event-title": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+        "issued": {
+            "date-parts": [
+                [
+                    "1999",
+                    10
+                ]
+            ]
+        },
+        "page": "746-751 vol.2",
+        "source": "IEEE Xplore",
+        "title": "Calibration and 3D structure recovery under varying cameras using known angles",
+        "type": "paper-conference",
+        "URL": "https://ieeexplore.ieee.org/abstract/document/812769",
+        "volume": "2",
+        "category": "international-conference",
+        "year": 1999,
+        "venue": "Proceedings 1999 IEEE/RSJ International Conference on Intelligent Robots and Systems. Human and Environment Friendly Robots with High Intelligence and Emotional Quotients",
+        "doi": "10.1109/IROS.1999.812769"
+    },
+    {
+        "id": "hajongeun1999new",
+        "accessed": {
+            "date-parts": [
+                [
+                    "2026",
+                    1,
+                    7
+                ]
+            ]
+        },
+        "author": "하종은, 권인소",
+        "citation-key": "hajongeun1999new",
+        "container-title": "제어로봇시스템학회 국내학술대회 논문집",
+        "event-title": "14th Korea Automatic control Conference",
+        "issued": {
+            "date-parts": [
+                [
+                    "1999",
+                    10
+                ]
+            ]
+        },
+        "page": "382–385",
+        "publisher": "제어로봇시스템학회",
+        "source": "www.dbpia.co.kr",
+        "title": "A New Calibration Algorithm using Known Angle Under Varying Cameras",
+        "type": "paper-conference",
+        "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02023570",
+        "volume": "2",
+        "category": "domestic-conference",
+        "year": 1999,
+        "venue": "제어로봇시스템학회 국내학술대회 논문집"
+    },
+    {
+        "id": "kweon1998robust",
+        "author": "Kweon, In-So, Ha, Jongeun",
+        "citation-key": "kweon1998robust",
+        "container-title": "Japan-korea joint workshop on computer vision",
+        "issued": {
+            "date-parts": [
+                [
+                    "1998"
+                ]
+            ]
+        },
+        "page": "115–120",
+        "title": "A robust method for 3D structure recovery and moving object segmentation",
+        "type": "paper-conference",
+        "category": "international-conference",
+        "year": 1998,
+        "venue": "Japan-korea joint workshop on computer vision"
+    },
+    {
+        "id": "hajongeun1996pyomyeonyi",
+        "author": "하종은, 이재용, 권인소",
+        "citation-key": "hajongeun1996pyomyeonyi",
+        "container-title": "제어자동화시스템 공학 논문지",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    "1996"
+                ]
+            ]
+        },
+        "page": "324–329",
+        "title": "표면의 반사모델을 이용한 타이어 정보마크의 추출",
+        "type": "article-journal",
+        "volume": "2",
+        "category": "domestic-journal",
+        "year": 1996,
+        "venue": "제어자동화시스템 공학 논문지"
+    }
+]
