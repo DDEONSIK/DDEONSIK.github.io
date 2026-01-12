@@ -6,11 +6,11 @@ import homeCasualImg from '@/assets/profile/home_casual.jpg';
 
 const HomeView: React.FC = () => {
     return (
-        <div className="min-h-screen bg-background text-foreground pt-32 pb-20">
+        <div className="bg-background text-foreground">
 
             {/* Hero Section */}
-            <header className="container-custom relative z-10 mb-24">
-                <div className="flex flex-col md:flex-row items-center gap-12">
+            <header className="relative z-10 min-h-screen flex items-center justify-center container-custom mb-0">
+                <div className="flex flex-col md:flex-row items-center gap-12 w-full">
 
                     {/* Text Content */}
                     <div className="flex-1 text-center md:text-left">
@@ -34,7 +34,6 @@ const HomeView: React.FC = () => {
                                 View Projects
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Link>
-                            {/* CV Button removed as CV is below */}
                         </div>
                     </div>
 
@@ -54,10 +53,16 @@ const HomeView: React.FC = () => {
                     </div>
 
                 </div>
+
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-muted-foreground">
+                    <span className="text-xs uppercase tracking-widest mb-2 block text-center">Scroll</span>
+                    <ArrowRight className="rotate-90 w-6 h-6 mx-auto" />
+                </div>
             </header>
 
             {/* CV Section (Embedded) */}
-            <div id="cv-section" className="border-t border-border/50">
+            <div id="cv-section" className="border-t border-border/50 bg-background relative z-20">
                 <CVView />
             </div>
 
