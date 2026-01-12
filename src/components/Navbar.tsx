@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, ChevronDown, Rocket, Users, BookOpen, GraduationCap, Mail, Brain, Presentation, Briefcase, Layout, Home, Moon, Sun } from 'lucide-react';
-import researchData from '@/data/research.json';
+import { Menu, X, ChevronDown, Rocket, Users, BookOpen, GraduationCap, Mail, Brain, Presentation, Briefcase, Layout, Home, Moon, Sun, User, FileText, Camera, BrainCircuit } from 'lucide-react';
 import { navigationData } from '@/data/navigation';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -19,13 +18,17 @@ const Navbar = () => {
             case 'Home': return <Home size={18} />;
             case 'Rocket': return <Rocket size={18} />;
             case 'Users': return <Users size={18} />;
+            case 'User': return <User size={18} />;
             case 'BookOpen': return <BookOpen size={18} />;
             case 'GraduationCap': return <GraduationCap size={18} />;
             case 'Mail': return <Mail size={18} />;
             case 'Brain': return <Brain size={18} />;
+            case 'BrainCircuit': return <BrainCircuit size={18} />;
             case 'Presentation': return <Presentation size={18} />;
             case 'Briefcase': return <Briefcase size={18} />;
             case 'Layout': return <Layout size={18} />;
+            case 'FileText': return <FileText size={18} />;
+            case 'Camera': return <Camera size={18} />;
             default: return null;
         }
     };
@@ -55,23 +58,12 @@ const Navbar = () => {
         }
     };
 
-    const navLinks = navigationData.map(link => {
-        if (link.name === 'Research') {
-            return {
-                ...link,
-                dropdown: researchData.map(r => ({
-                    name: r.title,
-                    hash: r.id
-                }))
-            };
-        }
-        return link;
-    });
+    const navLinks = navigationData;
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled 
-                ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-lg py-3' 
+            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+                ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-lg py-3'
                 : 'bg-transparent py-5'
                 }`}
         >
@@ -79,8 +71,8 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <NavLink to="/" className="flex items-center space-x-2 group">
-                        <span className={`text-2xl font-bold tracking-tighter ${isScrolled 
-                            ? 'text-slate-900 dark:text-white' 
+                        <span className={`text-2xl font-bold tracking-tighter ${isScrolled
+                            ? 'text-slate-900 dark:text-white'
                             : 'text-slate-800 dark:text-white'
                             }`}>
                             AIS <span className="text-blue-600 dark:text-blue-400">LAB</span>
@@ -154,7 +146,7 @@ const Navbar = () => {
                         >
                             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                         </button>
-                        
+
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"

@@ -1,6 +1,6 @@
 import { Description } from '@/types/Base';
 
-export type ResearchIconName = 'Brain' | 'Network' | 'Cpu' | 'ScanEye' | 'Microscope';
+export type ResearchIconName = 'Brain' | 'Network' | 'Cpu' | 'ScanEye' | 'Microscope' | 'Eye' | 'Layers' | 'Code';
 
 export interface ResearchTopic {
     id: string;

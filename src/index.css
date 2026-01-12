@@ -1,78 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&family=Fira+Code:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Light Theme (Default) */
-    --background: 248 250 252; /* slate-50 */
-    --foreground: 15 23 42;    /* slate-900 */
-    
-    --card: 255 255 255;       /* white */
-    --card-foreground: 15 23 42; /* slate-900 */
-    
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
-    
-    --primary: 37 99 235;      /* blue-600 */
-    --primary-foreground: 255 255 255; /* white */
-    
-    --secondary: 241 245 249;  /* slate-100 */
-    --secondary-foreground: 15 23 42;
-    
-    --muted: 241 245 249;      /* slate-100 */
-    --muted-foreground: 100 116 139; /* slate-500 */
-    
-    --accent: 241 245 249;     /* slate-100 */
-    --accent-foreground: 15 23 42;
-    
-    --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
+    /* Premium Dark Theme Variables (HSL) */
+    --background: 222 47% 11%;   /* #0f172a - Slate 900 */
+    --foreground: 210 40% 98%;   /* #f8fafc - Slate 50 */
 
-    --border: 226 232 240;     /* slate-200 */
-    --input: 226 232 240;
-    --ring: 37 99 235;         /* blue-600 */
-    
-    /* Custom Building Colors for Animation */
-    --building: 226 232 240;   /* slate-200 */
-    --road: 248 250 252;       /* slate-50 */
-    --road-line: 226 232 240;  /* slate-200 */
+    --card: 222 47% 13%;         /* Slightly lighter than bg */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;      /* #3b82f6 - Blue 500 (Vibrant Tech) */
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 215 16% 47%;    /* #64748b - Slate 500 (Subtle) */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 217 16% 26%;        /* Slate 800 */
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 180 100% 50%;      /* #00FFFF - Cyan/Teal (AI/Future) */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;       /* Slate 800 */
+    --input: 217 32% 17%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.5rem;
   }
 
+  /* Force Dark Mode by default for this heavy tech implementation */
   .dark {
-    /* Dark Theme */
-    --background: 2 6 23;      /* slate-950 */
-    --foreground: 248 250 252; /* slate-50 */
-    
-    --card: 15 23 42;          /* slate-900 */
-    --card-foreground: 248 250 252;
-    
-    --popover: 15 23 42;
-    --popover-foreground: 248 250 252;
-    
-    --primary: 59 130 246;     /* blue-500 (Slightly lighter for dark mode) */
-    --primary-foreground: 255 255 255;
-    
-    --secondary: 30 41 59;     /* slate-800 */
-    --secondary-foreground: 248 250 252;
-    
-    --muted: 30 41 59;         /* slate-800 */
-    --muted-foreground: 148 163 184; /* slate-400 */
-    
-    --accent: 30 41 59;        /* slate-800 */
-    --accent-foreground: 248 250 252;
-    
-    --destructive: 127 29 29;
-    --destructive-foreground: 248 250 252;
-    
-    --border: 30 41 59;        /* slate-800 */
-    --input: 30 41 59;
-    --ring: 59 130 246;        /* blue-500 */
-
-    /* Custom Building Colors for Animation */
-    --building: 30 41 59;      /* slate-800 */
-    --road: 15 23 42;          /* slate-900 */
-    --road-line: 51 65 85;     /* slate-700 */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    /* Re-declare if needed or just rely on root as default if we switch strategy */
   }
 }
 
@@ -81,36 +51,28 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
   }
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
+/* Glassmorphism Utilities */
 @layer utilities {
-  .animate-fadeIn {
-    animation: fadeIn 0.8s ease-out forwards;
+  .glass {
+    @apply bg-background/60 backdrop-blur-lg border-b border-white/10;
   }
-
-  .animate-underline {
-    @apply relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-md border border-white/10 shadow-xl;
   }
 }
 
-/* Prevent text selection and image dragging globally */
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+/* Scrollbar Hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-
-img {
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -18,12 +18,12 @@ const AnimatedRoutes = () => {
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-                <Route path="/people" element={<PageTransition><People /></PageTransition>} />
+                <Route path="/about" element={<PageTransition><People /></PageTransition>} />
                 <Route path="/research" element={<PageTransition><Research /></PageTransition>} />
-                <Route path="/courses" element={<PageTransition><Courses /></PageTransition>} />
+                <Route path="/life" element={<PageTransition><Courses /></PageTransition>} />
                 <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
                 <Route path="/publications" element={<PageTransition><Publications /></PageTransition>} />
-                <Route path="/board" element={<PageTransition><Board /></PageTransition>} />
+                <Route path="/cv" element={<PageTransition><Board /></PageTransition>} />
                 <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             </Routes>
         </AnimatePresence>

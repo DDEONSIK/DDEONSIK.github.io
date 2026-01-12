@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+
   /* Layout */
   .home-container {
     @apply min-h-screen bg-background;
@@ -47,6 +48,10 @@
 
   .hero-cta-button {
     @apply pointer-events-auto inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/30;
+  }
+
+  .hero-cta-button-outline {
+    @apply pointer-events-auto inline-flex items-center px-8 py-4 bg-transparent border-2 border-border text-foreground font-medium rounded-full hover:bg-muted/50 transition-all duration-300 backdrop-blur-sm;
   }
 
   .hero-cta-icon {
@@ -172,19 +177,19 @@
   .cta-section {
     @apply py-20 bg-muted/50 dark:bg-slate-900/60 border-y border-border relative z-20;
   }
-  
+
   .cta-container {
     @apply max-w-5xl mx-auto px-4 text-center space-y-8;
   }
-  
+
   .cta-title {
     @apply text-3xl md:text-4xl font-bold text-foreground;
   }
-  
+
   .cta-description {
     @apply text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed;
   }
-  
+
   .cta-button {
     @apply inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/30 hover:-translate-y-1;
   }

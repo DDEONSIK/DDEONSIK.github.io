@@ -7,55 +7,64 @@ export default {
     darkMode: "class",
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                heading: ['Outfit', 'sans-serif'],
+                mono: ['Fira Code', 'monospace'],
+            },
             colors: {
-                border: "rgb(var(--border) / <alpha-value>)",
-                input: "rgb(var(--input) / <alpha-value>)",
-                ring: "rgb(var(--ring) / <alpha-value>)",
-                background: "rgb(var(--background) / <alpha-value>)",
-                foreground: "rgb(var(--foreground) / <alpha-value>)",
+                border: "hsl(var(--border))",
+                input: "hsl(var(--input))",
+                ring: "hsl(var(--ring))",
+                background: "hsl(var(--background))",
+                foreground: "hsl(var(--foreground))",
                 primary: {
-                    DEFAULT: "rgb(var(--primary) / <alpha-value>)",
-                    foreground: "rgb(var(--primary-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--primary))",
+                    foreground: "hsl(var(--primary-foreground))",
                 },
                 secondary: {
-                    DEFAULT: "rgb(var(--secondary) / <alpha-value>)",
-                    foreground: "rgb(var(--secondary-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--secondary))",
+                    foreground: "hsl(var(--secondary-foreground))",
                 },
                 destructive: {
-                    DEFAULT: "rgb(var(--destructive) / <alpha-value>)",
-                    foreground: "rgb(var(--destructive-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--destructive))",
+                    foreground: "hsl(var(--destructive-foreground))",
                 },
                 muted: {
-                    DEFAULT: "rgb(var(--muted) / <alpha-value>)",
-                    foreground: "rgb(var(--muted-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--muted))",
+                    foreground: "hsl(var(--muted-foreground))",
                 },
                 accent: {
-                    DEFAULT: "rgb(var(--accent) / <alpha-value>)",
-                    foreground: "rgb(var(--accent-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--accent))",
+                    foreground: "hsl(var(--accent-foreground))",
                 },
                 popover: {
-                    DEFAULT: "rgb(var(--popover) / <alpha-value>)",
-                    foreground: "rgb(var(--popover-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--popover))",
+                    foreground: "hsl(var(--popover-foreground))",
                 },
                 card: {
-                    DEFAULT: "rgb(var(--card) / <alpha-value>)",
-                    foreground: "rgb(var(--card-foreground) / <alpha-value>)",
+                    DEFAULT: "hsl(var(--card))",
+                    foreground: "hsl(var(--card-foreground))",
                 },
+            },
+            borderRadius: {
+                lg: "var(--radius)",
+                md: "calc(var(--radius) - 2px)",
+                sm: "calc(var(--radius) - 4px)",
             },
             keyframes: {
                 'fade-in-up': {
-                    '0%': {
-                        opacity: '0',
-                        transform: 'translateY(10px)',
-                    },
-                    '100%': {
-                        opacity: '1',
-                        transform: 'translateY(0)',
-                    },
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                'fade-in': {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
                 },
             },
             animation: {
-                'fade-in-up': 'fade-in-up 0.5s ease-out',
+                'fade-in-up': 'fade-in-up 0.7s ease-out forwards',
+                'fade-in': 'fade-in 0.5s ease-out forwards',
             },
         },
     },
