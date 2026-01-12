@@ -1,7 +1,7 @@
 import React from 'react';
 import { Description } from '@/types/Base';
 import { ResearchTopic, ResearchIconName } from '@/types/Research';
-import { Brain, Network, Cpu, ScanEye, Microscope } from 'lucide-react';
+import { Brain, Network, Cpu, ScanEye, Microscope, Eye, Layers, Code } from 'lucide-react';
 import SmoothTabs from '@/components/SmoothTabs';
 import './Research.css';
 
@@ -10,7 +10,10 @@ const IconMap: Record<ResearchIconName, React.ElementType> = {
     Network,
     Cpu,
     ScanEye,
-    Microscope
+    Microscope,
+    Eye,
+    Layers,
+    Code
 };
 
 interface ResearchViewProps {
@@ -26,8 +29,8 @@ const DescriptionRenderer = ({ content, level = 0 }: { content: Description; lev
         <div className={`description-block ${level > 0 ? 'description-block-nested' : ''}`}>
             {content.title && (
                 <h3 className={
-                    level === 0 ? 'description-title-l0' : 
-                    level === 1 ? 'description-title-l1' : 'description-title-base'
+                    level === 0 ? 'description-title-l0' :
+                        level === 1 ? 'description-title-l1' : 'description-title-base'
                 }>
                     {content.title}
                 </h3>
@@ -36,10 +39,10 @@ const DescriptionRenderer = ({ content, level = 0 }: { content: Description; lev
             {/* Image Rendering - Always before text contents */}
             {content.imageUrl && (
                 <div className="description-image-container">
-                    <img 
-                        src={content.imageUrl} 
-                        alt={content.imageAlt || content.title || 'Research illustration'} 
-                        className="description-image" 
+                    <img
+                        src={content.imageUrl}
+                        alt={content.imageAlt || content.title || 'Research illustration'}
+                        className="description-image"
                     />
                     {content.imageAlt && (
                         <p className="description-image-caption">
@@ -48,7 +51,7 @@ const DescriptionRenderer = ({ content, level = 0 }: { content: Description; lev
                     )}
                 </div>
             )}
-            
+
             {/* Case 1: content.contents is a string (Paragraph) */}
             {content.contents && typeof content.contents === 'string' && (
                 <p className="description-text">
@@ -70,7 +73,7 @@ const DescriptionRenderer = ({ content, level = 0 }: { content: Description; lev
             {/* Case 3: content.contents is an array of objects (Recursive) */}
             {content.contents && Array.isArray(content.contents) && content.contents.length > 0 && typeof content.contents[0] === 'object' && (
                 <div className="description-nested-container">
-                    {(content.contents as Description[]).map((subContent, idx) => (
+                    {(content.contents as Description[]).map((subContent: Description, idx: number) => (
                         <DescriptionRenderer key={idx} content={subContent} level={level + 1} />
                     ))}
                 </div>

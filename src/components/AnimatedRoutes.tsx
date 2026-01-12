@@ -1,15 +1,11 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import PageTransition from '@/components/PageTransition';
-import Home from '@/pages/Home';
-import People from '@/pages/People';
-import Research from '@/pages/Research';
-import Courses from '@/pages/Courses';
-import Projects from '@/pages/Projects';
-import Publications from '@/pages/Publications';
-import Board from '@/pages/Board';
-import Contact from '@/pages/Contact';
+import HomeContainer from '@/pages/Home/HomeContainer';
+import AboutContainer from '@/pages/About/AboutContainer';
+import ProjectsContainer from '@/pages/Projects/ProjectsContainer';
+import LifeContainer from '@/pages/Life/LifeContainer';
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -17,14 +13,11 @@ const AnimatedRoutes = () => {
     return (
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-                <Route path="/about" element={<PageTransition><People /></PageTransition>} />
-                <Route path="/research" element={<PageTransition><Research /></PageTransition>} />
-                <Route path="/life" element={<PageTransition><Courses /></PageTransition>} />
-                <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
-                <Route path="/publications" element={<PageTransition><Publications /></PageTransition>} />
-                <Route path="/cv" element={<PageTransition><Board /></PageTransition>} />
-                <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+                <Route path="/" element={<PageTransition><HomeContainer /></PageTransition>} />
+                <Route path="/about" element={<AboutContainer />} />
+                <Route path="/projects" element={<ProjectsContainer />} />
+                <Route path="/life" element={<LifeContainer />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </AnimatePresence>
     );

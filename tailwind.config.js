@@ -8,44 +8,35 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Inter', 'system-ui', 'sans-serif'],
                 heading: ['Outfit', 'sans-serif'],
                 mono: ['Fira Code', 'monospace'],
             },
             colors: {
-                border: "hsl(var(--border))",
-                input: "hsl(var(--input))",
-                ring: "hsl(var(--ring))",
-                background: "hsl(var(--background))",
-                foreground: "hsl(var(--foreground))",
+                // Custom palette from ColorHunt #F1F6F9 #394867 #212A3E #9BA4B5
+                background: "#F1F6F9", // Light Grey/White
+                foreground: "#212A3E", // Dark Navy (Text)
                 primary: {
-                    DEFAULT: "hsl(var(--primary))",
-                    foreground: "hsl(var(--primary-foreground))",
+                    DEFAULT: "#394867", // Dark Blue
+                    foreground: "#F1F6F9",
                 },
                 secondary: {
-                    DEFAULT: "hsl(var(--secondary))",
-                    foreground: "hsl(var(--secondary-foreground))",
-                },
-                destructive: {
-                    DEFAULT: "hsl(var(--destructive))",
-                    foreground: "hsl(var(--destructive-foreground))",
+                    DEFAULT: "#9BA4B5", // Cool Grey
+                    foreground: "#212A3E",
                 },
                 muted: {
-                    DEFAULT: "hsl(var(--muted))",
-                    foreground: "hsl(var(--muted-foreground))",
+                    DEFAULT: "#DBE2EF", // Lighter grey for backgrounds
+                    foreground: "#5B6C8C",
                 },
                 accent: {
-                    DEFAULT: "hsl(var(--accent))",
-                    foreground: "hsl(var(--accent-foreground))",
-                },
-                popover: {
-                    DEFAULT: "hsl(var(--popover))",
-                    foreground: "hsl(var(--popover-foreground))",
+                    DEFAULT: "#3F72AF", // Slightly brighter blue for accents
+                    foreground: "#F1F6F9",
                 },
                 card: {
-                    DEFAULT: "hsl(var(--card))",
-                    foreground: "hsl(var(--card-foreground))",
+                    DEFAULT: "#FFFFFF",
+                    foreground: "#212A3E",
                 },
+                border: "#9BA4B5", // Using Secondary for borders
             },
             borderRadius: {
                 lg: "var(--radius)",
@@ -61,10 +52,15 @@ export default {
                     '0%': { opacity: '0' },
                     '100%': { opacity: '1' },
                 },
+                'slide-in-right': {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0)' },
+                }
             },
             animation: {
-                'fade-in-up': 'fade-in-up 0.7s ease-out forwards',
-                'fade-in': 'fade-in 0.5s ease-out forwards',
+                'fade-in-up': 'fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                'fade-in': 'fade-in 0.6s ease-out forwards',
+                'slide-in-right': 'slide-in-right 0.4s ease-out',
             },
         },
     },

@@ -1,146 +1,68 @@
-import React, { useRef, useEffect } from 'react';
-import { ArrowRight, Download, Brain, Code, Eye, Layers } from 'lucide-react'; // Changed icons to fit Personal portfolio
+import React, { useEffect, useRef } from 'react';
+import { ArrowRight, Download, Brain, Database, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import CityDetectionBackground from '@/pages/Home/CityDetectionBackground';
-import { ResearchTopic } from '@/types/Research';
-import './Home.css';
+import CVView from '@/pages/CV/CVView';
+import homeCasualImg from '@/assets/profile/home_casual.jpg';
 
-// Hardcoded Personal Data (Ideally move to a separate config later)
-const HERO_CONTENT = {
-    welcome: "AI RESEARCHER & ENGINEER",
-    title: "Bridging Perception",
-    highlight: "and Reasoning",
-    description: "I am a Master's student specializing in Computer Vision and Autonomous Driving. My research focuses on Vision-Language Models and 3D Visual Grounding to build intelligent systems that understand the physical world.",
-    ctaPrimary: "View Research",
-    ctaSecondary: "Download CV"
-};
-
-const FEATURED_RESEARCH: ResearchTopic[] = [
-    {
-        id: 1,
-        title: "UniAD: Planning-oriented Autonomous Driving",
-        description: [{ title: 'Overview', contents: 'Unified Autonomous Driving (UniAD) is a comprehensive framework that integrates perception, prediction, and planning into a single end-to-end network.' }],
-        icon: 'Brain'
-    },
-    {
-        id: 2,
-        title: "Viewformer: 3D Scene Understanding",
-        description: [{ title: 'Overview', contents: 'Novel architecture using transformers for multi-view 3D object detection and scene reconstruction.' }],
-        icon: 'Eye'
-    },
-    {
-        id: 3,
-        title: "Vision-Language Navigation in 3D",
-        description: [{ title: 'Overview', contents: 'Leveraging LLMs to guide agents through complex 3D environments using natural language instructions.' }],
-        icon: 'Layers'
-    }
-];
-
-interface HomeViewProps {
-    // We make props optional or ignore them for now to enforce the new personal design
-    researchItems?: ResearchTopic[];
-    content?: any;
-}
-
-const HomeView: React.FC<HomeViewProps> = () => {
-    const researchSectionRef = useRef<HTMLDivElement>(null);
-
-    const scrollToResearch = () => {
-        researchSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
+const HomeView: React.FC = () => {
     return (
-        <div className="home-container">
+        <div className="min-h-screen bg-background text-foreground pt-32 pb-20">
+
             {/* Hero Section */}
-            <div className="hero-section">
-                {/* Layer 1: Background */}
-                <div className="hero-bg-layer opacity-40 dark:opacity-60">
-                    <CityDetectionBackground />
-                    {/* Gradient Overlay for better text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
-                </div>
+            <header className="container-custom relative z-10 mb-24">
+                <div className="flex flex-col md:flex-row items-center gap-12">
 
-                {/* Layer 2: Text Content */}
-                <div className="hero-content-layer">
-                    <div className="hero-text-container animate-fade-in-up">
-                        <div className="flex items-center justify-center space-x-3 mb-4">
-                            <span className="h-px w-8 bg-accent"></span>
-                            <h2 className="hero-welcome-label text-accent">{HERO_CONTENT.welcome}</h2>
-                            <span className="h-px w-8 bg-accent"></span>
-                        </div>
+                    {/* Text Content */}
+                    <div className="flex-1 text-center md:text-left">
+                        <h2 className="text-primary font-mono text-sm md:text-base mb-6 tracking-wide animate-fade-in opacity-0" style={{ animationDelay: '0.1s' }}>
+                            AUTONOMOUS DRIVING PERCEPTION ENGINEER
+                        </h2>
 
-                        <h1 className="hero-title">
-                            {HERO_CONTENT.title} <br className="hidden md:block" />
-                            <span className="hero-title-gradient">{HERO_CONTENT.highlight}</span>
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-tight mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
+                            Bridging <br />
+                            <span className="text-gradient">Perception</span> & <br />
+                            Reasoning.
                         </h1>
 
-                        <p className="hero-description text-muted-foreground mt-6">
-                            {HERO_CONTENT.description}
+                        <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10 animate-fade-in opacity-0 mx-auto md:mx-0" style={{ animationDelay: '0.3s' }}>
+                            I build intelligent systems that understand the physical world. <br />
+                            Specializing in 3D Visual Grounding, Multi-view Occupancy, and Vision-Language Models.
                         </p>
 
-                        <div className="hero-cta-container space-x-4">
-                            <Link to="/research" className="hero-cta-button group">
-                                {HERO_CONTENT.ctaPrimary}
-                                <ArrowRight className="hero-cta-icon" />
+                        <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
+                            <Link to="/projects" className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                                View Projects
+                                <ArrowRight className="ml-2 w-5 h-5" />
                             </Link>
-                            <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer" className="hero-cta-button-outline group">
-                                {HERO_CONTENT.ctaSecondary}
-                                <Download className="hero-cta-icon group-hover:translate-y-1 group-hover:translate-x-0" />
-                            </a>
+                            {/* CV Button removed as CV is below */}
                         </div>
                     </div>
-                </div>
 
-                {/* Scroll Indicator */}
-                <div
-                    className="scroll-indicator cursor-pointer"
-                    onClick={scrollToResearch}
-                >
-                    <span className="text-xs text-muted-foreground mb-2 block uppercase tracking-widest">Scroll</span>
-                    <div className="scroll-mouse">
-                        <div className="scroll-dot animate-bounce"></div>
+                    {/* Hero Image */}
+                    <div className="flex-1 relative animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
+                        <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 transform rotate-2 hover:rotate-0 transition-all duration-500">
+                            <img
+                                src={homeCasualImg}
+                                alt="Jeon Hyun-Sik Casual"
+                                className="w-full h-full object-cover"
+                            />
+                            {/* Overlay Effect */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                        </div>
+                        {/* Decorative Elements */}
+                        <div className="absolute -z-10 top-10 right-10 w-full h-full bg-secondary/20 rounded-3xl blur-3xl"></div>
                     </div>
+
                 </div>
+            </header>
+
+            {/* CV Section (Embedded) */}
+            <div id="cv-section" className="border-t border-border/50">
+                <CVView />
             </div>
 
-            {/* Featured Research Preview */}
-            <section ref={researchSectionRef} className="research-section bg-background text-foreground">
-                <div className="section-container">
-                    <div className="section-header">
-                        <h2 className="section-title">Featured Research</h2>
-                        <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Highlights of my work in Autonomous Driving and Computer Vision.
-                        </p>
-                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {FEATURED_RESEARCH.map((topic, index) => (
-                            <Link
-                                to={`/research?area=${topic.id}`}
-                                key={index}
-                                className="group relative bg-card p-8 rounded-3xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden"
-                            >
-                                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                                    {/* Simple decorative icon based on index */}
-                                    {index === 0 ? <Brain size={120} /> : index === 1 ? <Eye size={120} /> : <Layers size={120} />}
-                                </div>
-                                <div className="relative z-10">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                                        {index === 0 ? <Brain size={24} /> : index === 1 ? <Eye size={24} /> : <Layers size={24} />}
-                                    </div>
-                                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{topic.title}</h3>
-                                    <p className="text-muted-foreground line-clamp-3 text-sm leading-relaxed">
-                                        {topic.description[0].contents}
-                                    </p>
-                                    <div className="mt-6 flex items-center text-sm font-semibold text-primary">
-                                        Learn more <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                    </div>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
+
         </div>
     );
 };

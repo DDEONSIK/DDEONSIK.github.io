@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&family=Fira+Code:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,43 +6,44 @@
 
 @layer base {
   :root {
-    /* Premium Dark Theme Variables (HSL) */
-    --background: 222 47% 11%;   /* #0f172a - Slate 900 */
-    --foreground: 210 40% 98%;   /* #f8fafc - Slate 50 */
+    /* 
+       Theme: "Absolute Clarity" (Pure White / Modern)
+       Bg: #FFFFFF (Pure White)
+       Text: #111827 (Gray 900) - Sharp and clear
+       Primary: #1E3A8A (Blue 900) - Trustworthy Navy
+       Secondary: #F3F4F6 (Gray 100) - Very subtle separation
+       Muted: #F9FAFB (Gray 50) - Almost white
+    */
+    --background: 0 0% 100%;
+    /* #FFFFFF */
+    --foreground: 220 13% 18%;
+    /* #111827 - Soft Black */
 
-    --card: 222 47% 13%;         /* Slightly lighter than bg */
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    /* #FFFFFF */
+    --card-foreground: 220 13% 18%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --primary: 224 64% 33%;
+    /* #1E3A8A - Keep the academic navy for authority */
+    --primary-foreground: 0 0% 100%;
 
-    --primary: 217 91% 60%;      /* #3b82f6 - Blue 500 (Vibrant Tech) */
-    --primary-foreground: 222 47% 11%;
+    --secondary: 220 14% 96%;
+    /* #F3F4F6 - Clean delineation */
+    --secondary-foreground: 220 13% 18%;
 
-    --secondary: 215 16% 47%;    /* #64748b - Slate 500 (Subtle) */
-    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 98%;
+    /* #F9FAFB */
+    --muted-foreground: 220 9% 46%;
+    /* #6B7280 - Readable gray */
 
-    --muted: 217 16% 26%;        /* Slate 800 */
-    --muted-foreground: 215 20% 65%;
+    --accent: 201 96% 32%;
+    /* #0369A1 */
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 180 100% 50%;      /* #00FFFF - Cyan/Teal (AI/Future) */
-    --accent-foreground: 222 47% 11%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217 32% 17%;       /* Slate 800 */
-    --input: 217 32% 17%;
-    --ring: 224 76% 48%;
+    --destructive: 0 84.2% 60.2%;
+    /* Keeping original as no new value provided */
 
     --radius: 0.5rem;
-  }
-
-  /* Force Dark Mode by default for this heavy tech implementation */
-  .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
-    /* Re-declare if needed or just rely on root as default if we switch strategy */
   }
 }
 
@@ -50,29 +51,41 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary;
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading tracking-tight;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight text-primary;
   }
 }
 
-/* Glassmorphism Utilities */
 @layer utilities {
-  .glass {
-    @apply bg-background/60 backdrop-blur-lg border-b border-white/10;
-  }
-  .glass-card {
-    @apply bg-card/50 backdrop-blur-md border border-white/10 shadow-xl;
-  }
-}
 
-/* Scrollbar Hide */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  /* Glass Effect (Softer for Light Mode) */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border-b border-white/20;
+  }
+
+  /* Hover Card Effect */
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 hover:border-primary/30;
+  }
+
+  /* Text Gradient (Subtle Navy to Blue) */
+  .text-gradient {
+    @apply text-primary;
+    /* Keep it clean solid color for academic look, or use bg-clip-text if requested */
+  }
+
+  /* Container Standard */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-20;
+  }
 }

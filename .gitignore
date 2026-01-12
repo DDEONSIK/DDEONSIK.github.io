@@ -6,3 +6,6 @@ docs/
 
 
 temp.*
+
+# Personal Data (Ignored)
+Personal_HomePage_Production_data/
