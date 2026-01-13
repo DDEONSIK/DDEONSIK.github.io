@@ -1,0 +1,137 @@
+{
+    "title": "Life & Moments",
+    "description": "Casual snapshots of my journey around the world.",
+    "footerQuote": "- Work Hard, Play Hard -",
+    "images": [
+        {
+            "id": "study0",
+            "name": "Research Lab",
+            "file": "life_study0.jpg"
+        },
+        {
+            "id": "vacation1",
+            "name": "Summer Break",
+            "file": "life_vacation1.jpg"
+        },
+        {
+            "id": "bike1",
+            "name": "Riding",
+            "file": "life_bike1.jpg"
+        },
+        {
+            "id": "europe1",
+            "name": "Europe Trip",
+            "file": "life_travel_to_Europe1.jpg"
+        },
+        {
+            "id": "study1",
+            "name": "Late Night Coding",
+            "file": "life_study1.jpg"
+        },
+        {
+            "id": "vacation0",
+            "name": "Weekend Getaway",
+            "file": "life_vacation0.jpg"
+        },
+        {
+            "id": "bike2",
+            "name": "Mountain Biking",
+            "file": "life_bike2.jpg"
+        },
+        {
+            "id": "parttime1",
+            "name": "Part Time",
+            "file": "life_part-time_job1.jpg"
+        },
+        {
+            "id": "europe2",
+            "name": "Europe Architecture",
+            "file": "life_travel_to_Europe2.jpg"
+        },
+        {
+            "id": "study2",
+            "name": "Deep Learning Study",
+            "file": "life_study2.jpg"
+        },
+        {
+            "id": "study3",
+            "name": "Lab Meeting",
+            "file": "life_study3.jpg"
+        },
+        {
+            "id": "vacation2",
+            "name": "Beach Sunset",
+            "file": "life_vacation2.jpg"
+        },
+        {
+            "id": "vacation3",
+            "name": "Hiking View",
+            "file": "life_vacation3.jpg"
+        },
+        {
+            "id": "vacation4",
+            "name": "Camping",
+            "file": "life_vacation4.jpg"
+        },
+        {
+            "id": "vacation5",
+            "name": "Road Trip",
+            "file": "life_vacation5.jpg"
+        },
+        {
+            "id": "vacation6",
+            "name": "City Lights",
+            "file": "life_vacation6.jpg"
+        },
+        {
+            "id": "vacation7",
+            "name": "Food Tour",
+            "file": "life_vacation7.jpg"
+        },
+        {
+            "id": "bike4",
+            "name": "Trail Riding",
+            "file": "life_bike4.jpg"
+        },
+        {
+            "id": "bike5",
+            "name": "Bike Maintenance",
+            "file": "life_bike5.jpg"
+        },
+        {
+            "id": "bike6",
+            "name": "Cycling Crew",
+            "file": "life_bike6.jpg"
+        },
+        {
+            "id": "bike7",
+            "name": "Uphill Challenge",
+            "file": "life_bike7.jpg"
+        },
+        {
+            "id": "bike8",
+            "name": "Downhill Rush",
+            "file": "life_bike8.jpg"
+        },
+        {
+            "id": "parttime2",
+            "name": "Cafe Work",
+            "file": "life_part-time_job2.jpg"
+        },
+        {
+            "id": "parttime3",
+            "name": "Teaching Assistant",
+            "file": "life_part-time_job3.jpg"
+        },
+        {
+            "id": "bicycle1",
+            "name": "My Bike",
+            "file": "life_bicycle1.jpg"
+        },
+        {
+            "id": "bicycle2",
+            "name": "Night Ride",
+            "file": "life_bicycle2.jpg"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-export interface DateInfo{
+export interface DateInfo {
     year: number;
     month: number;
     day?: number;
@@ -12,30 +12,4 @@ export interface Description {
     contents?: string | string[] | Description[];
 }
 
-export interface ContactInfo {
-    address: {
-        university: string;
-        room: string;
-        street: string;
-    };
-    email: string;
-    phone: string;
-    recruitment: {
-        title: string;
-        description: string;
-    };
-    research: {
-        title: string;
-        description: string[]; // Changed to array for multiple paragraphs
-        note: string;
-        capabilities: string;
-    };
-    labLife: {
-        title: string;
-        description: string;
-    };
-    contactInstruction: {
-        title: string;
-        description: string;
-    };
-}
+// ContactInfo removed as it was legacy lab data

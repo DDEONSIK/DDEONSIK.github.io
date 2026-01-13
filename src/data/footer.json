@@ -1,0 +1,31 @@
+{
+    "company": "DDEONSIK",
+    "companyUrl": "https://github.com/DDEONSIK",
+    "copyrightYear": 2026,
+    "contact": {
+        "email": "engineer0104@naver.com",
+        "label": "engineer0104@naver.com"
+    },
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/DDEONSIK",
+            "icon": "Github"
+        },
+        {
+            "name": "Scholar",
+            "url": "https://scholar.google.com/citations?user=PpmME_0AAAAJ&hl=ko&oi=sra",
+            "icon": "BookOpen"
+        },
+        {
+            "name": "ORCID",
+            "url": "https://orcid.org/0009-0006-3150-6866",
+            "icon": "User"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/hyunsik-jeon-0a808437a",
+            "icon": "Linkedin"
+        }
+    ]
+}

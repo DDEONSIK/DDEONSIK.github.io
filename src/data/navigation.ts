@@ -1,8 +1,4 @@
 import { NavItem } from '@/types/Navigation';
+import navigationJson from '@/data/navigation.json';
 
-export const navigationData: NavItem[] = [
-    { name: 'Home', path: '/', iconName: 'Home' },
-    { name: 'Projects', path: '/projects', iconName: 'BrainCircuit' },
-    { name: 'About', path: '/about', iconName: 'User' },
-    { name: 'Life', path: '/life', iconName: 'Heart' },
-];
+export const navigationData: NavItem[] = navigationJson as unknown as NavItem[];

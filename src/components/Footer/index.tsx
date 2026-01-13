@@ -1,5 +1,14 @@
 import React from 'react';
 import { Github, Linkedin, Mail, BookOpen, User } from 'lucide-react';
+import footerData from '@/data/footer.json';
+
+const iconMap: { [key: string]: any } = {
+    Github,
+    Linkedin,
+    Mail,
+    BookOpen,
+    User
+};
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -11,34 +20,27 @@ const Footer = () => {
                 {/* Copyright & Info */}
                 <div className="text-sm text-muted-foreground text-center md:text-left space-y-1">
                     <p className="font-medium">
-                        &copy; 2026 <a href="https://github.com/DDEONSIK" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DDEONSIK</a>. All Rights Reserved.
+                        &copy; {footerData.copyrightYear} <a href={footerData.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{footerData.company}</a>. All Rights Reserved.
                     </p>
                     <p className="text-xs opacity-80">
-                        Based on <a href="https://github.com/SEOULTECH-AIS/SEOULTECH-AIS.github.io" target="_blank" rel="noopener noreferrer" className="hover:underline">SEOULTECH AIS Lab</a> | Assisted by <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" className="hover:underline">Google Antigravity</a>
+                        Based on SEOULTECH AIS Lab | Provided by Google Antigravity
                     </p>
                     <p className="text-xs pt-1">
-                        Contact: <a href="mailto:engineer0104@naver.com" className="hover:text-primary transition-colors">engineer0104@naver.com</a>
+                        Contact: <a href={`mailto:${footerData.contact.email}`} className="hover:text-primary transition-colors">{footerData.contact.label}</a>
                     </p>
                 </div>
 
                 {/* Social Links (Right) */}
                 <div className="flex flex-wrap justify-center md:justify-end gap-3">
-                    <a href="https://github.com/DDEONSIK" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                        <Github size={18} />
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=PpmME_0AAAAJ&hl=ko&oi=sra" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                        <BookOpen size={18} />
-                        <span>Scholar</span>
-                    </a>
-                    <a href="https://orcid.org/0009-0006-3150-6866" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                        <User size={18} />
-                        <span>ORCID</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hyunsik-jeon-0a808437a" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                        <Linkedin size={18} />
-                        <span>LinkedIn</span>
-                    </a>
+                    {footerData.socialLinks.map((link) => {
+                        const Icon = iconMap[link.icon] || User;
+                        return (
+                            <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
+                                <Icon size={18} />
+                                <span>{link.name}</span>
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </footer>

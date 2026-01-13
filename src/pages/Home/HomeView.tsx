@@ -1,10 +1,33 @@
-import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Download, Brain, Database, Eye } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CVView from '@/pages/CV/CVView';
-import homeCasualImg from '@/assets/profile/home_casual.jpg';
+import { HomeContent } from '@/types/Home';
+import { ResearchTopic } from '@/types/Research';
 
-const HomeView: React.FC = () => {
+// Dynamic Profile Images
+// Using relative path for robust matching across environments
+const profileImagesGlob = import.meta.glob('../../assets/profile/*.jpg', { eager: true });
+
+interface HomeViewProps {
+    content: HomeContent;
+    researchItems?: ResearchTopic[];
+}
+
+const HomeView: React.FC<HomeViewProps> = ({ content }) => {
+
+    const profileImageSrc = useMemo(() => {
+        const filename = content.hero.profileImage;
+        // Search through the glob results for the matching filename
+        for (const path in profileImagesGlob) {
+            // Extract filename from path (e.g., "../../assets/profile/home_casual.jpg" -> "home_casual.jpg")
+            if (path.split('/').pop() === filename) {
+                return (profileImagesGlob[path] as any).default;
+            }
+        }
+        return null;
+    }, [content.hero.profileImage]);
+
     return (
         <div className="bg-background text-foreground">
 
@@ -15,23 +38,26 @@ const HomeView: React.FC = () => {
                     {/* Text Content */}
                     <div className="flex-1 text-center md:text-left">
                         <h2 className="text-primary font-mono text-sm md:text-base mb-6 tracking-wide animate-fade-in opacity-0" style={{ animationDelay: '0.1s' }}>
-                            AUTONOMOUS DRIVING PERCEPTION ENGINEER
+                            {content.hero.label}
                         </h2>
 
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-tight mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-                            Bridging <br />
-                            <span className="text-gradient">Perception</span> & <br />
-                            Reasoning.
+                            {content.hero.titlePrefix} <br />
+                            <span className="text-gradient">{content.hero.titleHighlight}</span> {content.hero.titleSuffix.split('&').map((part, i) => i === 0 ? part : <span key={i}>& {part}</span>).length > 1 ? <>& <br /> {content.hero.titleSuffix.replace('&', '').trim()}</> : content.hero.titleSuffix}
                         </h1>
 
                         <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10 animate-fade-in opacity-0 mx-auto md:mx-0" style={{ animationDelay: '0.3s' }}>
-                            I build intelligent systems that understand the physical world. <br />
-                            Specializing in 3D Visual Grounding, Multi-view Occupancy, and Vision-Language Models.
+                            {content.hero.description.split('\n').map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line}
+                                    {i < content.hero.description.split('\n').length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
                         </p>
 
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
-                            <Link to="/projects" className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
-                                View Projects
+                            <Link to={content.hero.buttonLink} className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                                {content.hero.buttonText}
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Link>
                         </div>
@@ -40,11 +66,17 @@ const HomeView: React.FC = () => {
                     {/* Hero Image */}
                     <div className="flex-1 relative animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
                         <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 transform rotate-2 hover:rotate-0 transition-all duration-500">
-                            <img
-                                src={homeCasualImg}
-                                alt="Jeon Hyun-Sik Casual"
-                                className="w-full h-full object-cover"
-                            />
+                            {profileImageSrc ? (
+                                <img
+                                    src={profileImageSrc}
+                                    alt="Profile Casual"
+                                    className="w-full h-full object-cover"
+                                />
+                            ) : (
+                                <div className="w-full h-full bg-muted flex items-center justify-center text-muted-foreground">
+                                    No Image
+                                </div>
+                            )}
                             {/* Overlay Effect */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                         </div>
@@ -61,12 +93,8 @@ const HomeView: React.FC = () => {
                 </div>
             </header>
 
-            {/* CV Section (Embedded) */}
-            <div id="cv-section" className="border-t border-border/50 bg-background relative z-20">
-                <CVView />
-            </div>
-
-
+            {/* Embedded CV Section */}
+            <CVView />
 
         </div>
     );

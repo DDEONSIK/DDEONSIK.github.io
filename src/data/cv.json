@@ -1,0 +1,83 @@
+{
+    "header": {
+        "title": "Curriculum Vitae",
+        "subtitle": "Autonomous Perception Engineer & Researcher"
+    },
+    "education": [
+        {
+            "id": 1,
+            "degree": "M.S. in Artificial Intelligence",
+            "institution": "SeoulTech",
+            "period": "2024 - Present",
+            "description": "Focus: 3D Vision, Sensor Fusion for Autonomous Driving.\nGPA: 4.5/4.5",
+            "status": "current"
+        },
+        {
+            "id": 2,
+            "degree": "B.S. in Automotive Engineering",
+            "institution": "Shinhan Univ.",
+            "period": "2018 - 2024",
+            "description": "Focus: Embedded Systems, Vehicle Dynamics.",
+            "status": "completed"
+        }
+    ],
+    "skills": {
+        "languages": [
+            "Python",
+            "C++",
+            "MATLAB",
+            "TypeScript"
+        ],
+        "frameworks": [
+            "PyTorch",
+            "TensorFlow",
+            "Opencv",
+            "Scikit-learn"
+        ],
+        "tools": [
+            "Docker",
+            "Linux (Ubuntu)",
+            "ROS 2",
+            "Git"
+        ]
+    },
+    "experience": [
+        {
+            "id": 1,
+            "role": "Graduate Researcher",
+            "organization": "Neural Systems Lab (SeoulTech)",
+            "period": "2024.03 - Present",
+            "descriptionItems": [
+                "Conducting research on <strong>3D Visual Grounding</strong> using relational depth text.",
+                "Developing lightweight <strong>UniAD</strong> models for edge-device deployment.",
+                "Implementing multi-view 3D occupancy networks (ViewFormer) for complex urban scenes."
+            ]
+        },
+        {
+            "id": 2,
+            "role": "Undergraduate Research Intern",
+            "organization": "Intelligent Mobility Lab",
+            "period": "2022.06 - 2023.12",
+            "descriptionItems": [
+                "Developed a <strong>Lane Keeping Assist System (LKAS)</strong> using sliding window algorithms.",
+                "Participated in the 2023 University Creative Mobility Competition (Bronze Award)."
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "id": 1,
+            "title": "Domestic Conference Best Paper",
+            "organization": "ICROS 2025",
+            "description": "Awarded for 'Lightweight UniAD' research.",
+            "icon": "Cpu"
+        },
+        {
+            "id": 2,
+            "title": "Automotive Engineer License",
+            "organization": "HRD Korea",
+            "description": "Certified (2022).",
+            "icon": "Award"
+        }
+    ]
+}

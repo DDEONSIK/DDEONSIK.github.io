@@ -1,0 +1,40 @@
+{
+    "profile": {
+        "title": "About Me",
+        "name": "Engineer Jeon Hyun-Sik",
+        "intro": "I am a researcher bridging the gap between perception and reasoning.\nMy work focuses on building autonomous systems that are not just intelligent, but reliable and interpretable.\nI value clean code, clear thoughts, and continuous improvement.",
+        "profileImage": "cv_id.jpg",
+        "tags": [
+            {
+                "label": "System Architect",
+                "icon": "Terminal"
+            },
+            {
+                "label": "Fast Learner",
+                "icon": "Zap"
+            },
+            {
+                "label": "Team Player",
+                "icon": "Coffee"
+            }
+        ]
+    },
+    "cards": [
+        {
+            "title": "Engineering Philosophy",
+            "icon": "Code2",
+            "content": "\"Robustness over Complexity.\"\nI believe the best systems are those that can be trusted. In my research on 3D Visual Grounding and Occupancy Networks, I prioritize algorithms that perform consistently in the real world, ensuring safety and reliability."
+        },
+        {
+            "title": "Continuous Growth",
+            "icon": "Book",
+            "content": "Technology never stops evolving, and neither do I.\nI actively engage with the open-source community and stay updated with the latest papers in CV and Robotics. I view every challenge as an opportunity to refine my mental models and technical skills."
+        },
+        {
+            "title": "Beyond the Workspace",
+            "icon": "Heart",
+            "content": "When I step away from the keyboard, I seek balance through photography and cycling.\nThese hobbies teach me patience and perspective—qualities that directly translate to better engineering.\nI am also a firm believer in knowledge sharing and enjoy mentoring junior students in my lab.",
+            "fullWidth": true
+        }
+    ]
+}
