@@ -16,29 +16,8 @@ const CVView = () => {
                         </p>
                     </div>
 
-                    {/* Social Links (Official Buttons) */}
-                    <div className="flex flex-wrap gap-3">
-                        <a href="https://github.com/DDEONSIK" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                            <Github size={18} />
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=PpmME_0AAAAJ&hl=ko&oi=sra" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                            <BookOpen size={18} />
-                            <span>Scholar</span>
-                        </a>
-                        <a href="https://orcid.org/0009-0006-3150-6866" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                            <User size={18} />
-                            <span>ORCID</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/hyunsik-jeon-0a808437a" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                            <Linkedin size={18} />
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="mailto:engineer0104@naver.com" className="flex items-center gap-2 px-4 py-2 bg-secondary/30 hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
-                            <Mail size={18} />
-                            <span>Email</span>
-                        </a>
-                    </div>
+                    {/* Social Links moved to Footer */}
+                    <div className="hidden"></div>
                 </header>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
