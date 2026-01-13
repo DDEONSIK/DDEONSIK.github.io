@@ -32,8 +32,7 @@ This project is a React-based single-page application (SPA) designed to present 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/DDEONSIK/HyunSikCV.github.io.git
-   cd HyunSikCV.github.io
+   git clone https://github.com/DDEONSIK/DDEONSIK.github.io.git
    ```
 
 2. **Install dependencies**
@@ -51,6 +50,11 @@ This project is a React-based single-page application (SPA) designed to present 
    npm run build
    ```
    The output will be generated in the `docs/` directory (configured for GitHub Pages).
+
+5. **Preview production build locally**
+   ```bash
+   npm run preview
+   ```
 
 ## 📜 Credits & Attribution
 
