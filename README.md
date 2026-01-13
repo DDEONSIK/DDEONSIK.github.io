@@ -1,70 +1,74 @@
-<h1 align="center">AIS Lab Homepage</h1>
+# Hyun-Sik Jeon | Personal Academic Portfolio
 
-<p align="center">
-  <img src="src/assets/logo/Logo1.png" alt="Header Logo" width="400">
-</p>
+Welcome to the personal academic portfolio website of **Hyun-Sik Jeon**.
+This website showcases my research, projects, publications, and personal life gallery with a modern, clean, and interactive design.
 
-AIS (Autonomous Intelligent Systems) Lab 공식 홈페이지 프로젝트.
+## 📌 Project Overview
 
-## 1. 프로젝트 개요
+This project is a React-based single-page application (SPA) designed to present academic CVs and portfolios effectively. It emphasizes visual clarity ("Absolute Clarity" theme), interactivity, and ease of maintenance via structured JSON data.
 
-연구 성과 및 구성원 정보의 효과적 전달을 위한 정적 웹사이트. 유지보수 편의성과 확장성을 최우선으로 설계.
+### Key Features
+- **Immersive Hero Section**: Full-screen introduction with smooth scroll transitions.
+- **Narrative About Page**: A personal introduction to my engineering philosophy and background.
+- **Dynamic Research & Projects**: Chronological display of publications and technical projects.
+- **Life Gallery**: A casual, modern masonry grid layout for personal moments.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
 
-- 데이터 중심: UI 수정 없이 JSON 파일 관리만으로 콘텐츠 업데이트.
-- 구조적 분리: Container-View 패턴 적용, 비즈니스 로직과 뷰의 명확한 분리.
-- 안정성 확보: TypeScript 도입으로 데이터 구조의 타입 안정성 보장.
+## 🛠 Technology Stack
 
-## 2. 기술 스택
+- **Core**: React 19, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Routing**: React Router (HashRouter)
 
-- Frontend: React 19 (Vite 기반)
-- Language: TypeScript
-- Styling: Tailwind CSS, Framer Motion (애니메이션)
-- Icons: Lucide React
-- CI/CD: GitHub Actions (자동 빌드/배포)
+## 🚀 Getting Started
 
-## 3. 폴더 구조
+### Prerequisites
+- Node.js (v20 or higher recommended)
+- npm or yarn
 
-```text
-src/
-├── assets/         # 정적 자산 (이미지, 로고, 아이콘)
-├── components/     # 재사용 가능한 공통 UI 컴포넌트
-├── context/        # 전역 상태 관리 (테마 등)
-├── data/           # 페이지 콘텐츠 데이터 (JSON 파일)
-├── pages/          # 라우트별 페이지 (Container/View 분리)
-├── types/          # TypeScript 데이터 인터페이스 정의
-├── App.tsx         # 라우팅 및 레이아웃 설정
-└── main.tsx        # 앱 진입점
-```
+### Installation
 
-## 4. 설치 및 실행
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/DDEONSIK/HyunSikCV.github.io.git
+   cd HyunSikCV.github.io
+   ```
 
-Prerequisites: Node.js v20+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-# 1. 의존성 설치
-npm install
+3. **Run locally (Development mode)**
+   ```bash
+   npm run dev
+   ```
 
-# 2. 프로덕션 빌드 (docs/ 생성)
-npm run build
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+   The output will be generated in the `docs/` directory (configured for GitHub Pages).
 
-# 3. preview 생성
-npm run preview
-```
+## 📜 Credits & Attribution
 
-## 5. 배포 (Deployment)
+This website was rebuilt and modified based on the **[SEOULTECH AIS Lab Website](https://github.com/SEOULTECH-AIS/SEOULTECH-AIS.github.io)**.
+While the core architecture was inspired by the AIS Lab framework, the design, content, and specific components (Life Gallery, Publications List, etc.) have been significantly customized for personal use.
 
-GitHub Actions를 통한 완전 자동화 배포 시스템.
+> **Acknowledgement**: This project was developed with the assistance of **[Google Antigravity](https://antigravity.google/)**, an advanced AI coding agent.
 
-- Trigger: `stable` 브랜치 Push 시 자동 실행.
-- Process: 빌드(`npm run build`) 후 `gh-pages` 브랜치로 결과물 업로드.
-- URL: [ais.seoultech.ac.kr](https://ais.seoultech.ac.kr)
+## ⚠️ License & Copyright
 
-## 6. 유지보수
+**Copyright © 2026 [DDEONSIK](https://github.com/DDEONSIK). All Rights Reserved.**
 
-구성원, 논문, 게시판 등 콘텐츠 데이터 관리 방법은 별도 매뉴얼 참조.
+### Usage Policy
+- **Ownership**: All content, designs, and code in this repository are the exclusive property of **DDEONSIK**, unless otherwise noted (e.g., open-source libraries).
+- **Restrictions**:
+  - You are **NOT** allowed to copy, modify, distribute, or use this website's code or design for your own public portfolio without explicit prior permission from the owner.
+  - This project is **NOT** open source for free redistribution.
+- **Contact**: If you wish to use any part of this project or have questions regarding the code, **you must contact the owner (DDEONSIK) beforehand**.
 
-- [📖 홈페이지 관리 매뉴얼 바로가기](./manual/README.md)
-
-<p align="center">
-  <img src="src/assets/logo/AIS_logo.png" alt="Footer Logo" width="100">
-</p>
+### Privacy & Security
+- This website contains personal information and photos. Unauthorized scraping, data collection, or misuse of personal data is strictly prohibited.
