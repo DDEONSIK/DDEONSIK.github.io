@@ -6,6 +6,9 @@ import subprocess
 # Increase PIL limit for large images (e.g. panos)
 Image.MAX_IMAGE_PIXELS = None 
 
+# MAX SIZE CONSTANT (QHD Width)
+_max_dimension = 2560
+
 # constant
 _img_dir = "src/assets"
 _img_quality = 100
@@ -34,17 +37,30 @@ for _file in _files_list:
         if _file.suffix.lower() in [".png", ".jpg", ".jpeg"]:
             _target_file = _file.with_suffix(".webp")
             
-            # Force re-conversion to fix rotation issues
-            # if _target_file.exists():
-            #     continue
-
+            # Open Image
             _img = Image.open(_file)
             
             # Fix EXIF Orientation (Auto-rotate)
             _img = ImageOps.exif_transpose(_img)
+
+            # Resize Logic
+            _width, _height = _img.size
+            if _width > _max_dimension or _height > _max_dimension:
+                # Calculate new size maintaining aspect ratio
+                if _width > _height:
+                     new_width = _max_dimension
+                     new_height = int(_height * (_max_dimension / _width))
+                else:
+                     new_height = _max_dimension
+                     new_width = int(_width * (_max_dimension / _height))
+                
+                # High-quality resize
+                _img = _img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+                print(f"Resizing: {_file.name} ({_width}x{_height} -> {new_width}x{new_height})")
             
+            # Save as WebP
             _img.save(_target_file, "webp", quality=_img_quality)
-            print(f"Converted Image (Fixed Orientation): {_file.name} -> {_target_file.name}")
+            print(f"Converted & Optimized: {_file.name} -> {_target_file.name}")
             
         # Video Conversion
         elif _file.suffix.lower() == ".mp4":
