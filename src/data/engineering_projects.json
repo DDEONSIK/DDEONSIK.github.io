@@ -1,0 +1,18 @@
+[
+    {
+        "id": "intl-car-competition",
+        "title": "International Student Creative Car Competition",
+        "category": "Engineering Projects",
+        "description": "Participated in the 2023 International Student Creative Car Competition. Developed an autonomous driving platform capable of navigating complex tracks with static and dynamic obstacles. Implemented lane detection and obstacle avoidance algorithms using LiDAR and Camera sensor fusion.",
+        "techStack": [
+            "C++",
+            "ROS 2",
+            "OpenCV",
+            "LiDAR"
+        ],
+        "role": "Camera Team Leader",
+        "icon": "Car",
+        "performance": "Bronze Award",
+        "year": 2023
+    }
+]

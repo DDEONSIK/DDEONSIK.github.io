@@ -14,9 +14,9 @@ const AnimatedRoutes = () => {
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<PageTransition><HomeContainer /></PageTransition>} />
-                <Route path="/about" element={<AboutContainer />} />
-                <Route path="/projects" element={<ProjectsContainer />} />
-                <Route path="/life" element={<LifeContainer />} />
+                <Route path="/about" element={<PageTransition><AboutContainer /></PageTransition>} />
+                <Route path="/projects" element={<PageTransition><ProjectsContainer /></PageTransition>} />
+                <Route path="/life" element={<PageTransition><LifeContainer /></PageTransition>} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </AnimatePresence>

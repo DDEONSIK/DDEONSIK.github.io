@@ -1,137 +1,232 @@
 {
     "title": "Life & Moments",
-    "description": "Casual snapshots of my journey around the world.",
+    "description": "Casual snapshots of my journey, research, and hobbies.",
     "footerQuote": "- Work Hard, Play Hard -",
     "images": [
         {
-            "id": "study0",
-            "name": "Research Lab",
+            "id": "1",
+            "name": "M.S. Thesis Defense",
+            "file": "M.S._dissertation_presentation_1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Dissertation Presentation",
+            "file": "M.S._dissertation_presentation_2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Research Workspace",
+            "file": "M.S._Workspace3.jpg"
+        },
+        {
+            "id": "4",
+            "name": "My Desk Setup",
+            "file": "life_desk_setup1.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Curiosity",
             "file": "life_study0.jpg"
         },
         {
-            "id": "vacation1",
+            "id": "6",
+            "name": "Automotive Technology",
+            "file": "life_study1.jpg"
+        },
+        {
+            "id": "7",
+            "name": "Technical Studies",
+            "file": "life_study7.jpg"
+        },
+        {
+            "id": "8",
+            "name": "My Lovely Cat",
+            "file": "My_Cat1.jpg"
+        },
+        {
+            "id": "9",
+            "name": "Super Focused",
+            "file": "My_Cat2.jpg"
+        },
+        {
+            "id": "10",
+            "name": "Sharp",
+            "file": "My_Cat3.jpg"
+        },
+        {
+            "id": "11",
+            "name": "Tiny Hunter",
+            "file": "My_Cat4.jpg"
+        },
+        {
+            "id": "12",
+            "name": "Childhood Bicycle",
+            "file": "life_bicycle1.jpg"
+        },
+        {
+            "id": "13",
+            "name": "Bicycle Standing",
+            "file": "life_bicycle2.jpg"
+        },
+        {
+            "id": "14",
+            "name": "Seoul Trip",
+            "file": "life_bike2.jpg"
+        },
+        {
+            "id": "15",
+            "name": "Long Distance Riding",
+            "file": "life_bike3.jpg"
+        },
+        {
+            "id": "16",
+            "name": "Bike Practice",
+            "file": "life_bike4.jpg"
+        },
+        {
+            "id": "17",
+            "name": "Bike Pose",
+            "file": "life_bike5.jpg"
+        },
+        {
+            "id": "18",
+            "name": "Mountain Riding",
+            "file": "life_bike6.jpg"
+        },
+        {
+            "id": "19",
+            "name": "Beach Riding",
+            "file": "life_bike7.jpg"
+        },
+        {
+            "id": "20",
+            "name": "Brother Riding",
+            "file": "life_bike8.jpg"
+        },
+        {
+            "id": "21",
+            "name": "City Riding",
+            "file": "life_bike10.jpg"
+        },
+        {
+            "id": "22",
+            "name": "Night Riding",
+            "file": "life_bike11.jpg"
+        },
+        {
+            "id": "23",
+            "name": "Hungary Trip",
+            "file": "life_travel_to_Europe1.jpg"
+        },
+        {
+            "id": "24",
+            "name": "Museum BMW, Germany",
+            "file": "life_travel_to_Europe2.jpg"
+        },
+        {
+            "id": "25",
+            "name": "Japan Trip",
+            "file": "life_travel_to_Japan.mp4"
+        },
+        {
+            "id": "26",
+            "name": "Swimming Sea",
+            "file": "life_vacation0.jpg"
+        },
+        {
+            "id": "27",
             "name": "Summer Break",
             "file": "life_vacation1.jpg"
         },
         {
-            "id": "bike1",
-            "name": "Riding",
-            "file": "life_bike1.jpg"
-        },
-        {
-            "id": "europe1",
-            "name": "Europe Trip",
-            "file": "life_travel_to_Europe1.jpg"
-        },
-        {
-            "id": "study1",
-            "name": "Late Night Coding",
-            "file": "life_study1.jpg"
-        },
-        {
-            "id": "vacation0",
-            "name": "Weekend Getaway",
-            "file": "life_vacation0.jpg"
-        },
-        {
-            "id": "bike2",
-            "name": "Mountain Biking",
-            "file": "life_bike2.jpg"
-        },
-        {
-            "id": "parttime1",
-            "name": "Part Time",
-            "file": "life_part-time_job1.jpg"
-        },
-        {
-            "id": "europe2",
-            "name": "Europe Architecture",
-            "file": "life_travel_to_Europe2.jpg"
-        },
-        {
-            "id": "study2",
-            "name": "Deep Learning Study",
-            "file": "life_study2.jpg"
-        },
-        {
-            "id": "study3",
-            "name": "Lab Meeting",
-            "file": "life_study3.jpg"
-        },
-        {
-            "id": "vacation2",
-            "name": "Beach Sunset",
+            "id": "28",
+            "name": "Family Trip",
             "file": "life_vacation2.jpg"
         },
         {
-            "id": "vacation3",
-            "name": "Hiking View",
+            "id": "29",
+            "name": "Backpack Kid Dance",
+            "file": "life_vacation2.mp4"
+        },
+        {
+            "id": "30",
+            "name": "Mountain Trip",
             "file": "life_vacation3.jpg"
         },
         {
-            "id": "vacation4",
-            "name": "Camping",
+            "id": "31",
+            "name": "Rough Ride",
             "file": "life_vacation4.jpg"
         },
         {
-            "id": "vacation5",
-            "name": "Road Trip",
+            "id": "32",
+            "name": "Night Skiing",
             "file": "life_vacation5.jpg"
         },
         {
-            "id": "vacation6",
-            "name": "City Lights",
+            "id": "33",
+            "name": "1HP",
             "file": "life_vacation6.jpg"
         },
         {
-            "id": "vacation7",
-            "name": "Food Tour",
+            "id": "34",
+            "name": "Sheep Farm",
             "file": "life_vacation7.jpg"
         },
         {
-            "id": "bike4",
-            "name": "Trail Riding",
-            "file": "life_bike4.jpg"
+            "id": "35",
+            "name": "Research Road",
+            "file": "life_vacation8.jpg"
         },
         {
-            "id": "bike5",
-            "name": "Bike Maintenance",
-            "file": "life_bike5.jpg"
+            "id": "36",
+            "name": "Latest Technology",
+            "file": "life_vacation9.jpg"
         },
         {
-            "id": "bike6",
-            "name": "Cycling Crew",
-            "file": "life_bike6.jpg"
+            "id": "37",
+            "name": "Troubleshooting",
+            "file": "life_vacation10.jpg"
         },
         {
-            "id": "bike7",
-            "name": "Uphill Challenge",
-            "file": "life_bike7.jpg"
+            "id": "38",
+            "name": "Snack Party",
+            "file": "life_vacation12.jpg"
         },
         {
-            "id": "bike8",
-            "name": "Downhill Rush",
-            "file": "life_bike8.jpg"
+            "id": "39",
+            "name": "I don't know",
+            "file": "life_vacation13.jpg"
         },
         {
-            "id": "parttime2",
-            "name": "Cafe Work",
+            "id": "40",
+            "name": "Eat a lot",
+            "file": "life_vacation14.jpg"
+        },
+        {
+            "id": "41",
+            "name": "Downtown",
+            "file": "life_vacation15.jpeg"
+        },
+        {
+            "id": "42",
+            "name": "Autumn Night",
+            "file": "life_vacation16.jpg"
+        },
+        {
+            "id": "43",
+            "name": "Part-time Job at Netflix",
+            "file": "life_part-time_job1.jpg"
+        },
+        {
+            "id": "44",
+            "name": "Part-time Job at Netflix",
             "file": "life_part-time_job2.jpg"
         },
         {
-            "id": "parttime3",
-            "name": "Teaching Assistant",
+            "id": "45",
+            "name": "Part-time Job at Netflix",
             "file": "life_part-time_job3.jpg"
-        },
-        {
-            "id": "bicycle1",
-            "name": "My Bike",
-            "file": "life_bicycle1.jpg"
-        },
-        {
-            "id": "bicycle2",
-            "name": "Night Ride",
-            "file": "life_bicycle2.jpg"
         }
     ]
 }

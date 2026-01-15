@@ -35,30 +35,46 @@ def __Author_parser__(authors: str | list[dict]):
                 _parser.append(", ".join(parts))
     return ", ".join(_parser)
 
-def __Get_data_from__(data_root: Path, pub_type: str):
-    """Loads and processes a single publication file."""
-    _file_path = data_root / f"{pub_type}.json"
-
-    if not _file_path.exists():
-        print(f"Warning: File not found: {_file_path}")
+def __Get_data_from__(file_path: Path):
+    """Loads and processes the single 'My Library.json' file."""
+    
+    if not file_path.exists():
+        print(f"Warning: File not found: {file_path}")
         return []
 
-    with _file_path.open("r", encoding="UTF-8") as _f:
+    with file_path.open("r", encoding="UTF-8") as _f:
         try:
             _meta_data: list[dict] = json.load(_f)
         except json.JSONDecodeError:
+            print("Error: Failed to decode JSON")
             return []
 
     _processed = []
+    
     for _item in _meta_data:
+        # 1. Determine Publication Type (Journal vs Conference)
+        _raw_type = _item.get("type", "")
+        if _raw_type in ["article-journal", "article"]:
+            pub_type = "journal"
+        elif _raw_type in ["paper-conference", "conference"]:
+            pub_type = "conference"
+        else:
+            # Skip unknown types or treat as misc? For now, let's skip to be safe/clean
+            # Or default to journal? The user only mentioned these two categories.
+            # Looking at the data, 'article' and 'paper-conference' are the main ones.
+            # 'article' is often ArXiv or similar, which might be treated as journal or misc.
+            # Let's verify 'article' usage. In the file it seems to be ArXiv preprints.
+            # For now mapping 'article' to 'journal' as requested implicitly by "journals.json" replacements.
+            continue 
+
         _title = _item.get("title", "")
 
         # 출판 정보
         _pub_title = _item.get("container-title", "")
         _event_title = _item.get("event-title", "")
 
-        # Determine category
-        # 1. Check for explicit "Domestic" keyword in venue
+        # Determine category (Domestic vs International)
+        # 1. Check for explicit "Domestic" keyword in venue (though rare in CSL JSON)
         if any("국내" in _txt for _txt in [_pub_title, _event_title]):
             _region = "domestic"
         # 2. Check for explicit "International" keyword in venue
@@ -78,13 +94,18 @@ def __Get_data_from__(data_root: Path, pub_type: str):
         _year = 0
         if "issued" in _item and "date-parts" in _item["issued"]:
             try:
-                _year = int(_item["issued"]["date-parts"][0][0])
+                # Handle cases where date-parts might be empty or malformed
+                if _item["issued"]["date-parts"] and _item["issued"]["date-parts"][0]:
+                    _year = int(_item["issued"]["date-parts"][0][0])
             except (IndexError, ValueError, TypeError):
                 pass
         _item["year"] = _year
 
         # Set Venue
         _item["venue"] = _pub_title if _pub_title else _event_title
+        if not _item["venue"] and "publisher" in _item:
+             # Fallback for ArXiv or similar if no container-title
+            _item["venue"] = _item["publisher"]
 
         # Format Author
         if isinstance(_item.get("author"), list):
@@ -98,23 +119,18 @@ def __Get_data_from__(data_root: Path, pub_type: str):
     return _processed
 
 if __name__ == "__main__":
-    _data_root = Path("./src/data/publication")
+    # Updated path to point to 'src/data/My Library.json'
+    _source_file = Path("./src/data/My Library.json")
+    _output_root = Path("./src/data")
 
-    # 1. Load and process both datasets
-    _processed_data = [
-        __Get_data_from__(
-            _data_root, _pub_type
-        ) for _pub_type in ["journal", "conference"]
-    ]
+    # 1. Load and process the single source file
+    _all_pub = __Get_data_from__(_source_file)
 
-    # 2. Merge
-    _all_pub: list[dict] = list(chain(*_processed_data))
-
-    # 3. Sort by year (descending)
+    # 2. Sort by year (descending)
     _all_pub.sort(key=lambda x: x.get("year", 0), reverse=True)
 
-    # 4. Save to merged JSON file
-    _write_file = _data_root / "publications.json"
+    # 3. Save to merged JSON file
+    _write_file = _output_root / "publications.json"
     with _write_file.open("w", encoding="UTF-8") as f:
         json.dump(_all_pub, f, indent=4, ensure_ascii=False)
 
