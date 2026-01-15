@@ -7,7 +7,7 @@ import { ResearchTopic } from '@/types/Research';
 
 // Dynamic Profile Images
 // Using relative path for robust matching across environments
-const profileImagesGlob = import.meta.glob('../../assets/profile/*.jpg', { eager: true });
+const profileImagesGlob = import.meta.glob('../../assets/profile/*.webp', { eager: true });
 
 interface HomeViewProps {
     content: HomeContent;

@@ -4,7 +4,7 @@ import aboutData from '@/data/about.json';
 
 // Dynamic Asset Loading
 // Using relative path for robust matching across environments
-const profileImagesGlob = import.meta.glob('../../assets/profile/*.jpg', { eager: true });
+const profileImagesGlob = import.meta.glob('../../assets/profile/*.webp', { eager: true });
 
 // Icon Mapping
 const iconMap: { [key: string]: any } = {

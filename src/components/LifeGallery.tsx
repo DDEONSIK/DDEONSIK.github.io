@@ -4,7 +4,7 @@ import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import lifeData from '@/data/life.json';
 
 // Dynamic Import for all supported media types
-const mediaGlob = import.meta.glob(['@/assets/life/*.{jpg,jpeg,png,mp4}'], { eager: true });
+const mediaGlob = import.meta.glob(['@/assets/life/*.{webp,mp4}'], { eager: true });
 
 // --- Custom Video Component ---
 const VideoCard = ({ src, name, index }: { src: string, name: string, index: number }) => {
