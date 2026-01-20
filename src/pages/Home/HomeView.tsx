@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CVView from '@/pages/CV/CVView';
 import { HomeContent } from '@/types/Home';
@@ -40,6 +40,14 @@ const HomeView: React.FC<HomeViewProps> = ({ content }) => {
                         <h2 className="text-primary font-mono text-sm md:text-base mb-6 tracking-wide animate-fade-in opacity-0" style={{ animationDelay: '0.1s' }}>
                             {content.hero.label}
                         </h2>
+
+                        {/* Location Tag */}
+                        {content.hero.location && (
+                            <div className="flex items-center justify-center md:justify-start gap-2 mb-6 text-muted-foreground animate-fade-in opacity-0" style={{ animationDelay: '0.15s' }}>
+                                <MapPin size={18} className="text-secondary-foreground" />
+                                <span className="font-medium text-sm md:text-base">{content.hero.location}</span>
+                            </div>
+                        )}
 
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-tight mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
                             {content.hero.titlePrefix} <br />

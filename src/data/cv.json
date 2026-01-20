@@ -3,21 +3,31 @@
         "title": "Curriculum Vitae",
         "subtitle": "Autonomous Perception Engineer & Researcher"
     },
+    "personalInfo": {
+        "nationality": "Republic of Korea 🇰🇷",
+        "email": "engineer0104@naver.com",
+        "military": "Republic of Korea Air Force",
+        "militaryDetails": "Sergeant, Feb. 2020 - Nov. 2021"
+    },
     "education": [
         {
             "id": 1,
-            "degree": "M.S. in Artificial Intelligence",
-            "institution": "SeoulTech",
-            "period": "2024 - Present",
-            "description": "Focus: 3D Vision, Sensor Fusion for Autonomous Driving.\nGPA: 4.5/4.5",
+            "degree": "M.S.",
+            "institution": "Seoul National University of Science and Technology",
+            "website": "https://www.seoultech.ac.kr",
+            "department": "Graduate School of Automotive Engineering",
+            "period": "Mar. 2024 - Feb. 2026",
+            "description": "Total GPA: 3.81 / 4.5",
             "status": "current"
         },
         {
             "id": 2,
-            "degree": "B.S. in Automotive Engineering",
-            "institution": "Shinhan Univ.",
-            "period": "2018 - 2024",
-            "description": "Focus: Embedded Systems, Vehicle Dynamics.",
+            "degree": "B.S.",
+            "institution": "Shinhan University",
+            "website": "https://www.shinhan.ac.kr",
+            "department": "Dept. of Future Automotive Engineering",
+            "period": "Mar. 2018 - Feb. 2024",
+            "description": "Total GPA: 3.63 / 4.5\nMajor GPA: 3.84 / 4.5",
             "status": "completed"
         }
     ],

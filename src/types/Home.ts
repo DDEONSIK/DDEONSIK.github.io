@@ -7,6 +7,7 @@ export interface HeroSection {
     buttonText: string;
     buttonLink: string;
     profileImage: string;
+    location?: string;
 }
 
 export interface HomeContent {

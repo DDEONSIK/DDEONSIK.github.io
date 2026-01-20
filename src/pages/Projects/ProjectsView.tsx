@@ -133,7 +133,7 @@ const ProjectsView = () => {
 
                     {/* LEFT LIST VIEW */}
                     <motion.div
-                        className="h-full overflow-y-auto pr-4 custom-scrollbar"
+                        className="h-full overflow-y-auto pr-4 pl-1 custom-scrollbar"
                         initial={{ width: "100%" }}
                         animate={{
                             width: selectedId ? "30%" : "100%",
@@ -204,12 +204,12 @@ const ProjectsView = () => {
                                                     </span>
                                                 )}
                                                 {selectedItem.details?.venue && (
-                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                                                         {selectedItem.details.venue}
                                                     </span>
                                                 )}
                                                 {selectedItem.role && (
-                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300">
+                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                                                         {selectedItem.role}
                                                     </span>
                                                 )}

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText } from 'lucide-react';
+import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText, User, ExternalLink } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 const CVView: React.FC = () => {
@@ -18,10 +17,44 @@ const CVView: React.FC = () => {
                     </div>
                 </header>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
-                    {/* Left Column: Education & Skills */}
-                    <div className="space-y-12">
+                    {/* Left Column: Personal, Education, Skills */}
+                    <div className="lg:col-span-4 space-y-12">
+
+                        {/* Personal Information */}
+                        <section>
+                            <h2 className="flex items-center text-2xl font-bold mb-6 text-foreground">
+                                <User className="mr-3 text-primary" /> Personal Info
+                            </h2>
+                            <div className="space-y-4 border-l-2 border-border ml-2 pl-6 relative">
+                                {/* Nationality */}
+                                <div>
+                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Nationality</h4>
+                                    <div className="text-muted-foreground font-medium flex items-center gap-2">
+                                        {cvData.personalInfo.nationality}
+                                    </div>
+                                </div>
+                                {/* Military */}
+                                <div>
+                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Military Service</h4>
+                                    <div className="text-muted-foreground font-medium leading-tight">
+                                        {cvData.personalInfo.military}
+                                    </div>
+                                    <div className="text-sm text-muted-foreground mt-1">
+                                        {/* @ts-ignore */}
+                                        {cvData.personalInfo.militaryDetails}
+                                    </div>
+                                </div>
+                                {/* Contact */}
+                                <div>
+                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Contact</h4>
+                                    <div className="text-muted-foreground font-medium">
+                                        {cvData.personalInfo.email}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                         {/* Education */}
                         <section>
@@ -32,10 +65,27 @@ const CVView: React.FC = () => {
                                 {cvData.education.map((edu) => (
                                     <div key={edu.id} className="relative">
                                         <div className={`absolute -left-[31px] top-1.5 w-4 h-4 rounded-full ring-4 ring-background ${edu.status === 'current' ? 'bg-primary' : 'bg-border'}`}></div>
-                                        <h3 className="font-bold text-lg">{edu.degree}</h3>
-                                        <div className={`${edu.status === 'current' ? 'text-primary' : 'text-muted-foreground'} font-medium`}>{edu.institution}</div>
-                                        <div className="text-sm text-muted-foreground mb-2">{edu.period}</div>
-                                        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                                        <h3 className="font-bold text-lg leading-tight">
+                                            {edu.degree} <span className="text-muted-foreground font-normal">at</span>{' '}
+                                            {edu.website ? (
+                                                <a href={edu.website} target="_blank" rel="noopener noreferrer" className="nav-link-hover inline text-foreground decoration-0 align-baseline group">
+                                                    {edu.institution}
+                                                    <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                        <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover:text-primary transition-colors" />
+                                                    </span>
+                                                </a>
+                                            ) : (
+                                                <span>{edu.institution}</span>
+                                            )}
+                                        </h3>
+                                        {/* Department */}
+                                        <div className="text-md font-medium text-muted-foreground mt-1">
+                                            {edu.department}
+                                        </div>
+                                        {/* Period */}
+                                        <div className="text-sm text-muted-foreground mb-2 mt-1">{edu.period}</div>
+                                        {/* GPA / Desc */}
+                                        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mt-2">
                                             {edu.description}
                                         </p>
                                     </div>
@@ -84,7 +134,7 @@ const CVView: React.FC = () => {
                     </div>
 
                     {/* Right Column: Experience & Projects */}
-                    <div className="lg:col-span-2 space-y-12">
+                    <div className="lg:col-span-8 space-y-12">
 
                         {/* Experience */}
                         <section>
