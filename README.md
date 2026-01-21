@@ -1,17 +1,21 @@
+# 🚧 **WEBSITE UNDER CONSTRUCTION** 🚧
+
 # Hyun-Sik Jeon | Personal Academic Portfolio
 
 Welcome to the personal academic portfolio website of **Hyun-Sik Jeon**.
 This website showcases my research, projects, publications, and personal life gallery with a modern, clean, and interactive design.
+
+> **Visit the Website:** [HyunSik-CV](https://ddeonsik.github.io/)
 
 ## 📌 Project Overview
 
 This project is a React-based single-page application (SPA) designed to present academic CVs and portfolios effectively. It emphasizes visual clarity ("Absolute Clarity" theme), interactivity, and ease of maintenance via structured JSON data.
 
 ### Key Features
-- **Immersive Hero Section**: Full-screen introduction with smooth scroll transitions.
-- **Narrative About Page**: A personal introduction to my engineering philosophy and background.
-- **Dynamic Research & Projects**: Chronological display of publications and technical projects.
-- **Life Gallery**: A casual, modern masonry grid layout for personal moments.
+- **Immersive Hero Section**: Full-screen introduction with nationality and location details.
+- **Academic CA**: Detailed curriculum vitae including education, skills, and professional experience.
+- **Research & Engineering Projects**: Comprehensive list of publications and projects with filtering capabilities.
+- **Life Gallery**: A casual, modern masonry grid layout for personal photos and videos.
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
 
 ## 🛠 Technology Stack
