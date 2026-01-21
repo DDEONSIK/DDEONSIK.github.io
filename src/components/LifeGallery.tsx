@@ -138,6 +138,57 @@ const VideoCard = ({ src, name, index }: { src: string, name: string, index: num
 };
 
 
+// --- Custom Image Component ---
+const ImageCard = ({ src, name, index, width, height }: { src: string, name: string, index: number, width?: number, height?: number }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    // Calculate aspect ratio style if dimensions are available
+    // We utilize the 'aspect-ratio' CSS property to reserve space
+    const style = (width && height) ? { aspectRatio: `${width} / ${height}` } : {};
+
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+            className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform translate-z-0 bg-secondary mb-4"
+        >
+            {/* Image Wrapper with Aspect Ratio for Stability */}
+            {/* If dimensions exist, this div will have the correct height before image loads */}
+            <div
+                className={`overflow-hidden relative w-full ${!isLoaded ? 'animate-pulse bg-muted' : ''}`}
+                style={style}
+            >
+                <motion.img
+                    src={src}
+                    alt={name}
+                    initial={{ opacity: 0, scale: 1.1 }}
+                    animate={{
+                        opacity: isLoaded ? 1 : 0,
+                        scale: isLoaded ? 1 : 1.1
+                    }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    onLoad={() => setIsLoaded(true)}
+                    className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out absolute inset-0"
+                    loading="lazy"
+                />
+                {/* Fallback spacer if no dimensions? No, aspect-ratio handles it. 
+                     If no width/height, it acts as before (height 0 until load). */}
+                {(!width || !height) && !isLoaded && <div className="h-48" />}
+            </div>
+
+            {/* Modern Gradient Overlay & Caption */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
+                <p className="text-white font-medium text-sm tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    {name}
+                </p>
+            </div>
+        </motion.div>
+    );
+};
+
+
 const LifeGallery = () => {
     const mediaMap = useMemo(() => {
         const map: { [key: string]: string } = {};
@@ -162,6 +213,19 @@ const LifeGallery = () => {
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
                         {lifeData.description}
                     </p>
+
+                    {/* Intro Lines */}
+                    {/* @ts-ignore */}
+                    {lifeData.introLines && (
+                        <div className="max-w-6xl mx-auto mb-12 space-y-1">
+                            {/* @ts-ignore */}
+                            {lifeData.introLines.map((line, idx) => (
+                                <p key={idx} className="text-muted-foreground font-medium">
+                                    {line}
+                                </p>
+                            ))}
+                        </div>
+                    )}
                 </div>
 
                 {/* Modern Casual Masonry Grid */}
@@ -176,51 +240,8 @@ const LifeGallery = () => {
                             return <VideoCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
                         }
 
-                        // --- Custom Image Component ---
-                        const ImageCard = ({ src, name, index }: { src: string, name: string, index: number }) => {
-                            const [isLoaded, setIsLoaded] = useState(false);
-
-                            return (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true, margin: "50px" }}
-                                    transition={{ duration: 0.5, delay: index * 0.05 }}
-                                    className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform translate-z-0 bg-secondary"
-                                >
-                                    {/* Image Wrapper for Zoom */}
-                                    <div className={`overflow-hidden relative ${!isLoaded ? 'min-h-[200px] animate-pulse' : ''}`}>
-                                        <motion.img
-                                            src={src}
-                                            alt={name}
-                                            initial={{ opacity: 0, scale: 1.1 }}
-                                            animate={{
-                                                opacity: isLoaded ? 1 : 0,
-                                                scale: isLoaded ? 1 : 1.1
-                                            }}
-                                            transition={{ duration: 0.7, ease: "easeOut" }}
-                                            onLoad={() => setIsLoaded(true)}
-                                            className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                                            loading="lazy"
-                                        />
-                                    </div>
-
-                                    {/* Modern Gradient Overlay & Caption */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                                        <p className="text-white font-medium text-sm tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                            {name}
-                                        </p>
-                                    </div>
-                                </motion.div>
-                            );
-                        };
-
-                        // ... inside LifeGallery ...
-                        if (isVideo) {
-                            return <VideoCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
-                        }
-
-                        return <ImageCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
+                        // @ts-ignore
+                        return <ImageCard key={item.id} src={mediaSrc} name={item.name} index={index} width={item.width} height={item.height} />;
                     })}
                 </div>
 
