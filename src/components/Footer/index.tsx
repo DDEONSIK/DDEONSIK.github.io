@@ -23,7 +23,7 @@ const Footer = () => {
                         &copy; {footerData.copyrightYear} <a href={footerData.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{footerData.company}</a>. All Rights Reserved.
                     </p>
                     <p className="text-xs opacity-80">
-                        Based on SEOULTECH AIS Lab | Provided by Google Antigravity
+                        Based on <a href="https://ais.seoultech.ac.kr/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">SEOULTECH AIS Lab</a> | Provided by <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Google Antigravity</a>
                     </p>
                     <p className="text-xs pt-1">
                         Contact: <a href={`mailto:${footerData.contact.email}`} className="hover:text-primary transition-colors">{footerData.contact.label}</a>
@@ -35,7 +35,7 @@ const Footer = () => {
                     {footerData.socialLinks.map((link) => {
                         const Icon = iconMap[link.icon] || User;
                         return (
-                            <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-secondary hover:bg-primary hover:text-white rounded-lg transition-all text-sm font-semibold text-foreground">
+                            <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white border border-border hover:bg-primary hover:text-white hover:border-primary rounded-lg transition-all text-sm font-semibold text-foreground shadow-sm">
                                 <Icon size={18} />
                                 <span>{link.name}</span>
                             </a>

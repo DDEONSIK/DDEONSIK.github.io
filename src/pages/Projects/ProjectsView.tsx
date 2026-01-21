@@ -48,11 +48,12 @@ const ProjectsView = () => {
             category: "Research",
             year: pub.year,
             icon: "FileText",
+            itemData: pub, // Added this line
             details: {
+                organization: pub.publisher,
                 venue: pub.venue,
                 doi: pub.doi,
-                organization: pub.publisher,
-                type: pub.type?.includes("journal") ? "journal" : "conference"
+                type: pub.category === 'international-journal' ? 'journal' : 'conference' // Modified type logic
             },
             links: pub.URL ? [{ url: pub.URL, label: "View Paper" }] : []
         })) as BaseItem[];
@@ -76,6 +77,7 @@ const ProjectsView = () => {
             icon: proj.icon,
             techStack: proj.techStack,
             role: proj.role,
+            itemData: proj,
             links: [],
             details: {
                 type: 'project'
@@ -198,23 +200,49 @@ const ProjectsView = () => {
 
                                             {/* Meta Tags */}
                                             <div className="flex flex-wrap gap-3 mb-6 items-center">
+                                                {/* @ts-ignore */}
+                                                {selectedItem.itemData?.language && (
+                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
+                                                        {/* @ts-ignore */}
+                                                        {selectedItem.itemData.language}
+                                                    </span>
+                                                )}
                                                 {selectedItem.year && (
                                                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                                                         <Calendar size={12} className="mr-1" /> {selectedItem.year}
                                                     </span>
                                                 )}
-                                                {selectedItem.details?.venue && (
+                                                {/* @ts-ignore */}
+                                                {selectedItem.details?.venue && (!selectedItem.itemData?.organizations || selectedItem.itemData.organizations.length === 0) && (
                                                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                                                         {selectedItem.details.venue}
                                                     </span>
                                                 )}
-                                                {selectedItem.role && (
-                                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
-                                                        {selectedItem.role}
-                                                    </span>
+                                                {/* Organizations (Hosts) with Links */}
+                                                {/* @ts-ignore */}
+                                                {selectedItem.itemData?.organizations && selectedItem.itemData.organizations.length > 0 ? (
+                                                    /* @ts-ignore */
+                                                    selectedItem.itemData.organizations.map((org: any, idx: number) => (
+                                                        <a
+                                                            key={idx}
+                                                            href={org.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                                                        >
+                                                            {org.name} <ExternalLink size={10} className="ml-1 opacity-50" />
+                                                        </a>
+                                                    ))
+                                                ) : (
+                                                    // Fallback to Role
+                                                    selectedItem.role && (
+                                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
+                                                            {selectedItem.role}
+                                                        </span>
+                                                    )
                                                 )}
 
-                                                {/* View Paper Button (Moved here) */}
+                                                {/* View Paper Button */}
                                                 {(selectedItem.details?.doi || (selectedItem.links && selectedItem.links.length > 0)) && (
                                                     <a
                                                         href={selectedItem.details?.doi ? `https://doi.org/${selectedItem.details.doi}` : selectedItem.links?.[0]?.url}
@@ -222,14 +250,14 @@ const ProjectsView = () => {
                                                         rel="noopener noreferrer"
                                                         className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors ml-auto shadow-sm"
                                                     >
-                                                        View Paper <ExternalLink size={12} className="ml-1" />
+                                                        {selectedItem.category === "Research" ? "View Paper" : "View Link"} <ExternalLink size={12} className="ml-1" />
                                                     </a>
                                                 )}
                                             </div>
                                         </div>
 
                                         <div className="prose prose-neutral dark:prose-invert max-w-none">
-                                            <h3 className="text-xl font-bold mb-3">Abstract / Overview</h3>
+                                            <h3 className="text-xl font-bold mb-3">Overview</h3>
                                             <p className="leading-relaxed text-lg text-muted-foreground mb-8">
                                                 {selectedItem.description}
                                             </p>

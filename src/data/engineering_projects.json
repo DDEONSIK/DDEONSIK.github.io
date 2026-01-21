@@ -1,18 +1,40 @@
 [
     {
         "id": "intl-car-competition",
-        "title": "International Student Creative Car Competition",
+        "title": "2023 University Creative Mobility Competition",
         "category": "Engineering Projects",
-        "description": "Participated in the 2023 International Student Creative Car Competition. Developed an autonomous driving platform capable of navigating complex tracks with static and dynamic obstacles. Implemented lane detection and obstacle avoidance algorithms using LiDAR and Camera sensor fusion.",
-        "techStack": [
-            "C++",
-            "ROS 2",
-            "OpenCV",
-            "LiDAR"
+        "description": "Founded Autonomous Driving Club 'S.D.S' and served as Vision Team Leader (Mar. 2022 - Feb. 2024). Led the development of Vision (Camera)-based environment perception algorithms (Object/Lane Detection). Achievements include developing an Object Detection model using YOLOv5 (built a custom dataset of 3,500 images) and designing a Lane Keeping algorithm considering static/dynamic obstacle avoidance.",
+        "detailedDescription": "Hosted by KATRI (Korea Automobile Testing & Research Institute) and KASA (Korean Auto-vehicle Safety Association). Sponsored by Ministry of Land, Infrastructure and Transport (MOLIT).",
+        "organizations": [
+            {
+                "name": "MOLIT",
+                "url": "https://www.molit.go.kr/english/intro.do"
+            },
+            {
+                "name": "KATRI",
+                "url": "https://main.kotsa.or.kr/eng/engMain.do"
+            },
+            {
+                "name": "KASA",
+                "url": "https://www.kasa.kr/"
+            }
         ],
-        "role": "Camera Team Leader",
         "icon": "Car",
-        "performance": "Bronze Award",
-        "year": 2023
+        "year": "Oct. 2023",
+        "links": [
+            {
+                "name": "MOLIT",
+                "url": "https://www.molit.go.kr/english/intro.do"
+            },
+            {
+                "name": "KATRI",
+                "url": "https://main.kotsa.or.kr/eng/engMain.do"
+            },
+            {
+                "name": "KASA",
+                "url": "https://www.kasa.kr/"
+            }
+        ],
+        "video": "https://youtu.be/vpsECdRKy98?si=zTDv2LqTsIWSLBji"
     }
 ]

@@ -1,4 +1,4 @@
-import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText, User, ExternalLink } from 'lucide-react';
+import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText, User, ExternalLink, Building2 } from 'lucide-react';
 import cvData from '@/data/cv.json';
 
 const CVView: React.FC = () => {
@@ -28,6 +28,14 @@ const CVView: React.FC = () => {
                                 <User className="mr-3 text-primary" /> Personal Info
                             </h2>
                             <div className="space-y-4 border-l-2 border-border ml-2 pl-6 relative">
+                                {/* Name */}
+                                <div>
+                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Name</h4>
+                                    <div className="text-muted-foreground font-medium flex items-center gap-2">
+                                        {/* @ts-ignore */}
+                                        {cvData.personalInfo.nameEn} <span className="text-border">|</span> {/* @ts-ignore */}{cvData.personalInfo.nameKo}
+                                    </div>
+                                </div>
                                 {/* Nationality */}
                                 <div>
                                     <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Nationality</h4>
@@ -35,11 +43,35 @@ const CVView: React.FC = () => {
                                         {cvData.personalInfo.nationality}
                                     </div>
                                 </div>
+                                {/* Gender / Birth Date */}
+                                <div>
+                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Gender / Birth Date</h4>
+                                    <div className="text-muted-foreground font-medium flex items-center gap-2">
+                                        {/* @ts-ignore */}
+                                        {cvData.personalInfo.gender} <span className="text-border">|</span> {/* @ts-ignore */}{cvData.personalInfo.birthDate}
+                                    </div>
+                                </div>
                                 {/* Military */}
                                 <div>
                                     <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Military Service</h4>
                                     <div className="text-muted-foreground font-medium leading-tight">
-                                        {cvData.personalInfo.military}
+                                        {/* @ts-ignore */}
+                                        {cvData.personalInfo.militaryWebsite ? (
+                                            <a
+                                                // @ts-ignore
+                                                href={cvData.personalInfo.militaryWebsite}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline align-baseline group"
+                                            >
+                                                {cvData.personalInfo.military}
+                                                <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                    <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover:text-primary transition-colors" />
+                                                </span>
+                                            </a>
+                                        ) : (
+                                            cvData.personalInfo.military
+                                        )}
                                     </div>
                                     <div className="text-sm text-muted-foreground mt-1">
                                         {/* @ts-ignore */}
@@ -68,7 +100,7 @@ const CVView: React.FC = () => {
                                         <h3 className="font-bold text-lg leading-tight">
                                             {edu.degree} <span className="text-muted-foreground font-normal">at</span>{' '}
                                             {edu.website ? (
-                                                <a href={edu.website} target="_blank" rel="noopener noreferrer" className="nav-link-hover inline text-foreground decoration-0 align-baseline group">
+                                                <a href={edu.website} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline align-baseline group">
                                                     {edu.institution}
                                                     <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
                                                         <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover:text-primary transition-colors" />
@@ -110,9 +142,9 @@ const CVView: React.FC = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-sm uppercase tracking-wider text-muted-foreground">AI / Frameworks</h4>
+                                    <h4 className="font-semibold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Tools & Platforms</h4>
                                     <div className="flex flex-wrap gap-2">
-                                        {cvData.skills.frameworks.map(skill => (
+                                        {cvData.skills.tools.map(skill => (
                                             <span key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                                                 {skill}
                                             </span>
@@ -120,9 +152,10 @@ const CVView: React.FC = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Tools & Platforms</h4>
+                                    <h4 className="font-semibold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Knowledge</h4>
                                     <div className="flex flex-wrap gap-2">
-                                        {cvData.skills.tools.map(skill => (
+                                        {/* @ts-ignore */}
+                                        {cvData.skills.knowledge && cvData.skills.knowledge.map(skill => (
                                             <span key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                                                 {skill}
                                             </span>
@@ -166,16 +199,63 @@ const CVView: React.FC = () => {
                         </section>
 
                         {/* Achievements */}
+                        {/* Certifications & Awards */}
                         <section>
                             <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
-                                <Award className="mr-3 text-primary" /> Key Achievements
+                                <Award className="mr-3 text-primary" /> Certifications & Field Training
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {cvData.achievements.map((item) => (
-                                    <div key={item.id} className="bg-secondary p-6 rounded-xl border border-border">
-                                        {item.icon === 'Cpu' ? <Cpu className="text-accent mb-4" size={32} /> : <Award className="text-accent mb-4" size={32} />}
-                                        <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                                        <p className="text-sm text-muted-foreground">{item.organization} - {item.description}</p>
+                                {/* @ts-ignore */}
+                                {cvData.certifications.map((item) => (
+                                    <div key={item.id} className="bg-card border border-border rounded-xl p-6 hover-card flex flex-col h-full group relative">
+
+                                        <div className="mb-4">
+                                            {/* Title Row - Clickable if link exists */}
+                                            <h3 className="font-bold text-lg leading-tight text-foreground mb-2 pr-6">
+                                                {/* @ts-ignore */}
+                                                {item.link ? (
+                                                    <a
+                                                        // @ts-ignore
+                                                        href={item.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/link"
+                                                        title="View Certificate"
+                                                    >
+                                                        {item.title}
+                                                        <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                            <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/link:text-primary transition-colors" />
+                                                        </span>
+                                                    </a>
+                                                ) : (
+                                                    item.title
+                                                )}
+                                            </h3>
+
+                                            {/* Tag Row */}
+                                            <div className="flex flex-wrap gap-2 justify-end">
+                                                <span className="inline-block px-2 py-1 bg-secondary text-muted-foreground text-xs font-semibold rounded-md uppercase tracking-wide border border-border/50">
+                                                    {item.type}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div className="mb-4 space-y-1">
+                                            {/* Issuer with Icon */}
+                                            <div className="text-sm font-medium text-muted-foreground flex items-start">
+                                                <Building2 size={14} className="mr-2 opacity-70 shrink-0 mt-[3px]" />
+                                                <span className="leading-tight">{item.issuer}</span>
+                                            </div>
+                                            {/* Date */}
+                                            <div className="text-sm text-muted-foreground flex items-center">
+                                                <Calendar size={14} className="mr-2 opacity-70" />
+                                                {item.date}
+                                            </div>
+                                        </div>
+
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-auto border-t border-border pt-3">
+                                            {item.description}
+                                        </p>
                                     </div>
                                 ))}
                             </div>

@@ -4,9 +4,14 @@
         "subtitle": "Autonomous Perception Engineer & Researcher"
     },
     "personalInfo": {
+        "nameEn": "Hyun-Sik Jeon",
+        "nameKo": "전현식",
         "nationality": "Republic of Korea 🇰🇷",
+        "gender": "Male",
+        "birthDate": "Jan. 04, 2000",
         "email": "engineer0104@naver.com",
         "military": "Republic of Korea Air Force",
+        "militaryWebsite": "https://rokaf.airforce.mil.kr/airforce/index.do",
         "militaryDetails": "Sergeant, Feb. 2020 - Nov. 2021"
     },
     "education": [
@@ -34,21 +39,24 @@
     "skills": {
         "languages": [
             "Python",
-            "C++",
-            "MATLAB",
-            "TypeScript"
-        ],
-        "frameworks": [
-            "PyTorch",
-            "TensorFlow",
-            "Opencv",
-            "Scikit-learn"
+            "MATLAB"
         ],
         "tools": [
+            "Git",
             "Docker",
             "Linux (Ubuntu)",
             "ROS 2",
-            "Git"
+            "nuScenes"
+        ],
+        "knowledge": [
+            "3D Occupancy",
+            "BEV Perception",
+            "Transformer",
+            "Multi-Model",
+            "Object Detection",
+            "OpenCV",
+            "MMCV",
+            "3DVG"
         ]
     },
     "experience": [
@@ -74,20 +82,51 @@
             ]
         }
     ],
-    "achievements": [
+    "certifications": [
         {
             "id": 1,
-            "title": "Domestic Conference Best Paper",
-            "organization": "ICROS 2025",
-            "description": "Awarded for 'Lightweight UniAD' research.",
-            "icon": "Cpu"
+            "title": "Development of E2E DL-based State Estimation Algorithm to Replace Kalman Filter",
+            "issuer": "WaysOne Inc.",
+            "date": "June 2024",
+            "type": "Field Practicum",
+            "description": "Participated in corporate field training program focused on deep learning state estimation. (Total 40 Hours)",
+            "link": "https://www.ways1.com/eng/"
         },
         {
             "id": 2,
-            "title": "Automotive Engineer License",
-            "organization": "HRD Korea",
-            "description": "Certified (2022).",
-            "icon": "Award"
+            "title": "Deep Learning Stage 1: Neural Networks and Deep Learning",
+            "issuer": "NAVER Connect Foundation (Boostcourse)",
+            "date": "Oct. 04, 2023",
+            "type": "Certificate of Lecture",
+            "description": "Completed the core curriculum on Neural Networks and Deep Learning.",
+            "link": "https://www.boostcourse.org/ai215"
+        },
+        {
+            "id": 3,
+            "title": "Electric Vehicle Maintenance Plus Course",
+            "issuer": "Gyeonggi Jobs Foundation",
+            "date": "Sept. 18, 2023",
+            "type": "Certificate",
+            "description": "Specialized training in EV maintenance and diagnostics. (July - Sept 2023)",
+            "link": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=151204&search="
+        },
+        {
+            "id": 4,
+            "title": "Electric Vehicle High Voltage Safety Training Level 1",
+            "issuer": "TÜV SÜD Korea",
+            "date": "Aug. 09, 2023",
+            "type": "Training Certificate",
+            "description": "Completed 8 hours training course on EV High Voltage Safety.",
+            "link": "https://www.tuvsud.com/en"
+        },
+        {
+            "id": 5,
+            "title": "Industrial Engineer Motor Vehicles Maintenance",
+            "issuer": "HRD Korea (Human Resources Development Service of Korea)",
+            "date": "June 03, 2022",
+            "type": "National Technical Qualification",
+            "description": "Certified by Ministry of Land, Infrastructure and Transport.",
+            "link": "https://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&gId=&jmCd=2070&jmNm=&jobSearch=N#none"
         }
     ]
 }

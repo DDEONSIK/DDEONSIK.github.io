@@ -35,6 +35,13 @@
         "category": "international-journal",
         "year": 2026,
         "venue": "Applied Sciences",
+        "language": "En",
+        "organizations": [
+            {
+                "name": "Applied Sciences",
+                "url": "https://www.mdpi.com/journal/applsci"
+            }
+        ],
         "doi": "10.3390/app16020652"
     },
     {
@@ -70,7 +77,14 @@
         "volume": "31",
         "category": "domestic-journal",
         "year": 2025,
-        "venue": "제어로봇시스템학회 논문지",
+        "venue": "제어로봇시스템학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "제어로봇시스템학회",
+                "url": "https://icros.org/eng/"
+            }
+        ],
         "doi": "10.5302/J.ICROS.2025.24.0249"
     },
     {
@@ -106,7 +120,14 @@
         "volume": "31",
         "category": "domestic-journal",
         "year": 2025,
-        "venue": "제어로봇시스템학회 논문지",
+        "venue": "제어로봇시스템학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "제어로봇시스템학회",
+                "url": "https://icros.org/eng/"
+            }
+        ],
         "doi": "10.5302/J.ICROS.2025.25.0168"
     },
     {
@@ -138,7 +159,14 @@
         "URL": "https://www.earticle.net/Article/A435695",
         "category": "domestic-journal",
         "year": 2023,
-        "venue": "한국정보통신설비학회 학술대회"
+        "venue": "한국정보통신설비학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "한국정보통신설비학회",
+                "url": "https://www.itfe.or.kr/html/"
+            }
+        ]
     },
     {
         "id": "ijaeug2023lidara",
@@ -169,7 +197,14 @@
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522688",
         "category": "domestic-journal",
         "year": 2023,
-        "venue": "대한전자공학회 학술대회"
+        "venue": "대한전자공학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "대한전자공학회",
+                "url": "https://www.theieie.org/eng/"
+            }
+        ]
     },
     {
         "id": "anseongju2022jeogeungjeog",
@@ -200,7 +235,14 @@
         "URL": "https://www.earticle.net/Article/A427683",
         "category": "domestic-journal",
         "year": 2022,
-        "venue": "한국정보통신설비학회 학술대회"
+        "venue": "한국정보통신설비학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "한국정보통신설비학회",
+                "url": "https://www.itfe.or.kr/html/"
+            }
+        ]
     },
     {
         "id": "jeonhyeonsig2022caseon",
@@ -231,6 +273,13 @@
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11195427",
         "category": "domestic-journal",
         "year": 2022,
-        "venue": "대한전자공학회 학술대회"
+        "venue": "대한전자공학회",
+        "language": "Ko",
+        "organizations": [
+            {
+                "name": "대한전자공학회",
+                "url": "https://www.theieie.org/eng/"
+            }
+        ]
     }
 ]
