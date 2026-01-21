@@ -176,33 +176,51 @@ const LifeGallery = () => {
                             return <VideoCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
                         }
 
-                        return (
-                            <motion.div
-                                key={item.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "50px" }}
-                                transition={{ duration: 0.5, delay: index * 0.05 }}
-                                className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform translate-z-0"
-                            >
-                                {/* Image Wrapper for Zoom */}
-                                <div className="overflow-hidden">
-                                    <img
-                                        src={mediaSrc}
-                                        alt={item.name}
-                                        className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                                        loading="lazy"
-                                    />
-                                </div>
+                        // --- Custom Image Component ---
+                        const ImageCard = ({ src, name, index }: { src: string, name: string, index: number }) => {
+                            const [isLoaded, setIsLoaded] = useState(false);
 
-                                {/* Modern Gradient Overlay & Caption */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                                    <p className="text-white font-medium text-sm tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                        {item.name}
-                                    </p>
-                                </div>
-                            </motion.div>
-                        );
+                            return (
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "50px" }}
+                                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                                    className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform translate-z-0 bg-secondary"
+                                >
+                                    {/* Image Wrapper for Zoom */}
+                                    <div className={`overflow-hidden relative ${!isLoaded ? 'min-h-[200px] animate-pulse' : ''}`}>
+                                        <motion.img
+                                            src={src}
+                                            alt={name}
+                                            initial={{ opacity: 0, scale: 1.1 }}
+                                            animate={{
+                                                opacity: isLoaded ? 1 : 0,
+                                                scale: isLoaded ? 1 : 1.1
+                                            }}
+                                            transition={{ duration: 0.7, ease: "easeOut" }}
+                                            onLoad={() => setIsLoaded(true)}
+                                            className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                                            loading="lazy"
+                                        />
+                                    </div>
+
+                                    {/* Modern Gradient Overlay & Caption */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                        <p className="text-white font-medium text-sm tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                            {name}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            );
+                        };
+
+                        // ... inside LifeGallery ...
+                        if (isVideo) {
+                            return <VideoCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
+                        }
+
+                        return <ImageCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
                     })}
                 </div>
 
