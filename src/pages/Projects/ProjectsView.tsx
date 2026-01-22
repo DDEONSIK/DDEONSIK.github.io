@@ -87,22 +87,28 @@ interface BaseItem {
         label: string;
     }[];
     media?: ProjectMedia[]; // New: Rich media content
-    details?: {
-        organization?: string;
-        venue?: string;
-        doi?: string;
-        type?: 'journal' | 'conference' | 'project';
-    };
     table?: {
         caption: string;
         columns: string[];
         rows: string[][];
         highlightRowIndex?: number;
     };
+    tables?: {
+        caption: string;
+        columns: string[];
+        rows: string[][];
+        highlightRowIndex?: number;
+    }[];
     resultImages?: {
         url: string;
         caption?: string;
     }[];
+    details?: {
+        organization?: string;
+        venue?: string;
+        doi?: string;
+        type?: 'journal' | 'conference' | 'project';
+    }
 }
 
 // Reuse icon map
@@ -132,6 +138,7 @@ const ProjectsView = () => {
             itemData: pub,
             media: pub.media || [], // Pass through
             table: pub.table, // Pass through
+            tables: pub.tables, // Pass through
             resultImages: pub.resultImages, // Pass through
             details: {
                 organization: pub.publisher,
@@ -363,7 +370,7 @@ const ProjectsView = () => {
                                         {selectedItem.media && selectedItem.media.length > 0 && (
                                             <div className="mb-8 space-y-4">
                                                 {selectedItem.media.map((media, idx) => (
-                                                    <div key={idx} className="rounded-xl overflow-hidden border border-border shadow-sm bg-black/5">
+                                                    <div key={idx} className="rounded-xl overflow-hidden border border-border shadow-sm bg-white">
                                                         {media.type === 'youtube' && (
                                                             <div className="aspect-video">
                                                                 <iframe
@@ -378,14 +385,16 @@ const ProjectsView = () => {
                                                             </div>
                                                         )}
                                                         {media.type === 'image' && (
-                                                            <img
-                                                                src={resolveAssetUrl(media.url)}
-                                                                alt={media.caption || "Project Image"}
-                                                                className="w-full h-auto object-cover"
-                                                            />
+                                                            <div className="flex justify-center bg-white p-2">
+                                                                <img
+                                                                    src={resolveAssetUrl(media.url)}
+                                                                    alt={media.caption || "Project Image"}
+                                                                    className="max-w-full h-auto object-contain"
+                                                                />
+                                                            </div>
                                                         )}
                                                         {media.caption && (
-                                                            <div className="p-2 text-center text-xs text-muted-foreground bg-secondary/50">
+                                                            <div className="p-3 text-left text-sm text-foreground bg-secondary/50 border-t border-border/10">
                                                                 {media.caption}
                                                             </div>
                                                         )}
@@ -401,47 +410,54 @@ const ProjectsView = () => {
 
                                             <RichTextRenderer text={selectedItem.abstract || selectedItem.description} />
 
-                                            {/* Start: Academic Table Section */}
-                                            {selectedItem.table && (
+                                            {/* Start: Academic Table Section (Single or Multiple) */}
+                                            {(selectedItem.table || (selectedItem.tables && selectedItem.tables.length > 0)) && (
                                                 <div className="mt-12 mb-8">
                                                     <h3 className="text-xl font-bold mb-4">Quantitative Results</h3>
 
-                                                    {selectedItem.table.caption && (
-                                                        <p className="mb-3 text-sm text-foreground font-medium text-center">
-                                                            {selectedItem.table.caption}
-                                                        </p>
-                                                    )}
+                                                    {/* Helper to render a single table */}
+                                                    {(selectedItem.tables || [selectedItem.table]).map((tableData, tIdx) => (
+                                                        tableData ? (
+                                                            <div key={tIdx} className="mb-8 last:mb-0">
+                                                                {tableData.caption && (
+                                                                    <p className="mb-3 text-sm text-foreground font-medium text-left">
+                                                                        {tableData.caption}
+                                                                    </p>
+                                                                )}
 
-                                                    <div className="overflow-x-auto rounded-lg border border-border shadow-sm bg-card">
-                                                        <table className="w-full text-sm text-left">
-                                                            <thead className="text-xs text-muted-foreground uppercase bg-secondary/50 border-b border-border">
-                                                                <tr>
-                                                                    {selectedItem.table.columns.map((col, idx) => (
-                                                                        <th key={idx} className="px-4 py-3 font-semibold whitespace-nowrap">
-                                                                            {col}
-                                                                        </th>
-                                                                    ))}
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                {selectedItem.table.rows.map((row, rIdx) => (
-                                                                    <tr
-                                                                        key={rIdx}
-                                                                        className={`
-                                                                            border-b last:border-0 border-border/50 transition-colors
-                                                                            ${selectedItem.table?.highlightRowIndex === rIdx ? 'bg-primary/10 font-medium' : 'hover:bg-muted/50'}
-                                                                        `}
-                                                                    >
-                                                                        {row.map((cell, cIdx) => (
-                                                                            <td key={cIdx} className="px-4 py-3 whitespace-nowrap text-foreground">
-                                                                                {cell}
-                                                                            </td>
-                                                                        ))}
-                                                                    </tr>
-                                                                ))}
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                                <div className="overflow-x-auto rounded-lg border border-border shadow-sm bg-card">
+                                                                    <table className="w-full text-sm text-left">
+                                                                        <thead className="text-xs text-muted-foreground uppercase bg-secondary/50 border-b border-border">
+                                                                            <tr>
+                                                                                {tableData.columns.map((col, idx) => (
+                                                                                    <th key={idx} className="px-4 py-3 font-semibold whitespace-nowrap">
+                                                                                        {col}
+                                                                                    </th>
+                                                                                ))}
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            {tableData.rows.map((row, rIdx) => (
+                                                                                <tr
+                                                                                    key={rIdx}
+                                                                                    className={`
+                                                                                        border-b last:border-0 border-border/50 transition-colors
+                                                                                        ${tableData.highlightRowIndex === rIdx ? 'bg-primary/10 font-medium' : 'hover:bg-muted/50'}
+                                                                                    `}
+                                                                                >
+                                                                                    {row.map((cell, cIdx) => (
+                                                                                        <td key={cIdx} className="px-4 py-3 whitespace-nowrap text-foreground">
+                                                                                            {cell}
+                                                                                        </td>
+                                                                                    ))}
+                                                                                </tr>
+                                                                            ))}
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        ) : null
+                                                    ))}
                                                 </div>
                                             )}
 
@@ -449,16 +465,18 @@ const ProjectsView = () => {
                                             {selectedItem.resultImages && selectedItem.resultImages.length > 0 && (
                                                 <div className="mt-12 mb-8">
                                                     <h3 className="text-xl font-bold mb-4">Representative Results</h3>
-                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-fr">
                                                         {selectedItem.resultImages.map((img, idx) => (
-                                                            <div key={idx} className="rounded-xl overflow-hidden border border-border shadow-sm bg-black/5 group">
-                                                                <img
-                                                                    src={resolveAssetUrl(img.url)}
-                                                                    alt={img.caption || "Result Image"}
-                                                                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                                                                />
+                                                            <div key={idx} className="flex flex-col rounded-xl overflow-hidden border border-border shadow-sm bg-white group h-full">
+                                                                <div className="flex-1 flex items-center justify-center bg-white p-2 min-h-[200px]">
+                                                                    <img
+                                                                        src={resolveAssetUrl(img.url)}
+                                                                        alt={img.caption || "Result Image"}
+                                                                        className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                                                                    />
+                                                                </div>
                                                                 {img.caption && (
-                                                                    <div className="p-2 text-center text-xs text-muted-foreground bg-secondary/50 backdrop-blur-sm">
+                                                                    <div className="p-3 text-left text-sm text-foreground bg-secondary/50 border-t border-border/10">
                                                                         {img.caption}
                                                                     </div>
                                                                 )}

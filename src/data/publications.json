@@ -48,7 +48,7 @@
             {
                 "type": "image",
                 "url": "/assets/project/SeeGround_Fig_1.webp",
-                "caption": "SeeGround with Relational Depth Text (RDT) Framework"
+                "caption": "The inference pipeline is integrated with the proposed ‘Relational Depth Text’ methodology."
             }
         ],
         "table": {
@@ -109,11 +109,11 @@
         "resultImages": [
             {
                 "url": "/assets/project/SeeGround_Fig_2.webp",
-                "caption": "Qualitative Results on Nr3D Dataset"
+                "caption": "Qualitative comparison results on the Nr3D dataset."
             },
             {
                 "url": "/assets/project/SeeGround_Fig_3.webp",
-                "caption": "Qualitative Results on ScanRefer Dataset"
+                "caption": "Qualitative comparison results on the ScanRefer dataset."
             }
         ]
     },
@@ -150,11 +150,11 @@
         "volume": "31",
         "category": "domestic-journal",
         "year": 2025,
-        "venue": "제어로봇시스템학회",
+        "venue": "ICROS",
         "language": "Ko",
         "organizations": [
             {
-                "name": "제어로봇시스템학회",
+                "name": "ICROS",
                 "url": "https://icros.org/eng/"
             }
         ],
@@ -187,21 +187,149 @@
         },
         "page": "1160–1168",
         "source": "www.dbpia.co.kr",
-        "title": "ViewFormer 기반 다중 시점 3D 점유 인지 성능 향상을 위한 객체 마스크 모듈",
+        "title": "Object Mask Module for Enhancing Multi-view 3D Occupancy Perception Performance Based on ViewFormer",
         "type": "article-journal",
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12406310",
         "volume": "31",
         "category": "domestic-journal",
         "year": 2025,
-        "venue": "제어로봇시스템학회",
+        "venue": "ICROS",
         "language": "Ko",
         "organizations": [
             {
-                "name": "제어로봇시스템학회",
+                "name": "ICROS",
                 "url": "https://icros.org/eng/"
             }
         ],
-        "doi": "10.5302/J.ICROS.2025.25.0168"
+        "doi": "10.5302/J.ICROS.2025.25.0168",
+        "abstract": "• **Problem**: ViewFormer effectively captures spatiotemporal information but **underperforms on small objects** such as pedestrians and bicycles.\n• **Solution**: Designed a **SegFormer-based object masking module** that estimates object probabilities from BEV features and concatenates them as an additional feature channel.\n• **Result**: Experimental evaluations on the nuScenes dataset revealed an **unexpected performance decline** in overall metrics, and subsequent analysis indicated **weak mask activation and instability** during initial training, highlighting the need for **structural adjustments and improved training strategies** in future work.",
+        "media": [
+            {
+                "type": "image",
+                "url": "/assets/project/Viewformer_Fig_1.webp",
+                "caption": "Overall architecture of ViewFormer with the proposed Object Mask module."
+            }
+        ],
+        "tables": [
+            {
+                "caption": "Comparison of model performance.",
+                "columns": [
+                    "Method",
+                    "Training GPU",
+                    "Test GPU",
+                    "Training Time",
+                    "Memory(G)",
+                    "FPS",
+                    "FLOPs",
+                    "Params",
+                    "IoUgeo",
+                    "mIoU"
+                ],
+                "rows": [
+                    [
+                        "ViewFormer",
+                        "4090*2",
+                        "4090*2",
+                        "5D 22h",
+                        "13.7",
+                        "12.2",
+                        "214.74",
+                        "99.19 M",
+                        "71.03",
+                        "41.37"
+                    ],
+                    [
+                        "Try 1 (126⊙126) CNN",
+                        "4090*2",
+                        "4090*2",
+                        "7D 7h",
+                        "14.1",
+                        "6.2",
+                        "242.14",
+                        "99.28 M",
+                        "62.48",
+                        "25.45"
+                    ],
+                    [
+                        "Try 2 (126⊕1) CNN",
+                        "4090*2",
+                        "4090*2",
+                        "6D 23h",
+                        "13.7",
+                        "12.1",
+                        "242.14",
+                        "99.28 M",
+                        "62.76",
+                        "25.73"
+                    ],
+                    [
+                        "Ours (126⊕1) Seg",
+                        "4090*2",
+                        "4090*2",
+                        "9D 5h",
+                        "16.2",
+                        "10.7",
+                        "249.30",
+                        "181.21 M",
+                        "64.89",
+                        "28.76"
+                    ]
+                ],
+                "highlightRowIndex": 3
+            },
+            {
+                "caption": "Early performance comparison when training the Seg model on a single GPU.",
+                "columns": [
+                    "Method",
+                    "Training GPU",
+                    "Test GPU",
+                    "Training Time",
+                    "Memory(G)",
+                    "FPS",
+                    "FLOPs",
+                    "Params",
+                    "IoUgeo",
+                    "mIoU"
+                ],
+                "rows": [
+                    [
+                        "ViewFormer",
+                        "3090*1",
+                        "1/10",
+                        "22D",
+                        "14.6",
+                        "-",
+                        "-",
+                        "99.19 M",
+                        "62.88",
+                        "27.36"
+                    ],
+                    [
+                        "Ours - single (126⊕1) Seg",
+                        "3090*1",
+                        "1/10",
+                        "32D",
+                        "14.9",
+                        "-",
+                        "-",
+                        "181.21 M",
+                        "62.53",
+                        "28.28"
+                    ]
+                ],
+                "highlightRowIndex": 1
+            }
+        ],
+        "resultImages": [
+            {
+                "url": "/assets/project/Viewformer_Fig_2.webp",
+                "caption": "Ground truth mask for object mask learning."
+            },
+            {
+                "url": "/assets/project/Viewformer_Fig_3.webp",
+                "caption": "Visualization of BEV feature changes caused by the application of object masks across different stages of training."
+            }
+        ]
     },
     {
         "id": "ijaeug2023lidar",
@@ -216,7 +344,7 @@
         },
         "author": "이재욱, 전현식, 최용수",
         "citation-key": "ijaeug2023lidar",
-        "container-title": "한국정보통신설비학회 학술대회",
+        "container-title": "ITFE Conference",
         "issued": {
             "date-parts": [
                 [
@@ -232,11 +360,11 @@
         "URL": "https://www.earticle.net/Article/A435695",
         "category": "domestic-journal",
         "year": 2023,
-        "venue": "한국정보통신설비학회",
+        "venue": "ITFE",
         "language": "Ko",
         "organizations": [
             {
-                "name": "한국정보통신설비학회",
+                "name": "ITFE",
                 "url": "https://www.itfe.or.kr/html/"
             }
         ]
@@ -270,11 +398,11 @@
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11522688",
         "category": "domestic-journal",
         "year": 2023,
-        "venue": "대한전자공학회",
+        "venue": "IEIE",
         "language": "Ko",
         "organizations": [
             {
-                "name": "대한전자공학회",
+                "name": "IEIE",
                 "url": "https://www.theieie.org/eng/"
             }
         ]
@@ -292,7 +420,7 @@
         },
         "author": "안성주, 김성택, 전현식, 최용수",
         "citation-key": "anseongju2022jeogeungjeog",
-        "container-title": "한국정보통신설비학회 학술대회",
+        "container-title": "ITFE Conference",
         "issued": {
             "date-parts": [
                 [
@@ -308,11 +436,11 @@
         "URL": "https://www.earticle.net/Article/A427683",
         "category": "domestic-journal",
         "year": 2022,
-        "venue": "한국정보통신설비학회",
+        "venue": "ITFE",
         "language": "Ko",
         "organizations": [
             {
-                "name": "한국정보통신설비학회",
+                "name": "ITFE",
                 "url": "https://www.itfe.or.kr/html/"
             }
         ]
@@ -346,11 +474,11 @@
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11195427",
         "category": "domestic-journal",
         "year": 2022,
-        "venue": "대한전자공학회",
+        "venue": "IEIE",
         "language": "Ko",
         "organizations": [
             {
-                "name": "대한전자공학회",
+                "name": "IEIE",
                 "url": "https://www.theieie.org/eng/"
             }
         ]
