@@ -1,10 +1,10 @@
 {
     "title": "Life & Moments",
-    "description": "Casual snapshots of my journey, research, and hobbies.",
+    "description": "Casual snapshots of my journey and hobbies.",
     "introLines": [
-        "I love capturing moments from behind the lens, so my own photos are rare. These are the precious few where I'm actually in the frame. 🎞️",
-        "I played piano, guitar, and violin as a child. While I've forgotten the chords, my love for music and arts remains unchanged. 🎵",
-        "I've backpacked through Austria, Hungary, Czechia, Germany, Italy, and Japan. Ready for the next adventure! 🛫"
+        "I'm usually the one behind the camera, so photos of me are rare. These are the few moments where I stepped into the frame. 📷",
+        "I played piano, guitar, and violin as a child. While I've forgotten the chords, music and arts remain a cherished interest. 🎼",
+        "I've backpacked through Austria, Hungary, Czechia, Germany, Italy, and Japan. Traveling gives me fresh inspiration and a broader perspective. 🛫"
     ],
     "footerQuote": "- Work Hard, Play Hard -",
     "images": [
@@ -115,209 +115,202 @@
         },
         {
             "id": "16",
-            "name": "Bike Practice",
-            "file": "life_bike4.webp",
-            "width": 1080,
-            "height": 1440
-        },
-        {
-            "id": "17",
             "name": "Bike Pose",
             "file": "life_bike5.webp",
             "width": 1080,
             "height": 1440
         },
         {
-            "id": "18",
+            "id": "17",
             "name": "Mountain Riding",
             "file": "life_bike6.webp",
             "width": 2560,
             "height": 1440
         },
         {
-            "id": "19",
+            "id": "18",
             "name": "Beach Riding",
             "file": "life_bike7.webp",
             "width": 2560,
             "height": 1440
         },
         {
-            "id": "20",
+            "id": "19",
             "name": "Brother Riding",
             "file": "life_bike8.webp",
             "width": 2558,
             "height": 1439
         },
         {
-            "id": "21",
+            "id": "20",
             "name": "City Riding",
             "file": "life_bike10.webp",
             "width": 1441,
             "height": 2560
         },
         {
-            "id": "22",
+            "id": "21",
             "name": "Night Riding",
             "file": "life_bike11.webp",
             "width": 2560,
             "height": 1441
         },
         {
-            "id": "23",
+            "id": "22",
             "name": "Hungary Trip",
             "file": "life_travel_to_Europe1.webp",
             "width": 1280,
             "height": 622
         },
         {
-            "id": "24",
+            "id": "23",
             "name": "Museum BMW, Germany",
             "file": "life_travel_to_Europe2.webp",
             "width": 1280,
             "height": 622
         },
         {
-            "id": "25",
+            "id": "24",
             "name": "Japan Trip",
             "file": "life_travel_to_Japan.mp4",
             "width": 1920,
             "height": 1080
         },
         {
-            "id": "26",
+            "id": "25",
             "name": "Swimming Sea",
             "file": "life_vacation0.webp",
             "width": 2560,
             "height": 1440
         },
         {
-            "id": "27",
+            "id": "26",
             "name": "Summer Break",
             "file": "life_vacation1.webp",
             "width": 1193,
             "height": 2560
         },
         {
-            "id": "28",
+            "id": "27",
             "name": "Family Trip",
             "file": "life_vacation2.webp",
             "width": 1920,
             "height": 1080
         },
         {
-            "id": "29",
+            "id": "28",
             "name": "Backpack Kid Dance",
             "file": "life_vacation2.mp4",
             "width": 1920,
             "height": 1080
         },
         {
-            "id": "30",
+            "id": "29",
             "name": "Mountain Trip",
             "file": "life_vacation3.webp",
             "width": 1080,
             "height": 1440
         },
         {
-            "id": "31",
+            "id": "30",
             "name": "Rough Ride",
             "file": "life_vacation4.webp",
             "width": 2560,
             "height": 1920
         },
         {
-            "id": "32",
+            "id": "31",
             "name": "Night Skiing",
             "file": "life_vacation5.webp",
             "width": 1440,
             "height": 2560
         },
         {
-            "id": "33",
-            "name": "1HP",
+            "id": "32",
+            "name": "1 HP",
             "file": "life_vacation6.webp",
             "width": 960,
             "height": 720
         },
         {
-            "id": "34",
+            "id": "33",
             "name": "Sheep Farm",
             "file": "life_vacation7.webp",
             "width": 2560,
             "height": 2560
         },
         {
-            "id": "35",
+            "id": "34",
             "name": "Research Road",
             "file": "life_vacation8.webp",
             "width": 2560,
             "height": 2560
         },
         {
-            "id": "36",
+            "id": "35",
             "name": "Latest Technology",
             "file": "life_vacation9.webp",
             "width": 2560,
             "height": 2560
         },
         {
-            "id": "37",
+            "id": "36",
             "name": "Troubleshooting",
             "file": "life_vacation10.webp",
             "width": 1920,
             "height": 2560
         },
         {
-            "id": "38",
+            "id": "37",
             "name": "Snack Party",
             "file": "life_vacation12.webp",
             "width": 2560,
             "height": 1441
         },
         {
-            "id": "39",
+            "id": "38",
             "name": "I don't know",
             "file": "life_vacation13.webp",
             "width": 720,
             "height": 960
         },
         {
-            "id": "40",
+            "id": "39",
             "name": "Eat a lot",
             "file": "life_vacation14.webp",
             "width": 1441,
             "height": 2560
         },
         {
-            "id": "41",
+            "id": "40",
             "name": "Downtown",
             "file": "life_vacation15.webp",
             "width": 1635,
             "height": 2560
         },
         {
-            "id": "42",
+            "id": "41",
             "name": "Autumn Night",
             "file": "life_vacation16.webp",
             "width": 1920,
             "height": 2560
         },
         {
-            "id": "43",
+            "id": "42",
             "name": "Part-time Job at Netflix",
             "file": "life_part-time_job1.webp",
             "width": 1080,
             "height": 1151
         },
         {
-            "id": "44",
+            "id": "43",
             "name": "Part-time Job at Netflix",
             "file": "life_part-time_job2.webp",
             "width": 756,
             "height": 1008
         },
         {
-            "id": "45",
+            "id": "44",
             "name": "Part-time Job at Netflix",
             "file": "life_part-time_job3.webp",
             "width": 2560,
