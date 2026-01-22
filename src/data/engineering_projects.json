@@ -35,6 +35,12 @@
                 "url": "https://www.kasa.kr/"
             }
         ],
-        "video": "https://youtu.be/vpsECdRKy98?si=zTDv2LqTsIWSLBji"
+        "media": [
+            {
+                "type": "youtube",
+                "url": "https://youtu.be/vpsECdRKy98?si=zTDv2LqTsIWSLBji",
+                "caption": "Competition Highlight Video"
+            }
+        ]
     }
 ]

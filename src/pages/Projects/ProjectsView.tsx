@@ -4,13 +4,81 @@ import engineeringProjectsData from '@/data/engineering_projects.json';
 import publicationsData from '@/data/publications.json';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Load project assets dynamically
+const projectAssets = import.meta.glob(['@/assets/project/*.{png,jpg,jpeg,webp}'], { eager: true });
+
+const resolveAssetUrl = (url: string) => {
+    if (!url.startsWith('/assets/project/')) return url;
+    const filename = url.split('/').pop();
+    // keys are like "/src/assets/project/filename.webp"
+    const parsedKey = Object.keys(projectAssets).find(k => k.endsWith('/' + filename));
+    return parsedKey ? (projectAssets[parsedKey] as any).default : url;
+};
+
+// Helper to strip markdown for preview cards
+const stripMarkdown = (text: string) => {
+    if (!text) return "";
+    // Remove bullets and extra spaces
+    let clean = text.replace(/^[•-]\s*/gm, '');
+    // Remove bold/italic markers
+    clean = clean.replace(/(\*\*|__)(.*?)\1/g, '$2');
+    clean = clean.replace(/(\*|_)(.*?)\1/g, '$2');
+    // Replace newlines with specific separator or space for preview
+    return clean.split('\n').map(l => l.trim()).filter(Boolean).join(' • ');
+};
+
+// Helper for rendering text with bold (**text**) and bullet points
+const RichTextRenderer = ({ text }: { text: string }) => {
+    if (!text) return null;
+    return (
+        <div className="space-y-2">
+            {text.split('\n').map((line, idx) => {
+                const trimmed = line.trim();
+                const isBullet = trimmed.startsWith('•') || trimmed.startsWith('- ');
+                // Remove bullet marker for clean rendering
+                const cleanLine = isBullet ? trimmed.replace(/^[•-]\s*/, '') : trimmed;
+
+                // Parse bold syntax **...**
+                const content = cleanLine.split(/(\*\*.*?\*\*)/g).map((part, i) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                        return <strong key={i} className="font-semibold text-foreground">{part.slice(2, -2)}</strong>;
+                    }
+                    return part;
+                });
+
+                if (isBullet) {
+                    return (
+                        <div key={idx} className="flex items-start gap-3">
+                            <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                            <p className="leading-relaxed text-lg text-muted-foreground">{content}</p>
+                        </div>
+                    );
+                }
+
+                // Standard paragraph
+                if (cleanLine.length === 0) return <br key={idx} />; // Preserve empty lines
+                return <p key={idx} className="leading-relaxed text-lg text-muted-foreground">{content}</p>;
+            })}
+        </div>
+    );
+};
+
 // --- Types ---
+interface ProjectMedia {
+    type: 'image' | 'video' | 'youtube' | 'pdf';
+    url: string;
+    caption?: string;
+    thumbnail?: string;
+}
+
 interface BaseItem {
     id: string;
     title: string;
+    title_translated?: string; // New: Localized title (e.g. KR -> EN)
     description: string; // Abstract or short description
+    abstract?: string;   // New: Full abstract
     category: string;
-    year?: number;
+    year?: number | string;
     icon?: string;
     techStack?: string[];
     role?: string;
@@ -18,12 +86,23 @@ interface BaseItem {
         url: string;
         label: string;
     }[];
+    media?: ProjectMedia[]; // New: Rich media content
     details?: {
         organization?: string;
         venue?: string;
         doi?: string;
         type?: 'journal' | 'conference' | 'project';
-    }
+    };
+    table?: {
+        caption: string;
+        columns: string[];
+        rows: string[][];
+        highlightRowIndex?: number;
+    };
+    resultImages?: {
+        url: string;
+        caption?: string;
+    }[];
 }
 
 // Reuse icon map
@@ -44,45 +123,64 @@ const ProjectsView = () => {
         const pubs = publicationsData.map((pub: any) => ({
             id: pub.id || pub.title,
             title: pub.title,
-            description: "Updating abstract.",
+            title_translated: pub.title_translated, // Pass through
+            description: pub.abstract || "Abstract usually goes here (updating...)", // Use abstract as description if available, else placeholder
+            abstract: pub.abstract, // Pass through
             category: "Research",
             year: pub.year,
             icon: "FileText",
-            itemData: pub, // Added this line
+            itemData: pub,
+            media: pub.media || [], // Pass through
+            table: pub.table, // Pass through
+            resultImages: pub.resultImages, // Pass through
             details: {
                 organization: pub.publisher,
                 venue: pub.venue,
                 doi: pub.doi,
-                type: pub.category === 'international-journal' ? 'journal' : 'conference' // Modified type logic
+                type: pub.category === 'international-journal' ? 'journal' : 'conference'
             },
             links: pub.URL ? [{ url: pub.URL, label: "View Paper" }] : []
         })) as BaseItem[];
 
         // Split M.S. (>= 2024) and B.S. (< 2024)
-        const ms = pubs.filter(p => (p.year || 0) >= 2024).sort((a, b) => {
-            // Force ViewFormer before UniAD
+        const ms = pubs.filter(p => (Number(p.year) || 0) >= 2024).sort((a, b) => {
             if (a.title.includes("ViewFormer") && b.title.includes("UniAD")) return -1;
             if (a.title.includes("UniAD") && b.title.includes("ViewFormer")) return 1;
-            return 0; // Maintain original order (by year from script)
+            return 0;
         });
-        const bs = pubs.filter(p => (p.year || 0) < 2024);
+        const bs = pubs.filter(p => (Number(p.year) || 0) < 2024);
 
         // 2. Process Engineering Projects
-        const projs = engineeringProjectsData.map((proj: any) => ({
-            id: proj.id,
-            title: proj.title,
-            description: proj.description,
-            category: proj.category,
-            year: proj.year,
-            icon: proj.icon,
-            techStack: proj.techStack,
-            role: proj.role,
-            itemData: proj,
-            links: [],
-            details: {
-                type: 'project'
+        const projs = engineeringProjectsData.map((proj: any) => {
+            // Backward compatibility: Convert 'video' string to 'media' array if needed
+            let mediaItems: ProjectMedia[] = proj.media || [];
+            if (!mediaItems.length && proj.video) {
+                mediaItems.push({
+                    type: 'youtube',
+                    url: proj.video,
+                    caption: 'Project Video'
+                });
             }
-        })) as BaseItem[];
+
+            return {
+                id: proj.id,
+                title: proj.title,
+                title_translated: proj.title_translated,
+                description: proj.description,
+                abstract: proj.detailedDescription, // Use detailedDescription as abstract-like content
+                category: proj.category,
+                year: proj.year,
+                icon: proj.icon,
+                techStack: proj.techStack,
+                role: proj.role,
+                itemData: proj,
+                links: proj.links || [],
+                media: mediaItems,
+                details: {
+                    type: 'project'
+                }
+            };
+        }) as BaseItem[];
 
         return {
             msResearch: ms,
@@ -196,7 +294,12 @@ const ProjectsView = () => {
                                                     return <Icon size={32} />;
                                                 })()}
                                             </div>
-                                            <h2 className="text-3xl font-heading font-bold mb-4 leading-tight">{selectedItem.title}</h2>
+                                        </div>
+                                        <div className="mb-6">
+                                            <h2 className="text-3xl font-heading font-bold mb-2 leading-tight">{selectedItem.title}</h2>
+                                            {selectedItem.title_translated && (
+                                                <h3 className="text-xl text-muted-foreground font-medium mb-4">{selectedItem.title_translated}</h3>
+                                            )}
 
                                             {/* Meta Tags */}
                                             <div className="flex flex-wrap gap-3 mb-6 items-center">
@@ -242,7 +345,7 @@ const ProjectsView = () => {
                                                     )
                                                 )}
 
-                                                {/* View Paper Button */}
+                                                {/* View Paper/Link Button */}
                                                 {(selectedItem.details?.doi || (selectedItem.links && selectedItem.links.length > 0)) && (
                                                     <a
                                                         href={selectedItem.details?.doi ? `https://doi.org/${selectedItem.details.doi}` : selectedItem.links?.[0]?.url}
@@ -256,11 +359,114 @@ const ProjectsView = () => {
                                             </div>
                                         </div>
 
+                                        {/* Media Gallery (Carousel/Stack) */}
+                                        {selectedItem.media && selectedItem.media.length > 0 && (
+                                            <div className="mb-8 space-y-4">
+                                                {selectedItem.media.map((media, idx) => (
+                                                    <div key={idx} className="rounded-xl overflow-hidden border border-border shadow-sm bg-black/5">
+                                                        {media.type === 'youtube' && (
+                                                            <div className="aspect-video">
+                                                                <iframe
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    src={media.url.replace("watch?v=", "embed/").split("&")[0]} // Simple embed converter
+                                                                    title={media.caption || `Video ${idx + 1}`}
+                                                                    frameBorder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowFullScreen
+                                                                ></iframe>
+                                                            </div>
+                                                        )}
+                                                        {media.type === 'image' && (
+                                                            <img
+                                                                src={resolveAssetUrl(media.url)}
+                                                                alt={media.caption || "Project Image"}
+                                                                className="w-full h-auto object-cover"
+                                                            />
+                                                        )}
+                                                        {media.caption && (
+                                                            <div className="p-2 text-center text-xs text-muted-foreground bg-secondary/50">
+                                                                {media.caption}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
                                         <div className="prose prose-neutral dark:prose-invert max-w-none">
-                                            <h3 className="text-xl font-bold mb-3">Overview</h3>
-                                            <p className="leading-relaxed text-lg text-muted-foreground mb-8">
-                                                {selectedItem.description}
-                                            </p>
+                                            <h3 className="text-xl font-bold mb-4">
+                                                {(selectedItem.abstract || selectedItem.description).includes('•') ? 'Key Contributions' : (selectedItem.category === 'Research' ? 'Abstract' : 'Overview')}
+                                            </h3>
+
+                                            <RichTextRenderer text={selectedItem.abstract || selectedItem.description} />
+
+                                            {/* Start: Academic Table Section */}
+                                            {selectedItem.table && (
+                                                <div className="mt-12 mb-8">
+                                                    <h3 className="text-xl font-bold mb-4">Quantitative Results</h3>
+
+                                                    {selectedItem.table.caption && (
+                                                        <p className="mb-3 text-sm text-foreground font-medium text-center">
+                                                            {selectedItem.table.caption}
+                                                        </p>
+                                                    )}
+
+                                                    <div className="overflow-x-auto rounded-lg border border-border shadow-sm bg-card">
+                                                        <table className="w-full text-sm text-left">
+                                                            <thead className="text-xs text-muted-foreground uppercase bg-secondary/50 border-b border-border">
+                                                                <tr>
+                                                                    {selectedItem.table.columns.map((col, idx) => (
+                                                                        <th key={idx} className="px-4 py-3 font-semibold whitespace-nowrap">
+                                                                            {col}
+                                                                        </th>
+                                                                    ))}
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {selectedItem.table.rows.map((row, rIdx) => (
+                                                                    <tr
+                                                                        key={rIdx}
+                                                                        className={`
+                                                                            border-b last:border-0 border-border/50 transition-colors
+                                                                            ${selectedItem.table?.highlightRowIndex === rIdx ? 'bg-primary/10 font-medium' : 'hover:bg-muted/50'}
+                                                                        `}
+                                                                    >
+                                                                        {row.map((cell, cIdx) => (
+                                                                            <td key={cIdx} className="px-4 py-3 whitespace-nowrap text-foreground">
+                                                                                {cell}
+                                                                            </td>
+                                                                        ))}
+                                                                    </tr>
+                                                                ))}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Start: Representative Results Section */}
+                                            {selectedItem.resultImages && selectedItem.resultImages.length > 0 && (
+                                                <div className="mt-12 mb-8">
+                                                    <h3 className="text-xl font-bold mb-4">Representative Results</h3>
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                        {selectedItem.resultImages.map((img, idx) => (
+                                                            <div key={idx} className="rounded-xl overflow-hidden border border-border shadow-sm bg-black/5 group">
+                                                                <img
+                                                                    src={resolveAssetUrl(img.url)}
+                                                                    alt={img.caption || "Result Image"}
+                                                                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                                                                />
+                                                                {img.caption && (
+                                                                    <div className="p-2 text-center text-xs text-muted-foreground bg-secondary/50 backdrop-blur-sm">
+                                                                        {img.caption}
+                                                                    </div>
+                                                                )}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
 
                                             {/* Additional Info for Projects */}
                                             {selectedItem.techStack && (
@@ -349,7 +555,7 @@ const Section = ({ title, items, onClick, selectedId, subSection = false }: { ti
                                     {item.title}
                                 </h4>
                                 <div className="text-sm text-muted-foreground line-clamp-2">
-                                    {item.description}
+                                    {stripMarkdown(item.description)}
                                 </div>
                             </div>
                             {/* Small Arrow indicator on hover */}
