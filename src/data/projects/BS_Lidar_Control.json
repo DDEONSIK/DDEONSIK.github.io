@@ -34,5 +34,23 @@
             "name": "ITFE",
             "url": "https://www.itfe.or.kr/html/"
         }
+    ],
+    "abstract": "• **Problem**: Advanced autonomous driving typically relies on high-spec hardware, establishing a barrier to entry for basic research and accessibility.\n• **Solution**: Focused on **utilizing LiDAR sensors in low-spec environments** (Windows 10, Python) to avoid small static obstacles. Implemented a **simplified avoidance algorithm** that detects traffic cones and generates target points for steering control.\n• **Result**: Verified stable **maneuvering between traffic cones** through the proposed algorithm, demonstrating the efficiency of this simplified approach and **enhancing accessibility** for autonomous driving implementation in resource-constrained environments.",
+    "media": [
+        {
+            "type": "image",
+            "url": "/assets/project/BS_Lidar_Control_Fig_1.webp",
+            "caption": "Flowchart of steering algorithm for avoiding small static obstacles."
+        }
+    ],
+    "resultImages": [
+        {
+            "url": "/assets/project/BS_Lidar_Control_Fig_2.webp",
+            "caption": "Test environment configured with traffic cones."
+        },
+        {
+            "url": "/assets/project/BS_Lidar_Control_Fig_3.webp",
+            "caption": "Linear regression and path generation plot graph."
+        }
     ]
 }
