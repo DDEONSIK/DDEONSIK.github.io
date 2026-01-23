@@ -51,7 +51,7 @@ const Navbar = () => {
                     {/* Brand */}
                     <NavLink to="/" className="group">
                         <span className="text-xl md:text-2xl font-heading font-bold tracking-tight text-foreground">
-                            Jeon<span className="text-primary">HyunSik</span>
+                            Hyun-Sik <span className="text-primary">Jeon</span>
                         </span>
                     </NavLink>
 

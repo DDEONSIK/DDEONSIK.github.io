@@ -147,6 +147,7 @@ const ProjectsView = () => {
             category: "Research",
             year: pub.year,
             icon: "FileText",
+            role: pub.role, // Map role from JSON
             itemData: pub,
             media: pub.media || [], // Pass through
             table: pub.table, // Pass through
@@ -318,6 +319,28 @@ const ProjectsView = () => {
                                             <h2 className="text-3xl font-heading font-bold mb-2 leading-tight">{selectedItem.title}</h2>
                                             {selectedItem.title_translated && (
                                                 <h3 className="text-xl text-muted-foreground font-medium mb-4">{selectedItem.title_translated}</h3>
+                                            )}
+
+                                            {/* Author & Role */}
+                                            {/* @ts-ignore */}
+                                            {selectedItem.itemData?.author && (
+                                                <div className="mb-4 text-lg text-foreground/80 flex flex-wrap items-center gap-2">
+                                                    <span className="font-semibold text-muted-foreground mr-1">Authors:</span>
+                                                    <span>
+                                                        {(() => {
+                                                            // @ts-ignore
+                                                            const authorText = selectedItem.itemData.author;
+                                                            // Parser for bold markdown (**text**)
+                                                            const parts = authorText.split(/(\*\*.*?\*\*)/g);
+                                                            return parts.map((part: string, i: number) => {
+                                                                if (part.startsWith('**') && part.endsWith('**')) {
+                                                                    return <strong key={i} className="font-bold text-foreground">{part.slice(2, -2)}</strong>;
+                                                                }
+                                                                return <span key={i}>{part}</span>;
+                                                            });
+                                                        })()}
+                                                    </span>
+                                                </div>
                                             )}
 
                                             {/* Meta Tags */}
