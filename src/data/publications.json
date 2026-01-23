@@ -144,7 +144,7 @@
         },
         "page": "256–264",
         "source": "www.dbpia.co.kr",
-        "title": "UniAD 모델 경량화 및 성능 비교",
+        "title": "UniAD Model Lightweighting and Performance Comparison",
         "type": "article-journal",
         "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12125019",
         "volume": "31",
@@ -158,7 +158,314 @@
                 "url": "https://icros.org/eng/"
             }
         ],
-        "doi": "10.5302/J.ICROS.2025.24.0249"
+        "doi": "10.5302/J.ICROS.2025.24.0249",
+        "abstract": "• **Problem**: The original UniAD framework's **complex transformer structure requires substantial computational resources**, limiting accessibility.\n• **Solution**: Proposed a **lightweight version** by reducing dimensions, queries, and BEV resolution, and **optimized memory** through limited sampling queries and page-locked settings.\n• **Result**: Achieved **significant memory reductions** (up to 79.92% in Stage 1) and identified that **progressive resolution expansion** enhances feature extraction during low-resolution phases.",
+        "media": [
+            {
+                "type": "image",
+                "url": "/assets/project/UniAD_Fig_1.webp",
+                "caption": "The structure of UniAD (Unified Autonomous Driving)"
+            }
+        ],
+        "tables": [
+            {
+                "caption": "Comparison of structures by lightweight version (the two values in the table represent the structures in stages 1 and 2, respectively).",
+                "headerRows": [
+                    [
+                        {
+                            "label": "Method"
+                        },
+                        {
+                            "label": "GPU*N (NVIDIA)"
+                        },
+                        {
+                            "label": "Encoder",
+                            "rotated": true
+                        },
+                        {
+                            "label": "embed dimensions",
+                            "rotated": true
+                        },
+                        {
+                            "label": "layers",
+                            "rotated": true
+                        },
+                        {
+                            "label": "heads",
+                            "rotated": true
+                        },
+                        {
+                            "label": "FFN channels",
+                            "rotated": true
+                        },
+                        {
+                            "label": "BEV resolution",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Queue length (stage1)",
+                            "rotated": true
+                        },
+                        {
+                            "label": "BEV queries",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Seg queries",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Learning Rate",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Grid Size",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Query dimensions (stage2)",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Pin memory",
+                            "rotated": true
+                        },
+                        {
+                            "label": "Memory threshold",
+                            "rotated": true
+                        }
+                    ]
+                ],
+                "rows": [
+                    [
+                        "UniAD",
+                        "A100*16",
+                        "R101",
+                        "256",
+                        "6",
+                        "8",
+                        "2048",
+                        "200x200",
+                        "5",
+                        "900",
+                        "300",
+                        "2e-4",
+                        "512",
+                        "256",
+                        "False",
+                        "3"
+                    ],
+                    [
+                        "DV-1",
+                        "3090*3",
+                        "R101",
+                        "128",
+                        "4",
+                        "8",
+                        "1024",
+                        "200x200",
+                        "3",
+                        "900",
+                        "300",
+                        "1e-6 / 1e-4",
+                        "512 / 256",
+                        "128",
+                        "False",
+                        "3"
+                    ],
+                    [
+                        "DV-2",
+                        "A100*1",
+                        "R50",
+                        "128",
+                        "4",
+                        "4",
+                        "1024",
+                        "50x50 / 200",
+                        "3",
+                        "900",
+                        "300",
+                        "2e-4",
+                        "512",
+                        "128",
+                        "True",
+                        "1"
+                    ]
+                ],
+                "highlightRowIndex": 2
+            },
+            {
+                "caption": "Comparison of experimental results by lightweight version (the two values in the Memory section represent stages 1 and 2, respectively).",
+                "headerRows": [
+                    [
+                        {
+                            "label": "Method",
+                            "rowSpan": 2
+                        },
+                        {
+                            "label": "Memory (GB)",
+                            "rowSpan": 2
+                        },
+                        {
+                            "label": "Tracking",
+                            "colSpan": 3
+                        },
+                        {
+                            "label": "Mapping",
+                            "colSpan": 2
+                        },
+                        {
+                            "label": "Motion Forecasting",
+                            "colSpan": 4
+                        },
+                        {
+                            "label": "Occupancy Prediction",
+                            "colSpan": 4
+                        },
+                        {
+                            "label": "Planning",
+                            "colSpan": 2
+                        }
+                    ],
+                    [
+                        {
+                            "label": "AMOTA ↑"
+                        },
+                        {
+                            "label": "AMOTP ↓"
+                        },
+                        {
+                            "label": "mIDS ↓"
+                        },
+                        {
+                            "label": "IoU-lane ↑"
+                        },
+                        {
+                            "label": "IoU-road ↑"
+                        },
+                        {
+                            "label": "minADE ↓"
+                        },
+                        {
+                            "label": "minFDE ↓"
+                        },
+                        {
+                            "label": "MR ↓"
+                        },
+                        {
+                            "label": "EPA ↑"
+                        },
+                        {
+                            "label": "IoU-n. ↑"
+                        },
+                        {
+                            "label": "IoU-f. ↑"
+                        },
+                        {
+                            "label": "VPQ-n. ↑"
+                        },
+                        {
+                            "label": "VPQ-f. ↑"
+                        },
+                        {
+                            "label": "avg.L2 ↓"
+                        },
+                        {
+                            "label": "avg.Col. ↓"
+                        }
+                    ]
+                ],
+                "rows": [
+                    [
+                        "UniAD(Base)",
+                        "52.3 / 16.7",
+                        "**0.359**",
+                        "**1.32**",
+                        "906",
+                        "0.313",
+                        "**0.691**",
+                        "**0.708**",
+                        "**1.025**",
+                        "0.151",
+                        "**0.456**",
+                        "**63.4**",
+                        "**40.2**",
+                        "**54.7**",
+                        "**33.5**",
+                        "1.03",
+                        "**0.31**"
+                    ],
+                    [
+                        "UniAD(Small)",
+                        "N/A",
+                        "0.241",
+                        "1.488",
+                        "958",
+                        "**0.315**",
+                        "0.689",
+                        "0.788",
+                        "1.126",
+                        "0.156",
+                        "0.381",
+                        "59.4",
+                        "35.6",
+                        "49.2",
+                        "28.9",
+                        "1.04",
+                        "0.32"
+                    ],
+                    [
+                        "DV-1",
+                        "17.9 / 10.4",
+                        "0.000",
+                        "1.946",
+                        "1493",
+                        "0.253",
+                        "0.615",
+                        "<u>0.995</u>",
+                        "<u>1.274</u>",
+                        "<u>**0.130**</u>",
+                        "-0.077",
+                        "25.7",
+                        "9.8",
+                        "15.4",
+                        "5.7",
+                        "1.25",
+                        "0.88"
+                    ],
+                    [
+                        "DV-2",
+                        "10.5 / 10.2",
+                        "<u>0.016</u>",
+                        "<u>1.816</u>",
+                        "<u>**753**</u>",
+                        "<u>0.304</u>",
+                        "<u>0.684</u>",
+                        "1.157",
+                        "1.658",
+                        "0.208",
+                        "<u>0.108</u>",
+                        "<u>43.0</u>",
+                        "<u>22.0</u>",
+                        "<u>29.6</u>",
+                        "<u>15.0</u>",
+                        "<u>**0.97**</u>",
+                        "<u>0.75</u>"
+                    ]
+                ],
+                "highlightRowIndex": 3
+            }
+        ],
+        "resultImages": [
+            {
+                "url": "/assets/project/UniAD_Fig_7_8_9.webp",
+                "caption": "Test results by model: Urban driving scenario. (a) UniAD. (b) DV-1. (c) DV-2."
+            },
+            {
+                "url": "/assets/project/UniAD_Fig_10_11_12.webp",
+                "caption": "Test results by model: Pedestrian crossing scenario. (a) UniAD. (b) DV-1. (c) DV-2."
+            }
+        ]
     },
     {
         "id": "jeonhyeonsig2025viewformer",

@@ -95,7 +95,8 @@ interface BaseItem {
     };
     tables?: {
         caption: string;
-        columns: string[];
+        columns?: string[]; // Simple headers
+        headerRows?: { label: string; colSpan?: number; rowSpan?: number; rotated?: boolean; className?: string }[][]; // Complex headers
         rows: string[][];
         highlightRowIndex?: number;
     }[];
@@ -108,7 +109,7 @@ interface BaseItem {
         venue?: string;
         doi?: string;
         type?: 'journal' | 'conference' | 'project';
-    }
+    };
 }
 
 // Reuse icon map
@@ -426,15 +427,48 @@ const ProjectsView = () => {
                                                                 )}
 
                                                                 <div className="overflow-x-auto rounded-lg border border-border shadow-sm bg-card">
-                                                                    <table className="w-full text-sm text-left">
-                                                                        <thead className="text-xs text-muted-foreground uppercase bg-secondary/50 border-b border-border">
-                                                                            <tr>
-                                                                                {tableData.columns.map((col, idx) => (
-                                                                                    <th key={idx} className="px-4 py-3 font-semibold whitespace-nowrap">
-                                                                                        {col}
-                                                                                    </th>
-                                                                                ))}
-                                                                            </tr>
+                                                                    <table className="w-full text-sm text-center">
+                                                                        <thead className="text-xs text-muted-foreground bg-secondary/50 border-b border-border">
+                                                                            {tableData.headerRows ? (
+                                                                                // Render Complex Headers
+                                                                                tableData.headerRows.map((headerRow, hrIdx) => (
+                                                                                    <tr key={hrIdx}>
+                                                                                        {headerRow.map((hCol, hcIdx) => (
+                                                                                            <th
+                                                                                                key={hcIdx}
+                                                                                                colSpan={hCol.colSpan || 1}
+                                                                                                rowSpan={hCol.rowSpan || 1}
+                                                                                                className={`
+                                                                                                    px-4 py-3 font-semibold border-r border-border/50 last:border-r-0
+                                                                                                    ${hCol.rotated ? 'h-48 align-middle' : 'whitespace-nowrap'}
+                                                                                                    ${hCol.rowSpan && hCol.rowSpan > 1 ? 'align-middle border-b border-border/50' : ''}
+                                                                                                    ${hCol.className || ''}
+                                                                                                    ${hcIdx === 0 && hrIdx === 0 && !hCol.colSpan ? 'text-left' : ''} 
+                                                                                                `}
+                                                                                            >
+                                                                                                {hCol.rotated ? (
+                                                                                                    <div className="flex items-center justify-center h-full w-4 mx-auto">
+                                                                                                        <div className="whitespace-nowrap transform -rotate-90 origin-center">
+                                                                                                            {hCol.label}
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                ) : (
+                                                                                                    hCol.label
+                                                                                                )}
+                                                                                            </th>
+                                                                                        ))}
+                                                                                    </tr>
+                                                                                ))
+                                                                            ) : (
+                                                                                // Render Simple Columns
+                                                                                <tr>
+                                                                                    {tableData.columns?.map((col, idx) => (
+                                                                                        <th key={idx} className={`px-4 py-3 font-semibold whitespace-nowrap ${idx === 0 ? 'text-left' : 'text-center'}`}>
+                                                                                            {col}
+                                                                                        </th>
+                                                                                    ))}
+                                                                                </tr>
+                                                                            )}
                                                                         </thead>
                                                                         <tbody>
                                                                             {tableData.rows.map((row, rIdx) => (
@@ -446,8 +480,25 @@ const ProjectsView = () => {
                                                                                     `}
                                                                                 >
                                                                                     {row.map((cell, cIdx) => (
-                                                                                        <td key={cIdx} className="px-4 py-3 whitespace-nowrap text-foreground">
-                                                                                            {cell}
+                                                                                        <td key={cIdx} className={`px-4 py-3 whitespace-nowrap text-foreground ${cIdx === 0 ? 'text-left' : 'text-center'}`}>
+                                                                                            {/* Simple Rich Text Parser for Table Cells */}
+                                                                                            {(() => {
+                                                                                                const parts = cell.split(/(<u>.*?<\/u>|\*\*.*?\*\*)/g);
+                                                                                                return parts.map((part, i) => {
+                                                                                                    if (part.startsWith('**') && part.endsWith('**')) {
+                                                                                                        return <strong key={i} className="font-bold">{part.slice(2, -2)}</strong>;
+                                                                                                    }
+                                                                                                    if (part.startsWith('<u>') && part.endsWith('</u>')) {
+                                                                                                        // Standardize underline color to gray/black as requested
+                                                                                                        const content = part.slice(3, -4);
+                                                                                                        if (content.startsWith('**') && content.endsWith('**')) {
+                                                                                                            return <u key={i} className="decoration-gray-500 decoration-2 underline-offset-2"><strong className="font-bold">{content.slice(2, -2)}</strong></u>;
+                                                                                                        }
+                                                                                                        return <u key={i} className="decoration-gray-500 decoration-2 underline-offset-2">{content}</u>;
+                                                                                                    }
+                                                                                                    return part;
+                                                                                                });
+                                                                                            })()}
                                                                                         </td>
                                                                                     ))}
                                                                                 </tr>
