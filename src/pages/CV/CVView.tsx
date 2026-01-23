@@ -114,6 +114,32 @@ const CVView: React.FC = () => {
                                         <div className="text-md font-medium text-muted-foreground mt-1">
                                             {edu.department}
                                         </div>
+                                        {/* Lab Info */}
+                                        {/* @ts-ignore */}
+                                        {edu.labName && (
+                                            <div className="text-md font-medium text-muted-foreground mt-1 flex items-center">
+                                                Research Lab:{" "}
+                                                {/* @ts-ignore */}
+                                                {edu.labLink ? (
+                                                    <a
+                                                        // @ts-ignore
+                                                        href={edu.labLink}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="ml-1 hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/link"
+                                                    >
+                                                        {/* @ts-ignore */}
+                                                        {edu.labName}
+                                                        <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                            <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/link:text-primary transition-colors" />
+                                                        </span>
+                                                    </a>
+                                                ) : (
+                                                    // @ts-ignore
+                                                    <span className="ml-1">{edu.labName}</span>
+                                                )}
+                                            </div>
+                                        )}
                                         {/* Period */}
                                         <div className="text-sm text-muted-foreground mb-2 mt-1">{edu.period}</div>
                                         {/* GPA / Desc */}
