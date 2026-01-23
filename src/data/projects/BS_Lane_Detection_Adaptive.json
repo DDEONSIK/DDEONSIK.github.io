@@ -1,0 +1,38 @@
+{
+    "id": "anseongju2022jeogeungjeog",
+    "accessed": {
+        "date-parts": [
+            [
+                "2026",
+                1,
+                15
+            ]
+        ]
+    },
+    "author": "안성주, 김성택, 전현식, 최용수",
+    "citation-key": "anseongju2022jeogeungjeog",
+    "container-title": "ITFE Conference",
+    "issued": {
+        "date-parts": [
+            [
+                "2022",
+                11
+            ]
+        ]
+    },
+    "page": "24–25",
+    "source": "www.earticle.net",
+    "title": "적응적 차량요소 제거를 통한 차선인식 향상방법",
+    "type": "article-journal",
+    "URL": "https://www.earticle.net/Article/A427683",
+    "category": "domestic-journal",
+    "year": 2022,
+    "venue": "한국정보통신설비학회 학술대회",
+    "language": "Ko",
+    "organizations": [
+        {
+            "name": "ITFE",
+            "url": "https://www.itfe.or.kr/html/"
+        }
+    ]
+}

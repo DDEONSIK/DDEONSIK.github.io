@@ -1,8 +1,19 @@
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, Github, Layers, Eye, Brain, ChevronLeft, Calendar, FileText, ArrowUp, Car } from 'lucide-react';
-import engineeringProjectsData from '@/data/engineering_projects.json';
-import publicationsData from '@/data/publications.json';
 import { motion, AnimatePresence } from 'framer-motion';
+
+// --- Data Loading (Refactored to individual files) ---
+const projectFiles = import.meta.glob('../../data/projects/*.json', { eager: true });
+const allProjectData = Object.values(projectFiles).map((mod: any) => mod.default);
+
+// 1. Publications: Filter by category != 'Engineering Projects' and Sort by Year (Desc)
+const publicationsData = allProjectData
+    .filter((item: any) => item.category !== 'Engineering Projects')
+    .sort((a: any, b: any) => (Number(b.year) || 0) - (Number(a.year) || 0));
+
+// 2. Engineering Projects: Filter by category == 'Engineering Projects'
+const engineeringProjectsData = allProjectData
+    .filter((item: any) => item.category === 'Engineering Projects');
 
 // Load project assets dynamically
 const projectAssets = import.meta.glob(['@/assets/project/*.{png,jpg,jpeg,webp}'], { eager: true });

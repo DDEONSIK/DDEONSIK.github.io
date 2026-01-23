@@ -1,0 +1,118 @@
+{
+    "id": "jeon2026enhancing",
+    "accessed": {
+        "date-parts": [
+            [
+                "2026",
+                1,
+                9
+            ]
+        ]
+    },
+    "author": "Jeon, Hyun-Sik, Kang, Seong-Hui, Ha, Jong-Eun",
+    "citation-key": "jeon2026enhancing",
+    "container-title": "Applied Sciences",
+    "DOI": "10.3390/app16020652",
+    "ISSN": "2076-3417",
+    "issue": "2",
+    "issued": {
+        "date-parts": [
+            [
+                "2026",
+                1
+            ]
+        ]
+    },
+    "license": "http://creativecommons.org/licenses/by/3.0/",
+    "page": "652",
+    "publisher": "Multidisciplinary Digital Publishing Institute",
+    "source": "www.mdpi.com",
+    "title": "Enhancing SeeGround with Relational Depth Text for 3D Visual Grounding",
+    "type": "article-journal",
+    "URL": "https://www.mdpi.com/2076-3417/16/2/652",
+    "volume": "16",
+    "category": "international-journal",
+    "year": 2026,
+    "venue": "Applied Sciences",
+    "language": "En",
+    "organizations": [
+        {
+            "name": "Applied Sciences",
+            "url": "https://www.mdpi.com/journal/applsci"
+        }
+    ],
+    "doi": "10.3390/app16020652",
+    "abstract": "• **Problem**: Traditional 3D visual grounding (e.g., SeeGround) struggles with distinguishing objects based on relative depth due to implicit depth representation in 2D views.\n• **Solution**: Proposed **Relational Depth Text (RDT)**, which explicitly converts relative depth relationships (e.g., 'behind', 'in front of') into natural language using Monocular Depth Estimation and K-NN.\n• **Result**: Achieved **3.54% accuracy improvement** on Nr3D and **6.74% boost** in Unique cases on ScanRefer, enhancing spatial reasoning in complex 3D scenes.",
+    "media": [
+        {
+            "type": "image",
+            "url": "/assets/project/SeeGround_Fig_1.webp",
+            "caption": "The inference pipeline is integrated with the proposed ‘Relational Depth Text’ methodology."
+        }
+    ],
+    "table": {
+        "caption": "Comparison with state-of-the-art zero-shot methods on Nr3D and ScanRefer benchmarks. (Unit: %).",
+        "columns": [
+            "Method",
+            "Backbone (Size)",
+            "Nr3D (Acc@25)",
+            "ScanRefer (Acc@25)",
+            "ScanRefer (Acc@50)"
+        ],
+        "rows": [
+            [
+                "VLM-Grounder",
+                "GPT-4V (Large)",
+                "48.00 †",
+                "51.60 †",
+                "32.80 †"
+            ],
+            [
+                "SORT3D",
+                "GPT-4o (Large)",
+                "62.00 †",
+                "-",
+                "-"
+            ],
+            [
+                "SeqVLM",
+                "Doubao-1.5-vision-pro",
+                "53.20 †",
+                "55.60 †",
+                "49.60 †"
+            ],
+            [
+                "View-on-Graph",
+                "Qwen2-VL-72B",
+                "47.60 †",
+                "44.80 †",
+                "40.30 †"
+            ],
+            [
+                "SeeGround (Baseline)",
+                "Qwen2-VL-7B",
+                "33.18",
+                "37.59",
+                "35.04"
+            ],
+            [
+                "Ours 7B+Depth",
+                "Qwen2-VL-7B",
+                "36.72",
+                "38.01",
+                "34.33"
+            ]
+        ],
+        "highlightRowIndex": 5
+    },
+    "resultImages": [
+        {
+            "url": "/assets/project/SeeGround_Fig_2.webp",
+            "caption": "Qualitative comparison results on the Nr3D dataset."
+        },
+        {
+            "url": "/assets/project/SeeGround_Fig_3.webp",
+            "caption": "Qualitative comparison results on the ScanRefer dataset."
+        }
+    ]
+}

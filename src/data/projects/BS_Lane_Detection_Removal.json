@@ -1,0 +1,38 @@
+{
+    "id": "jeonhyeonsig2022caseon",
+    "accessed": {
+        "date-parts": [
+            [
+                "2026",
+                1,
+                15
+            ]
+        ]
+    },
+    "author": "전현식, 안성주, 김성택, 최용수",
+    "citation-key": "jeonhyeonsig2022caseon",
+    "container-title": "대한전자공학회 학술대회",
+    "issued": {
+        "date-parts": [
+            [
+                "2022",
+                11
+            ]
+        ]
+    },
+    "page": "80–82",
+    "source": "www.dbpia.co.kr",
+    "title": "차선 인식 향상을 위한 차량요소 제거 방법",
+    "type": "article-journal",
+    "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11195427",
+    "category": "domestic-journal",
+    "year": 2022,
+    "venue": "대한전자공학회 학술대회",
+    "language": "Ko",
+    "organizations": [
+        {
+            "name": "IEIE",
+            "url": "https://www.theieie.org/eng/"
+        }
+    ]
+}

@@ -2,6 +2,7 @@ from itertools import chain
 import json
 import re
 from pathlib import Path
+import glob
 
 def __Has_korean__(text: str):
     """Check if the text contains any Korean characters."""
@@ -35,103 +36,144 @@ def __Author_parser__(authors: str | list[dict]):
                 _parser.append(", ".join(parts))
     return ", ".join(_parser)
 
-def __Get_data_from__(file_path: Path):
-    """Loads and processes the single 'My Library.json' file."""
+def __Process_Zotero_Item__(item: dict) -> dict:
+    """Extracts core metadata from a Zotero CSL JSON item."""
+    processed = {"id": item.get("id")}
     
-    if not file_path.exists():
-        print(f"Warning: File not found: {file_path}")
-        return []
+    # 1. Type & Category
+    _raw_type = item.get("type", "")
+    if _raw_type in ["article-journal", "article"]:
+        pub_type = "journal"
+    elif _raw_type in ["paper-conference", "conference"]:
+        pub_type = "conference"
+    else:
+        return None # Skip unknown types
 
-    with file_path.open("r", encoding="UTF-8") as _f:
+    _title = item.get("title", "")
+    _pub_title = item.get("container-title", "")
+    _event_title = item.get("event-title", "")
+
+    # Category Logic (Domestic vs International)
+    if any("국내" in _txt for _txt in [_pub_title, _event_title]):
+        _region = "domestic"
+    elif any("국제" in _txt for _txt in [_pub_title, _event_title]):
+        _region = "international"
+    else:
+        _region = "domestic" if any(__Has_korean__(_txt) for _txt in [_title, _pub_title, _event_title]) else "international"
+    
+    processed["category"] = f"{_region}-{pub_type}"
+    processed["title"] = _title
+    
+    # Year
+    _year = 0
+    if "issued" in item and "date-parts" in item["issued"]:
         try:
-            _meta_data: list[dict] = json.load(_f)
-        except json.JSONDecodeError:
-            print("Error: Failed to decode JSON")
-            return []
+            if item["issued"]["date-parts"] and item["issued"]["date-parts"][0]:
+                _year = int(item["issued"]["date-parts"][0][0])
+        except (IndexError, ValueError, TypeError):
+            pass
+    processed["year"] = _year
 
-    _processed = []
-    
-    for _item in _meta_data:
-        # 1. Determine Publication Type (Journal vs Conference)
-        _raw_type = _item.get("type", "")
-        if _raw_type in ["article-journal", "article"]:
-            pub_type = "journal"
-        elif _raw_type in ["paper-conference", "conference"]:
-            pub_type = "conference"
-        else:
-            # Skip unknown types or treat as misc? For now, let's skip to be safe/clean
-            # Or default to journal? The user only mentioned these two categories.
-            # Looking at the data, 'article' and 'paper-conference' are the main ones.
-            # 'article' is often ArXiv or similar, which might be treated as journal or misc.
-            # Let's verify 'article' usage. In the file it seems to be ArXiv preprints.
-            # For now mapping 'article' to 'journal' as requested implicitly by "journals.json" replacements.
-            continue 
+    # Venue
+    _venue = _pub_title if _pub_title else _event_title
+    if not _venue and "publisher" in item:
+        _venue = item["publisher"]
+    processed["venue"] = _venue
 
-        _title = _item.get("title", "")
+    # Author
+    if isinstance(item.get("author"), list):
+        processed["author"] = __Author_parser__(item["author"])
+    else:
+        processed["author"] = item.get("author", "")
 
-        # 출판 정보
-        _pub_title = _item.get("container-title", "")
-        _event_title = _item.get("event-title", "")
+    # DOI / URL
+    if "DOI" in item:
+        processed["doi"] = item["DOI"]
+    if "URL" in item:
+        processed["URL"] = item["URL"]
 
-        # Determine category (Domestic vs International)
-        # 1. Check for explicit "Domestic" keyword in venue (though rare in CSL JSON)
-        if any("국내" in _txt for _txt in [_pub_title, _event_title]):
-            _region = "domestic"
-        # 2. Check for explicit "International" keyword in venue
-        elif any("국제" in _txt for _txt in [_pub_title, _event_title]):
-            _region = "international"
-        # 3. Fallback: Check for any Korean characters
-        else:
-            _region = "domestic" if any(
-                __Has_korean__(
-                    _txt
-                ) for _txt in [_title, _pub_title, _event_title]
-            ) else "international"
+    # Initial Abstract (only if creating new)
+    if "abstract" in item:
+        processed["abstract"] = item["abstract"]
 
-        _item["category"] = f"{_region}-{pub_type}"
-
-        # Extract Year
-        _year = 0
-        if "issued" in _item and "date-parts" in _item["issued"]:
-            try:
-                # Handle cases where date-parts might be empty or malformed
-                if _item["issued"]["date-parts"] and _item["issued"]["date-parts"][0]:
-                    _year = int(_item["issued"]["date-parts"][0][0])
-            except (IndexError, ValueError, TypeError):
-                pass
-        _item["year"] = _year
-
-        # Set Venue
-        _item["venue"] = _pub_title if _pub_title else _event_title
-        if not _item["venue"] and "publisher" in _item:
-             # Fallback for ArXiv or similar if no container-title
-            _item["venue"] = _item["publisher"]
-
-        # Format Author
-        if isinstance(_item.get("author"), list):
-            _item["author"] = __Author_parser__(_item["author"])
-
-        # Normalize DOI
-        if "DOI" in _item:
-            _item["doi"] = _item["DOI"]
-
-        _processed.append(_item)
-    return _processed
+    return processed
 
 if __name__ == "__main__":
-    # Updated path to point to 'src/data/My Library.json'
     _source_file = Path("./src/data/My Library.json")
-    _output_root = Path("./src/data")
+    _projects_dir = Path("./src/data/projects")
+    
+    # Ensure projects directory exists
+    if not _projects_dir.exists():
+        _projects_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1. Load and process the single source file
-    _all_pub = __Get_data_from__(_source_file)
+    # 1. Load Zotero Data
+    if not _source_file.exists():
+        print(f"Warning: {_source_file} not found. Skipping Zotero sync.")
+        exit(0)
 
-    # 2. Sort by year (descending)
-    _all_pub.sort(key=lambda x: x.get("year", 0), reverse=True)
+    with _source_file.open("r", encoding="UTF-8") as _f:
+        try:
+            _zotero_data = json.load(_f)
+        except json.JSONDecodeError:
+            print("Error: Failed to decode My Library.json")
+            exit(1)
 
-    # 3. Save to merged JSON file
-    _write_file = _output_root / "publications.json"
-    with _write_file.open("w", encoding="UTF-8") as f:
-        json.dump(_all_pub, f, indent=4, ensure_ascii=False)
+    # 2. Build Map of Existing Files: ID -> FilePath
+    _existing_map = {}
+    for _file_path in _projects_dir.glob("*.json"):
+        try:
+            with _file_path.open("r", encoding="UTF-8") as _f:
+                _data = json.load(_f)
+                if "id" in _data:
+                    _existing_map[_data["id"]] = _file_path
+        except Exception as e:
+            print(f"Warning: Could not read {_file_path}: {e}")
 
-    print(f"Successfully merged {len(_all_pub)} items into {_write_file}")
+    # 3. Process Each Zotero Item
+    _count_updated = 0
+    _count_created = 0
+
+    for _z_item in _zotero_data:
+        _core_data = __Process_Zotero_Item__(_z_item)
+        if not _core_data:
+            continue
+
+        _id = _core_data["id"]
+        
+        if _id in _existing_map:
+            # UPDATE EXISTING
+            _target_path = _existing_map[_id]
+            
+            # Load current file content to preserve manual edits
+            with _target_path.open("r", encoding="UTF-8") as _f:
+                _current_file_data = json.load(_f)
+            
+            # Merge: Update strict metadata, Preserve everything else
+            # Core fields to update from Zotero:
+            _fields_to_sync = ["title", "year", "venue", "category", "doi", "URL", "author"]
+            
+            for _field in _fields_to_sync:
+                if _field in _core_data:
+                    _current_file_data[_field] = _core_data[_field]
+            
+            # Special case: Abstract
+            # If abstract is missing in file, add it. If it exists, KEEP IT (manual edit assumed).
+            if "abstract" not in _current_file_data and "abstract" in _core_data:
+                _current_file_data["abstract"] = _core_data["abstract"]
+
+            # Save
+            with _target_path.open("w", encoding="UTF-8") as _f:
+                json.dump(_current_file_data, _f, indent=4, ensure_ascii=False)
+            _count_updated += 1
+
+        else:
+            # CREATE NEW
+            _sanitized_id = _id.replace("/", "_").replace("\\", "_")
+            _filename = f"{_sanitized_id}.json"
+            _target_path = _projects_dir / _filename
+            
+            with _target_path.open("w", encoding="UTF-8") as _f:
+                json.dump(_core_data, _f, indent=4, ensure_ascii=False)
+            _count_created += 1
+
+    print(f"Sync Complete. Updated: {_count_updated}, Created: {_count_created}")
