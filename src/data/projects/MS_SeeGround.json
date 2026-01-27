@@ -28,6 +28,7 @@
     "publisher": "Multidisciplinary Digital Publishing Institute",
     "source": "www.mdpi.com",
     "title": "Enhancing SeeGround with Relational Depth Text for 3D Visual Grounding",
+    "short_description": "Enhancing 3D Visual Grounding by explicitly modeling relative depth relationships using Relational Depth Text (RDT).",
     "type": "article-journal",
     "URL": "https://www.mdpi.com/2076-3417/16/2/652",
     "volume": "16",

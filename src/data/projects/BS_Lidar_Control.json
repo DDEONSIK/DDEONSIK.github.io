@@ -23,6 +23,7 @@
     "page": "227–228",
     "source": "www.earticle.net",
     "title": "Steering and Velocity Control Between Traffic Cones for a LiDAR-based Autonomous Driving Platform in Low-spec Environments",
+    "short_description": "Implementing a simplified steering algorithm for obstacle avoidance (traffic cones) using LiDAR in low-spec environments.",
     "type": "article-journal",
     "URL": "https://www.earticle.net/Article/A435695",
     "category": "domestic-journal",

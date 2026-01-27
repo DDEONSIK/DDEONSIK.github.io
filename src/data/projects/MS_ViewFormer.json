@@ -26,6 +26,7 @@
     "page": "1160–1168",
     "source": "www.dbpia.co.kr",
     "title": "Object Mask Module for Enhancing Multi-view 3D Occupancy Perception Performance Based on ViewFormer",
+    "short_description": "Integrating a SegFormer-based object masking module to improve small object detection in ViewFormer-based 3D occupancy prediction.",
     "type": "article-journal",
     "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12406310",
     "volume": "31",

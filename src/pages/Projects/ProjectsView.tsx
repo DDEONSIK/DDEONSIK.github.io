@@ -155,6 +155,18 @@ const ProjectsView = () => {
                                                     {selectedItem.role}
                                                 </span>
                                             )}
+                                            {/* @ts-ignore */}
+                                            {selectedItem.itemData?.organizations && selectedItem.itemData.organizations.map((org: any, idx: number) => (
+                                                <a
+                                                    key={idx}
+                                                    href={org.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-secondary/50 hover:bg-secondary text-secondary-foreground border border-border/50 transition-colors"
+                                                >
+                                                    {org.name} <ExternalLink size={12} className="ml-2 opacity-50" />
+                                                </a>
+                                            ))}
                                         </div>
                                     </div>
 

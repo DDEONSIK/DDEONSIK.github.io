@@ -102,7 +102,7 @@ const PublicationsView = () => {
             id: pub.id || pub.title,
             title: pub.title,
             title_translated: pub.title_translated,
-            description: pub.abstract || "Abstract ...",
+            description: pub.short_description || pub.abstract || "Abstract ...",
             abstract: pub.abstract,
             category: "Research",
             year: pub.year,
