@@ -24,7 +24,7 @@ lifeData.images = lifeData.images.map(item => {
     if (fs.existsSync(imagePath)) {
         try {
             // Check if it's a video or image
-            if (item.file.toLowerCase().endsWith('.mp4')) {
+            if (item.file.toLowerCase().endsWith('.mp4') || item.file.toLowerCase().endsWith('.webm')) {
                 // Videos are tricky without ffmpeg, but user only mentioned photos "popping".
                 // We'll skip videos for now or set a default aspect ratio if requested.
                 // Assuming 16:9 for now if undefined?

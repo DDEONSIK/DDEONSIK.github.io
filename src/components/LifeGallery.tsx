@@ -4,10 +4,10 @@ import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import lifeData from '@/data/life.json';
 
 // Dynamic Import for all supported media types
-const mediaGlob = import.meta.glob(['@/assets/life/*.{webp,mp4}'], { eager: true });
+const mediaGlob = import.meta.glob(['@/assets/life/*.{webp,mp4,webm}'], { eager: true });
 
 // --- Custom Video Component ---
-const VideoCard = ({ src, name, index }: { src: string, name: string, index: number }) => {
+const VideoCard = ({ src, poster, name, index }: { src: string, poster?: string, name: string, index: number }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -66,6 +66,7 @@ const VideoCard = ({ src, name, index }: { src: string, name: string, index: num
                 <video
                     ref={videoRef}
                     src={src}
+                    poster={poster}
                     className="w-full h-auto object-cover"
                     loop
                     muted={isMuted} // Controlled by volume, but initial mute helps autoplay policy if needed (though we use explicit click)
@@ -232,12 +233,15 @@ const LifeGallery = () => {
                 <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-4">
                     {lifeData.images.map((item, index) => {
                         const mediaSrc = mediaMap[item.file];
+                        // @ts-ignore
+                        const posterSrc = item.poster ? mediaMap[item.poster] : undefined;
+
                         if (!mediaSrc) return null;
 
-                        const isVideo = item.file.toLowerCase().endsWith('.mp4');
+                        const isVideo = item.file.toLowerCase().endsWith('.mp4') || item.file.toLowerCase().endsWith('.webm');
 
                         if (isVideo) {
-                            return <VideoCard key={item.id} src={mediaSrc} name={item.name} index={index} />;
+                            return <VideoCard key={item.id} src={mediaSrc} poster={posterSrc} name={item.name} index={index} />;
                         }
 
                         // @ts-ignore
