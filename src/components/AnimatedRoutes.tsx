@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import PageTransition from '@/components/PageTransition';
 import HomeContainer from '@/pages/Home/HomeContainer';
 import AboutContainer from '@/pages/About/AboutContainer';
+import PublicationsContainer from '@/pages/Publications/PublicationsContainer';
 import ProjectsContainer from '@/pages/Projects/ProjectsContainer';
 import LifeContainer from '@/pages/Life/LifeContainer';
 
@@ -15,6 +16,7 @@ const AnimatedRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<PageTransition><HomeContainer /></PageTransition>} />
                 <Route path="/about" element={<PageTransition><AboutContainer /></PageTransition>} />
+                <Route path="/publications" element={<PageTransition><PublicationsContainer /></PageTransition>} />
                 <Route path="/projects" element={<PageTransition><ProjectsContainer /></PageTransition>} />
                 <Route path="/life" element={<PageTransition><LifeContainer /></PageTransition>} />
                 <Route path="*" element={<Navigate to="/" replace />} />

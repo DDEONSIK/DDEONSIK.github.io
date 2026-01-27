@@ -5,6 +5,11 @@
         "iconName": "Home"
     },
     {
+        "name": "Publications",
+        "path": "/publications",
+        "iconName": "FileText"
+    },
+    {
         "name": "Projects",
         "path": "/projects",
         "iconName": "BrainCircuit"
