@@ -1,0 +1,163 @@
+{
+    "header": {
+        "title": "Curriculum Vitae",
+        "subtitle": "Autonomous Perception Engineer & Researcher"
+    },
+    "personalInfo": {
+        "nameEn": "Hyun-Sik Jeon",
+        "nameKo": "전현식",
+        "nationality": "Republic of Korea 🇰🇷",
+        "gender": "Male",
+        "birthDate": "Jan. 04, 2000",
+        "email": "hyunsik.jeons@gmail.com",
+        "military": "Republic of Korea Air Force",
+        "militaryWebsite": "https://rokaf.airforce.mil.kr/airforce/index.do",
+        "militaryDetails": "Sergeant, Feb. 2020 - Nov. 2021"
+    },
+    "education": [
+        {
+            "id": 1,
+            "degree": "M.S.",
+            "institution": "Seoul National University of Science and Technology",
+            "website": "https://www.seoultech.ac.kr",
+            "department": "Graduate School of Automotive Engineering",
+            "labName": "AIS Lab",
+            "labLink": "https://ais.seoultech.ac.kr/",
+            "thesisTitle": "Spatial Understanding for Camera-based Autonomous Driving Perception and 3D Visual Grounding",
+            "thesisLink": "https://snut.dcollection.net/srch/srchDetail/200000955484",
+            "period": "Mar. 2024 - Feb. 2026",
+            "description": "Total GPA: 3.81 / 4.5",
+            "status": "current"
+        },
+        {
+            "id": 2,
+            "degree": "B.S.",
+            "institution": "Shinhan University",
+            "website": "https://www.shinhan.ac.kr",
+            "department": "Dept. of Future Automotive Engineering",
+            "period": "Mar. 2018 - Feb. 2024",
+            "description": "Total GPA: 3.63 / 4.5\nMajor GPA: 3.84 / 4.5",
+            "status": "completed"
+        }
+    ],
+    "skills": {
+        "Domain Knowledge": [
+            "3D Visual Grounding",
+            "3D Occupancy Prediction",
+            "BEV Perception",
+            "Multi-Modal",
+            "Model Lightweighting"
+        ],
+        "ML/DL Frameworks": [
+            "PyTorch",
+            "MMCV"
+        ],
+        "Robotics & Sim": [
+            "ROS2",
+            "IsaacGym"
+        ],
+        "Programming": [
+            "Python",
+            "MATLAB",
+            "LaTeX"
+        ],
+        "Platforms & Environments": [
+            "Linux (Ubuntu)",
+            "Windows",
+            "Docker",
+            "Anaconda",
+            "Git/GitHub",
+            "Hugging Face"
+        ],
+        "Mechanical Engineering Tools": [
+            "CAD",
+            "CATIA",
+            "Abaqus",
+            "PAM-STAMP"
+        ]
+    },
+    "experience": [
+        {
+            "id": 1,
+            "role": "Graduate Student Researcher (Master's Program)",
+            "organization": "AIS Lab (SeoulTech)",
+            "period": "2024.03 - 2026.02",
+            "descriptionItems": [
+                "Achieved a <strong>3.54%</strong> (Nr3D) and <strong>6.74%</strong> (ScanRefer) accuracy improvement in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>.",
+                "Optimized <strong>UniAD</strong> for edge-device deployment, reducing <strong>memory footprint</strong> by <strong>~80%</strong> via advanced <strong>model lightweighting</strong> techniques.",
+                "Engineered an <strong>Object Mask Module</strong> for ViewFormer to enhance <strong>3D Occupancy Prediction</strong> within complex urban environments."
+            ]
+        },
+        {
+            "id": 2,
+            "role": "Undergraduate Researcher",
+            "organization": "Dept. of Future Automotive Engineering (Shinhan Univ.)",
+            "period": "2022.06 - 2023.12",
+            "descriptionItems": [
+                "Authored <strong>4 conference papers</strong> (IEIE, ITFE) regarding robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
+                "Proposed an <strong>Occlusion Removal</strong> technique utilizing <strong>DeepLab-V3+</strong> to significantly improve lane recognition stability.",
+                "Implemented <strong>Real-time Obstacle Avoidance</strong> using <strong>LiDAR ROI Filtering</strong> and <strong>Pure-Pursuit</strong> on <strong>low-compute</strong> platforms."
+            ]
+        },
+        {
+            "id": 3,
+            "role": "Founder & Vision Team Leader",
+            "organization": "Autonomous Driving Club 'S.D.S'",
+            "period": "2022.03 - 2024.02",
+            "actionLink": "/activity",
+            "actionLabel": "View Activity Details",
+            "descriptionItems": [
+                "Led the team as a finalist in the <strong>2023 University Creative Mobility Competition</strong> (Hosted by MOLIT, KATRI, and KASA).",
+                "Architected a full-stack perception system for <strong>ERP-42 EV</strong>, encompassing robust <strong>Lane Detection</strong> and <strong>Traffic Sign Recognition</strong>.",
+                "Curated a custom dataset of <strong>3,500 images</strong> for South Korean traffic environments and optimized the end-to-end training pipeline."
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "id": 1,
+            "title": "Development of E2E DL-based State Estimation Algorithm to Replace Kalman Filter",
+            "issuer": "Ways1 Inc.",
+            "date": "June 2024",
+            "type": "Field Practicum",
+            "description": "Participated in corporate field training program focused on deep learning state estimation. (Total 40 Hours)",
+            "link": "https://www.ways1.com/eng/"
+        },
+        {
+            "id": 2,
+            "title": "Deep Learning Stage 1: Neural Networks and Deep Learning",
+            "issuer": "NAVER Connect Foundation (Boostcourse)",
+            "date": "Oct. 04, 2023",
+            "type": "Certificate of Lecture",
+            "description": "Completed the core curriculum on Neural Networks and Deep Learning.",
+            "link": "https://www.boostcourse.org/ai215"
+        },
+        {
+            "id": 3,
+            "title": "Electric Vehicle Maintenance Plus Course",
+            "issuer": "Gyeonggi Jobs Foundation",
+            "date": "Sept. 18, 2023",
+            "type": "Certificate",
+            "description": "Specialized training in EV maintenance and diagnostics. (July - Sept 2023)",
+            "link": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=151204&search="
+        },
+        {
+            "id": 4,
+            "title": "Electric Vehicle High Voltage Safety Training Level 1",
+            "issuer": "TÜV SÜD Korea",
+            "date": "Aug. 09, 2023",
+            "type": "Training Certificate",
+            "description": "Completed 8 hours training course on EV High Voltage Safety.",
+            "link": "https://www.tuvsud.com/en"
+        },
+        {
+            "id": 5,
+            "title": "Industrial Engineer Motor Vehicles Maintenance",
+            "issuer": "HRD Korea (Human Resources Development Service of Korea)",
+            "date": "June 03, 2022",
+            "type": "National Technical Qualification",
+            "description": "Certified by Ministry of Land, Infrastructure and Transport.",
+            "link": "https://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&gId=&jmCd=2070&jmNm=&jobSearch=N#none"
+        }
+    ]
+}

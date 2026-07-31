@@ -1,0 +1,67 @@
+{
+    "id": "anseongju2022jeogeungjeog",
+    "accessed": {
+        "date-parts": [
+            [
+                "2026",
+                1,
+                15
+            ]
+        ]
+    },
+    "author": "Sung-Ju An, Sung-Taek Kim, **Hyun-Sik Jeon**, Yong-Soo Choi*",
+    "citation-key": "anseongju2022jeogeungjeog",
+    "container-title": "ITFE Conference",
+    "issued": {
+        "date-parts": [
+            [
+                "2022",
+                11
+            ]
+        ]
+    },
+    "page": "24–25",
+    "source": "www.earticle.net",
+    "title": "A method for improving lane recognition by adaptive removing vehicle elements",
+    "short_description": "Proposed a lane detection method robust to vehicle occlusions by integrating DeepLabV3+ for vehicle removal and ROI-based Hough Transform.",
+    "notice": "This paper is recorded under 'Hyun-Soo Kim' due to a registration information error; however, I (Hyun-Sik Jeon) am the **3rd author** and served as the **presenter**.",
+    "abstract": "• **Problem**: Ensuring stable lane detection is challenging when lanes are occluded by other vehicles in urban environments. Even with ROI and HSV color space filtering, vehicle noise often leads to unstable detection.\n• **Solution**: We proposed a method to improve lane recognition accuracy by **adaptively removing vehicle elements**. We utilized **DeepLab-V3+** to segment and remove vehicle regions within the ROI before applying lane detection. Features such as lane boundaries were then detected using **Hough Transform** on the processed image.\n• **Result**: The proposed method successfully removed vehicle noise and detected lanes more stably compared to using Hough Transform alone in congested environments. However, errors persisted in cases where lanes were completely obscured by external factors like shadows or large obstacles, suggesting the need for further research on exploiting road boundary features.",
+    "media": [
+        {
+            "type": "image",
+            "url": "/assets/Publications/BS_Lane_Detection_Adaptive_Fig_1.webp",
+            "caption": "Comparison of lane detection before and after vehicle removal"
+        },
+        {
+            "type": "pdf",
+            "url": "/assets/Publications/BS_Lane_Detection_Adaptive_paper.pdf",
+            "caption": "View Paper"
+        }
+    ],
+    "resultImages": [
+        {
+            "url": "/assets/Publications/BS_Lane_Detection_Adaptive_Fig_2.webp",
+            "caption": "Removal of other vehicle regions within ROI"
+        },
+        {
+            "url": "/assets/Publications/BS_Lane_Detection_Adaptive_Fig_3.webp",
+            "caption": "Edge detection after vehicle removal"
+        }
+    ],
+    "presentationImage": {
+        "url": "/assets/Publications/BS_Lane_Detection_Adaptive_Conference_Presentation.webp",
+        "caption": "Conference Presentation"
+    },
+    "type": "article-journal",
+    "URL": "https://www.earticle.net/Article/A427683",
+    "category": "domestic-journal",
+    "year": 2022,
+    "venue": "한국정보통신설비학회 학술대회",
+    "language": "Ko",
+    "organizations": [
+        {
+            "name": "ITFE",
+            "url": "https://www.itfe.or.kr/html/"
+        }
+    ]
+}

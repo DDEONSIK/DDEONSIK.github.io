@@ -1,0 +1,287 @@
+{
+    "title": "Life & Moments",
+    "description": "Casual snapshots of my journey and hobbies.",
+    "introLines": [
+        "I'm usually the one behind the camera, so photos of me are rare. These are the few moments where I stepped into the frame. 📷",
+        "I played piano, guitar, and violin as a child. While I've forgotten the chords, music and arts remain a cherished interest. 🎼",
+        "I've backpacked through Austria, Hungary, Czechia, Germany, Italy, and Japan. Traveling gives me fresh inspiration and a broader perspective. 🛫"
+    ],
+    "footerQuote": "- Work Hard, Play Hard -",
+    "images": [
+        {
+            "id": "1",
+            "name": "Master of Science",
+            "file": "M.S_Graduate1.webp",
+            "width": 490,
+            "height": 720
+        },
+        {
+            "id": "2",
+            "name": "Proud Moment",
+            "file": "M.S_Graduate2.webp",
+            "width": 2560,
+            "height": 1706
+        },
+        {
+            "id": "3",
+            "name": "M.S. Thesis Defense",
+            "file": "M.S._dissertation_presentation_1.webp",
+            "width": 407,
+            "height": 607
+        },
+        {
+            "id": "4",
+            "name": "Dissertation Presentation",
+            "file": "M.S._dissertation_presentation_2.webp",
+            "width": 938,
+            "height": 1080
+        },
+        {
+            "id": "5",
+            "name": "Research Workspace",
+            "file": "M.S._Workspace3.webp",
+            "width": 2252,
+            "height": 1696
+        },
+        {
+            "id": "6",
+            "name": "My Desk Setup",
+            "file": "life_desk_setup1.webp",
+            "width": 2560,
+            "height": 1441
+        },
+        {
+            "id": "7",
+            "name": "Curiosity",
+            "file": "life_study0.webp",
+            "width": 2560,
+            "height": 1244
+        },
+        {
+            "id": "8",
+            "name": "Automotive Technology",
+            "file": "life_study1.webp",
+            "width": 1441,
+            "height": 2560
+        },
+        {
+            "id": "9",
+            "name": "Tesla Model X FSD",
+            "file": "life_study2.webp",
+            "width": 2476,
+            "height": 2475
+        },
+        {
+            "id": "10",
+            "name": "Satisfied",
+            "file": "life_study3.webp",
+            "width": 720,
+            "height": 720
+        },
+        {
+            "id": "11",
+            "name": "Technical Studies",
+            "file": "life_study7.webp",
+            "width": 746,
+            "height": 746
+        },
+        {
+            "id": "12",
+            "name": "My Lovely Cat",
+            "file": "My_Cat1.webp",
+            "width": 1920,
+            "height": 2560
+        },
+        {
+            "id": "13",
+            "name": "Tiny Hunter",
+            "file": "My_Cat4.webp",
+            "width": 2176,
+            "height": 2176
+        },
+        {
+            "id": "14",
+            "name": "Bicycle Standing",
+            "file": "life_bicycle2.webp",
+            "width": 960,
+            "height": 720
+        },
+        {
+            "id": "15",
+            "name": "Mountain Riding",
+            "file": "life_bike6.webp",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "id": "16",
+            "name": "Beach Riding",
+            "file": "life_bike7.webp",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "id": "17",
+            "name": "Brother Riding",
+            "file": "life_bike8.webp",
+            "width": 2558,
+            "height": 1439
+        },
+        {
+            "id": "18",
+            "name": "City Riding",
+            "file": "life_bike10.webp",
+            "width": 1441,
+            "height": 1929
+        },
+        {
+            "id": "19",
+            "name": "Night Riding",
+            "file": "life_bike11.webp",
+            "width": 2560,
+            "height": 1441
+        },
+        {
+            "id": "20",
+            "name": "Hungary Trip",
+            "file": "life_travel_to_Europe1.webp",
+            "width": 1280,
+            "height": 622
+        },
+        {
+            "id": "21",
+            "name": "Museum BMW, Germany",
+            "file": "life_travel_to_Europe2.webp",
+            "width": 1280,
+            "height": 622
+        },
+        {
+            "id": "22",
+            "name": "Japan Trip",
+            "file": "life_travel_to_Japan.webm",
+            "width": 1920,
+            "height": 1080,
+            "poster": "life_travel_to_Japan_poster.webp"
+        },
+        {
+            "id": "23",
+            "name": "Swimming Sea",
+            "file": "life_vacation0.webp",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "id": "24",
+            "name": "Summer Break",
+            "file": "life_vacation1.webp",
+            "width": 1193,
+            "height": 1590
+        },
+        {
+            "id": "25",
+            "name": "Family Trip",
+            "file": "life_vacation2.webp",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "id": "26",
+            "name": "Backpack Kid Dance",
+            "file": "life_vacation2.webm",
+            "width": 1920,
+            "height": 1080,
+            "poster": "life_vacation2_poster.webp"
+        },
+        {
+            "id": "27",
+            "name": "Mountain Trip",
+            "file": "life_vacation3.webp",
+            "width": 1080,
+            "height": 1440
+        },
+        {
+            "id": "28",
+            "name": "Rough Ride",
+            "file": "life_vacation4.webp",
+            "width": 2560,
+            "height": 1920
+        },
+        {
+            "id": "29",
+            "name": "Night Skiing",
+            "file": "life_vacation5.webp",
+            "width": 1440,
+            "height": 1908
+        },
+        {
+            "id": "30",
+            "name": "1 HP",
+            "file": "life_vacation6.webp",
+            "width": 960,
+            "height": 720
+        },
+        {
+            "id": "31",
+            "name": "Sheep Farm",
+            "file": "life_vacation7.webp",
+            "width": 2560,
+            "height": 2560
+        },
+        {
+            "id": "32",
+            "name": "Research Road",
+            "file": "life_vacation8.webp",
+            "width": 2560,
+            "height": 2560
+        },
+        {
+            "id": "33",
+            "name": "Latest Technology",
+            "file": "life_vacation9.webp",
+            "width": 2560,
+            "height": 2560
+        },
+        {
+            "id": "34",
+            "name": "Troubleshooting",
+            "file": "life_vacation10.webp",
+            "width": 1920,
+            "height": 2560
+        },
+        {
+            "id": "35",
+            "name": "Snack Party",
+            "file": "life_vacation12.webp",
+            "width": 2560,
+            "height": 1441
+        },
+        {
+            "id": "36",
+            "name": "I'm not sure",
+            "file": "life_vacation13.webp",
+            "width": 720,
+            "height": 960
+        },
+        {
+            "id": "37",
+            "name": "Autumn Night",
+            "file": "life_vacation16.webp",
+            "width": 1920,
+            "height": 2560
+        },
+        {
+            "id": "38",
+            "name": "Part-time Job at Netflix",
+            "file": "life_part-time_job2.webp",
+            "width": 756,
+            "height": 1008
+        },
+        {
+            "id": "39",
+            "name": "Part-time Job at Netflix",
+            "file": "life_part-time_job3.webp",
+            "width": 2560,
+            "height": 2537
+        }
+    ]
+}

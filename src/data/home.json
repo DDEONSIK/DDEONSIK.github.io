@@ -1,0 +1,12 @@
+{
+    "hero": {
+        "label": "AUTONOMOUS DRIVING PERCEPTION ENGINEER",
+        "titlePrefix": "Bridging",
+        "titleHighlight": "Perception",
+        "titleSuffix": "& Reasoning.",
+        "description": "I build intelligent systems that understand the physical world.\nSpecializing in 3D Visual Grounding, Multi-view Occupancy, and Vision-Language Models.",
+        "buttonText": "View Publications",
+        "buttonLink": "/publications",
+        "profileImage": "home_casual.webp"
+    }
+}

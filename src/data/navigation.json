@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Home",
+        "path": "/",
+        "iconName": "Home"
+    },
+    {
+        "name": "Publications",
+        "path": "/publications",
+        "iconName": "FileText"
+    },
+    {
+        "name": "Activity",
+        "path": "/activity",
+        "iconName": "BrainCircuit"
+    },
+    {
+        "name": "About",
+        "path": "/about",
+        "iconName": "User"
+    },
+    {
+        "name": "Life",
+        "path": "/life",
+        "iconName": "Heart"
+    }
+]

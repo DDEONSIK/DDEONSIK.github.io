@@ -1,0 +1,11 @@
+node_modules/
+docs/
+
+.DS_Store
+.env
+
+
+temp.*
+
+# Personal Data (Ignored)
+Personal_HomePage_Production_data/

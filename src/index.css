@@ -1,0 +1,43 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* Using Tailwind utility classes that now map to hardcoded config */
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-sm;
+  }
+
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border;
+  }
+
+  .text-gradient {
+    /* Hardcoded VIVID gradient as requested by user (Decoupled from soft UI theme) */
+    background-image: linear-gradient(to right, hsl(221 83% 53%), hsl(199 89% 48%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-20;
+  }
+}

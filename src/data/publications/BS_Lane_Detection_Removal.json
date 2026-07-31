@@ -1,0 +1,66 @@
+{
+    "id": "jeonhyeonsig2022caseon",
+    "accessed": {
+        "date-parts": [
+            [
+                "2026",
+                1,
+                15
+            ]
+        ]
+    },
+    "author": "**Hyun-Sik Jeon**, Sung-Ju An, Sung-Taek Kim, Yong-Soo Choi*",
+    "citation-key": "jeonhyeonsig2022caseon",
+    "container-title": "대한전자공학회 학술대회",
+    "issued": {
+        "date-parts": [
+            [
+                "2022",
+                11
+            ]
+        ]
+    },
+    "page": "80–82",
+    "source": "www.dbpia.co.kr",
+    "title": "Vehicle Element Removal Method to Improve Lane Recognition",
+    "short_description": "Improved lane recognition accuracy by utilizing DeepLabV3+ semantic segmentation to remove vehicle occlusion areas.",
+    "abstract": "• **Problem**: Ensuring stable lane detection is challenging when lanes are occluded by other vehicles in urban environments. Even with ROI and noise removal, vehicle occlusions often lead to detection failures.\n• **Solution**: We proposed a method to remove vehicle regions using **DeepLab-V3+ semantic segmentation** before applying lane detection. This approach identifies vehicle areas within the ROI and excludes them from processing, allowing for cleaner lane feature extraction.\n• **Result**: Experimental results based on urban driving footage demonstrated that the proposed method effectively removed vehicle occlusion areas that interfere with lane detection, enabling more stable lane recognition compared to traditional methods. However, in cases where lanes were completely obscured by external factors (shadows, obstacles), detection remained difficult, suggesting future work on exploiting road boundary features.",
+    "media": [
+        {
+            "type": "image",
+            "url": "/assets/Publications/BS_Lane_Detection_Removal_Fig_1.webp",
+            "caption": "ASPP (Atrous Spatial Pyramid Pooling) Structure"
+        },
+        {
+            "type": "pdf",
+            "url": "/assets/Publications/BS_Lane_Detection_Removal_paper.pdf",
+            "caption": "View Paper"
+        }
+    ],
+    "resultImages": [
+        {
+            "url": "/assets/Publications/BS_Lane_Detection_Removal_Fig_2.webp",
+            "caption": "Image before vehicle removal"
+        },
+        {
+            "url": "/assets/Publications/BS_Lane_Detection_Removal_Fig_3.webp",
+            "caption": "Image after vehicle removal"
+        }
+    ],
+    "presentationImage": {
+        "url": "/assets/Publications/BS_Lane_Detection_Removal_Conference_Presentation.webp",
+        "caption": "Conference Presentation"
+    },
+    "type": "article-journal",
+    "URL": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11195427",
+    "category": "domestic-journal",
+    "year": 2022,
+    "venue": "대한전자공학회 학술대회",
+    "language": "Ko",
+    "organizations": [
+        {
+            "name": "IEIE",
+            "url": "https://www.theieie.org/eng/"
+        }
+    ]
+}

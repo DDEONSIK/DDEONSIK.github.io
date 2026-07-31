@@ -1,0 +1,35 @@
+.tabs-wrapper {
+  @apply flex justify-center;
+}
+
+.tabs-container {
+  @apply bg-card p-1.5 rounded-xl shadow-sm border border-border inline-flex flex-wrap justify-center gap-2 relative transition-all duration-300;
+}
+
+.tab-button {
+  @apply flex items-center px-4 py-2 rounded-lg text-sm font-bold transition-colors duration-200 relative z-10;
+}
+
+.tab-button-inactive {
+  @apply text-muted-foreground hover:text-primary;
+}
+
+.tab-button-active {
+  @apply text-primary-foreground;
+}
+
+.tab-active-pill {
+  @apply absolute inset-0 bg-primary rounded-lg shadow-md -z-10;
+}
+
+.tab-icon {
+  @apply mr-2 transition-colors duration-200;
+}
+
+.tab-icon-inactive {
+  @apply text-muted-foreground group-hover:text-primary;
+}
+
+.tab-icon-active {
+  @apply text-primary-foreground;
+}
