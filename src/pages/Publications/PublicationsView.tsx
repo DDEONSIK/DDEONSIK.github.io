@@ -123,9 +123,15 @@ const PublicationsView = () => {
         })) as BaseItem[];
 
         const ms = pubs.filter(p => (Number(p.year) || 0) >= 2024).sort((a, b) => {
-            if (a.title.includes("ViewFormer") && b.title.includes("UniAD")) return -1;
-            if (a.title.includes("UniAD") && b.title.includes("ViewFormer")) return 1;
-            return 0;
+            const getMsPriority = (title: string) => {
+                if (title.includes("SpatialRGPT") || title.includes("Spatial Reasoning")) return 1;
+                if (title.includes("Zero-shot")) return 2;
+                if (title.includes("SeeGround")) return 3;
+                if (title.includes("ViewFormer") || title.includes("Object Mask Module")) return 4;
+                if (title.includes("UniAD")) return 5;
+                return 99;
+            };
+            return getMsPriority(a.title) - getMsPriority(b.title);
         });
         const bs = pubs.filter(p => (Number(p.year) || 0) < 2024);
 

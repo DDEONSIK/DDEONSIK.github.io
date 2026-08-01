@@ -1,5 +1,43 @@
 [
     {
+        "id": "jeon2026spatial",
+        "author": "Jeon, Hyun-Sik, Ha, Jong-Eun",
+        "citation-key": "jeon2026spatial",
+        "container-title": "in submission",
+        "issued": {
+            "date-parts": [
+                [
+                    "2026"
+                ]
+            ]
+        },
+        "title": "Enhancing Spatial Reasoning in VLMs through Saliency-Aware SpatialRGPT",
+        "type": "article-journal",
+        "category": "international-journal",
+        "year": 2026,
+        "venue": "in submission",
+        "note": "SCIE"
+    },
+    {
+        "id": "kang2026robust",
+        "author": "Kang, Seong-Hui, Jeon, Hyun-Sik, Ha, Jong-Eun",
+        "citation-key": "kang2026robust",
+        "container-title": "in submission",
+        "issued": {
+            "date-parts": [
+                [
+                    "2026"
+                ]
+            ]
+        },
+        "title": "Robust Zero-shot 3D Visual Grounding via Structural Query Decomposition and Dynamic Viewpoint Selection",
+        "type": "article-journal",
+        "category": "international-journal",
+        "year": 2026,
+        "venue": "in submission",
+        "note": "SCIE"
+    },
+    {
         "id": "jeon2026enhancing",
         "accessed": {
             "date-parts": [
