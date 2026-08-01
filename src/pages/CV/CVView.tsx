@@ -22,9 +22,9 @@ const CVView: React.FC = () => {
                         href={cvPdf}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-background border border-border hover:border-primary hover:text-primary text-foreground text-sm font-semibold rounded-lg transition-all shadow-sm hover:shadow group shrink-0"
+                        className="inline-flex items-center gap-2.5 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold rounded-lg transition-all shadow-md hover:shadow-lg shadow-primary/10 hover:shadow-primary/20 group shrink-0"
                     >
-                        <FileText size={18} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                        <FileText size={20} className="text-primary-foreground transition-transform group-hover:scale-105" />
                         View PDF CV
                     </a>
                 </header>
