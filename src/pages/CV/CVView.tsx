@@ -235,29 +235,29 @@ const CVView: React.FC = () => {
                                          <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                                              <div>
                                                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{exp.role}</h3>
-                                                 <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
-                                                     <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
-                                                     {/* @ts-ignore */}
-                                                     {exp.website ? (
-                                                         <a
-                                                             // @ts-ignore
-                                                             href={exp.website}
-                                                             target="_blank"
-                                                             rel="noopener noreferrer"
-                                                             className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline-flex items-center gap-1"
-                                                         >
-                                                             {exp.organization}
-                                                             <ExternalLink size={13} className="text-muted-foreground opacity-60 inline" />
-                                                         </a>
-                                                     ) : (
-                                                         <span>{exp.organization}</span>
-                                                     )}
-                                                 </div>
                                              </div>
-                                             <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                             <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0 shrink-0 whitespace-nowrap">
                                                  <Calendar size={14} className="mr-2" />
                                                  {exp.period}
                                              </div>
+                                         </div>
+                                         <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1 mb-3">
+                                             <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                             {/* @ts-ignore */}
+                                             {exp.website ? (
+                                                 <a
+                                                     // @ts-ignore
+                                                     href={exp.website}
+                                                     target="_blank"
+                                                     rel="noopener noreferrer"
+                                                     className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline-flex items-center gap-1"
+                                                 >
+                                                     {exp.organization}
+                                                     <ExternalLink size={13} className="text-muted-foreground opacity-60 inline" />
+                                                 </a>
+                                             ) : (
+                                                 <span>{exp.organization}</span>
+                                             )}
                                          </div>
                                          {/* Advisor / Supervisor [NEW] */}
                                          {/* @ts-ignore */}
@@ -304,15 +304,15 @@ const CVView: React.FC = () => {
                                             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                                                 <div>
                                                     <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{teach.role}</h3>
-                                                    <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
-                                                        <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
-                                                        <span>{teach.organization}</span>
-                                                    </div>
                                                 </div>
-                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0 shrink-0 whitespace-nowrap">
                                                     <Calendar size={14} className="mr-2" />
                                                     {teach.period}
                                                 </div>
+                                            </div>
+                                            <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1 mb-3">
+                                                <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                <span>{teach.organization}</span>
                                             </div>
                                             {/* Instructor / Supervisor [NEW] */}
                                             {/* @ts-ignore */}
@@ -351,15 +351,15 @@ const CVView: React.FC = () => {
                                             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                                                 <div>
                                                     <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{award.title}</h3>
-                                                    <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
-                                                        <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
-                                                        <span>{award.issuer}</span>
-                                                    </div>
                                                 </div>
-                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0 shrink-0 whitespace-nowrap">
                                                     <Calendar size={14} className="mr-2" />
                                                     {award.date}
                                                 </div>
+                                            </div>
+                                            <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1 mb-3">
+                                                <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                <span>{award.issuer}</span>
                                             </div>
                                             <p className="text-sm text-muted-foreground leading-relaxed mt-4 border-t border-border pt-3">
                                                 {award.description}
