@@ -122,71 +122,79 @@ const CVView: React.FC = () => {
                                                 <span>{edu.institution}</span>
                                             )}
                                         </h3>
-                                        {/* Department */}
-                                        <div className="text-md font-medium text-muted-foreground mt-1">
-                                            {edu.department}
-                                        </div>
-                                        {/* Thesis Info */}
-                                        {/* @ts-ignore */}
-                                        {edu.thesisTitle && (
-                                            <div className="text-md font-medium text-muted-foreground mt-1">
-                                                Thesis Title:{" "}
-                                                {/* @ts-ignore */}
-                                                {edu.thesisLink ? (
-                                                    <a
-                                                        // @ts-ignore
-                                                        href={edu.thesisLink}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/thesis font-normal"
-                                                    >
-                                                        {/* @ts-ignore */}
-                                                        {edu.thesisTitle}
-                                                        <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
-                                                            <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/thesis:text-primary transition-colors" />
-                                                        </span>
-                                                    </a>
-                                                ) : (
-                                                    // @ts-ignore
-                                                    <span className="font-normal">{edu.thesisTitle}</span>
+                                         {/* Department */}
+                                         <div className="text-md font-medium text-muted-foreground mt-1 flex items-center gap-1.5">
+                                             <Building2 size={15} className="text-muted-foreground opacity-70 shrink-0 mt-[1px]" />
+                                             {edu.department}
+                                         </div>
+                                         {/* Thesis Advisor [NEW] */}
+                                         {/* @ts-ignore */}
+                                         {edu.thesisAdvisor && (
+                                             <div className="text-md font-medium text-muted-foreground mt-1">
+                                                 Thesis Advisor: <span className="font-normal text-foreground">{edu.thesisAdvisor}</span>
+                                             </div>
+                                         )}
+                                         {/* Thesis Info */}
+                                         {/* @ts-ignore */}
+                                         {edu.thesisTitle && (
+                                             <div className="text-md font-medium text-muted-foreground mt-1">
+                                                 Thesis Title:{" "}
+                                                 {/* @ts-ignore */}
+                                                 {edu.thesisLink ? (
+                                                     <a
+                                                         // @ts-ignore
+                                                         href={edu.thesisLink}
+                                                         target="_blank"
+                                                         rel="noopener noreferrer"
+                                                         className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/thesis font-normal"
+                                                     >
+                                                         {/* @ts-ignore */}
+                                                         {edu.thesisTitle}
+                                                         <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                             <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/thesis:text-primary transition-colors" />
+                                                         </span>
+                                                     </a>
+                                                 ) : (
+                                                     // @ts-ignore
+                                                     <span className="font-normal">{edu.thesisTitle}</span>
+                                                  )}
+                                             </div>
+                                         )}
+                                         {/* Lab Info */}
+                                         {/* @ts-ignore */}
+                                         {edu.labName && (
+                                             <div className="text-md font-medium text-muted-foreground mt-1 flex items-center">
+                                                 Research Lab:{" "}
+                                                 {/* @ts-ignore */}
+                                                 {edu.labLink ? (
+                                                     <a
+                                                         // @ts-ignore
+                                                         href={edu.labLink}
+                                                         target="_blank"
+                                                         rel="noopener noreferrer"
+                                                         className="ml-1 hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/link font-normal"
+                                                     >
+                                                         {/* @ts-ignore */}
+                                                         {edu.labName}
+                                                         <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
+                                                             <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/link:text-primary transition-colors" />
+                                                         </span>
+                                                     </a>
+                                                 ) : (
+                                                     // @ts-ignore
+                                                     <span className="ml-1 font-normal">{edu.labName}</span>
                                                  )}
-                                            </div>
-                                        )}
-                                        {/* Lab Info */}
-                                        {/* @ts-ignore */}
-                                        {edu.labName && (
-                                            <div className="text-md font-medium text-muted-foreground mt-1 flex items-center">
-                                                Research Lab:{" "}
-                                                {/* @ts-ignore */}
-                                                {edu.labLink ? (
-                                                    <a
-                                                        // @ts-ignore
-                                                        href={edu.labLink}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="ml-1 hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline group/link font-normal"
-                                                    >
-                                                        {/* @ts-ignore */}
-                                                        {edu.labName}
-                                                        <span className="inline-block ml-1 align-middle transform -translate-y-[1px]">
-                                                            <ExternalLink size={14} className="text-muted-foreground opacity-70 group-hover/link:text-primary transition-colors" />
-                                                        </span>
-                                                    </a>
-                                                ) : (
-                                                    // @ts-ignore
-                                                    <span className="ml-1 font-normal">{edu.labName}</span>
-                                                )}
-                                            </div>
-                                        )}
-                                        {/* Period */}
-                                        <div className="text-sm text-muted-foreground mb-2 mt-1">{edu.period}</div>
-                                        {/* GPA / Desc */}
-                                        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mt-2">
-                                            {edu.description}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
+                                             </div>
+                                         )}
+                                         {/* Period */}
+                                         <div className="text-sm text-muted-foreground mb-2 mt-1">{edu.period}</div>
+                                         {/* GPA / Desc */}
+                                         <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mt-2">
+                                             {edu.description}
+                                         </p>
+                                     </div>
+                                 ))}
+                             </div>
                         </section>
 
                         {/* Skills */}
@@ -213,56 +221,160 @@ const CVView: React.FC = () => {
                     </div>
 
                     {/* Right Column: Experience & Projects */}
-                    <div className="lg:col-span-8 space-y-12">
+                    <div className="lg:col-span-8 space-y-10">
 
                         {/* Experience */}
                         <section>
                             <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
-                                <Briefcase className="mr-3 text-primary" /> Research & Experience
+                                <Briefcase className="mr-3 text-primary" /> Research & Professional Experience
                             </h2>
 
-                            <div className="space-y-10">
-                                {cvData.experience.map((exp) => (
-                                    <div key={exp.id} className="group bg-card border border-border rounded-xl p-6 hover-card">
-                                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                                            <div>
-                                                <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{exp.role}</h3>
-                                                <div className="text-lg text-muted-foreground">{exp.organization}</div>
+                             <div className="space-y-6">
+                                 {cvData.experience.map((exp) => (
+                                     <div key={exp.id} className="group bg-card border border-border rounded-xl p-6 hover-card">
+                                         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                             <div>
+                                                 <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{exp.role}</h3>
+                                                 <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
+                                                     <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                     {/* @ts-ignore */}
+                                                     {exp.website ? (
+                                                         <a
+                                                             // @ts-ignore
+                                                             href={exp.website}
+                                                             target="_blank"
+                                                             rel="noopener noreferrer"
+                                                             className="hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 inline-flex items-center gap-1"
+                                                         >
+                                                             {exp.organization}
+                                                             <ExternalLink size={13} className="text-muted-foreground opacity-60 inline" />
+                                                         </a>
+                                                     ) : (
+                                                         <span>{exp.organization}</span>
+                                                     )}
+                                                 </div>
+                                             </div>
+                                             <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                                 <Calendar size={14} className="mr-2" />
+                                                 {exp.period}
+                                             </div>
+                                         </div>
+                                         {/* Advisor / Supervisor [NEW] */}
+                                         {/* @ts-ignore */}
+                                         {(exp.advisor || exp.supervisor) && (
+                                             <div className="text-sm italic text-muted-foreground mb-4">
+                                                 {/* @ts-ignore */}
+                                                 {exp.advisor ? `Advisor: ${exp.advisor}` : `Supervisor: ${exp.supervisor}`}
+                                             </div>
+                                         )}
+                                         <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
+                                             {exp.descriptionItems.map((item, index) => (
+                                                 <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                                             ))}
+                                         </ul>
+                                         {/* @ts-ignore */}
+                                         {exp.actionLink && (
+                                             <div className="mt-6 flex justify-end">
+                                                 <Link
+                                                     // @ts-ignore
+                                                     to={exp.actionLink}
+                                                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold rounded-lg transition-all group"
+                                                 >
+                                                     {exp.actionLabel || "View Details"}
+                                                     <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
+                                                 </Link>
+                                             </div>
+                                         )}
+                                     </div>
+                                 ))}
+                             </div>
+                         </section>
+
+                        {/* Teaching Experiences */}
+                        {/* @ts-ignore */}
+                        {cvData.teaching && cvData.teaching.length > 0 && (
+                            <section>
+                                <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
+                                    <GraduationCap className="mr-3 text-primary" /> Teaching Experiences
+                                </h2>
+                                <div className="space-y-6">
+                                    {/* @ts-ignore */}
+                                    {cvData.teaching.map((teach) => (
+                                        <div key={teach.id} className="group bg-card border border-border rounded-xl p-6 hover-card">
+                                            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                                <div>
+                                                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{teach.role}</h3>
+                                                    <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
+                                                        <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                        <span>{teach.organization}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                                    <Calendar size={14} className="mr-2" />
+                                                    {teach.period}
+                                                </div>
                                             </div>
-                                            <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
-                                                <Calendar size={14} className="mr-2" />
-                                                {exp.period}
-                                            </div>
-                                        </div>
-                                        <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
-                                            {exp.descriptionItems.map((item, index) => (
-                                                <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
-                                            ))}
-                                        </ul>
-                                        {/* @ts-ignore */}
-                                        {exp.actionLink && (
-                                            <div className="mt-6 flex justify-end">
-                                                <Link
-                                                    // @ts-ignore
-                                                    to={exp.actionLink}
-                                                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold rounded-lg transition-all group"
-                                                >
+                                            {/* Instructor / Supervisor [NEW] */}
+                                            {/* @ts-ignore */}
+                                            {teach.instructor && (
+                                                <div className="text-sm italic text-muted-foreground mb-3">
+                                                    Instructor: {teach.instructor}
+                                                </div>
+                                            )}
+                                            <div className="text-md text-muted-foreground mb-3">{teach.course}</div>
+                                            {/* @ts-ignore */}
+                                            {teach.descriptionItems && teach.descriptionItems.length > 0 && (
+                                                <ul className="list-disc list-inside space-y-1 text-muted-foreground leading-relaxed">
                                                     {/* @ts-ignore */}
-                                                    {exp.actionLabel || "View Details"}
-                                                    <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
-                                                </Link>
+                                                    {teach.descriptionItems.map((item, index) => (
+                                                        <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
+
+                        {/* Honors & Awards */}
+                        {/* @ts-ignore */}
+                        {cvData.awards && cvData.awards.length > 0 && (
+                            <section>
+                                <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
+                                    <Award className="mr-3 text-primary" /> Honors & Awards
+                                </h2>
+                                <div className="space-y-6">
+                                    {/* @ts-ignore */}
+                                    {cvData.awards.map((award) => (
+                                        <div key={award.id} className="group bg-card border border-border rounded-xl p-6 hover-card">
+                                            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                                <div>
+                                                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{award.title}</h3>
+                                                    <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1">
+                                                        <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                        <span>{award.issuer}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0">
+                                                    <Calendar size={14} className="mr-2" />
+                                                    {award.date}
+                                                </div>
                                             </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
+                                            <p className="text-sm text-muted-foreground leading-relaxed mt-4 border-t border-border pt-3">
+                                                {award.description}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
                         {/* Achievements */}
                         {/* Certifications & Awards */}
                         <section>
                             <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
-                                <Award className="mr-3 text-primary" /> Certifications & Field Training
+                                <Award className="mr-3 text-primary" /> Certifications & Training
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* @ts-ignore */}

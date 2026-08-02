@@ -2,7 +2,7 @@ const fs = require('fs');
 const pdfLib = require('pdf-parse');
 const path = require('path');
 
-const pdfPath = path.join(__dirname, '..', 'personal_data_temp', '[컨설팅] 전현식 이력서.pdf');
+const pdfPath = path.join(__dirname, '..', 'src', 'assets', 'Hyun-Sik_Jeon_Curriculum_Vitae.pdf');
 
 if (!fs.existsSync(pdfPath)) {
     console.error('File not found:', pdfPath);

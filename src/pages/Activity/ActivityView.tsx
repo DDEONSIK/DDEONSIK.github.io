@@ -66,8 +66,9 @@ const RichTextRenderer = ({ text }: { text: string }) => {
                 }
 
                 // Standard Paragraph
+                const isAdvisorLine = trimmed.startsWith('*Advisor:');
                 return (
-                    <p key={idx} className="leading-relaxed text-lg text-muted-foreground">
+                    <p key={idx} className={`leading-relaxed text-lg text-muted-foreground ${isAdvisorLine ? 'mb-1 mt-1' : ''}`}>
                         <InlineTextRenderer text={content} />
                     </p>
                 );
@@ -76,12 +77,11 @@ const RichTextRenderer = ({ text }: { text: string }) => {
     );
 };
 
-// Helper for inline styles (Bold, Link)
+// Helper for inline styles (Bold, Link, Italic)
 const InlineTextRenderer = ({ text }: { text: string }) => {
-    // Regex to match [Link](Url) OR **Bold**
-    // We split by them to get parts. 
-    // Capturing groups: 1=LinkText, 2=LinkUrl, 3=BoldText
-    const parts = text.split(/(\[.*?\]\(.*?\))|(\*\*.*?\*\*)/g);
+    // Regex to match [Link](Url) OR **Bold** OR *Italic*
+    // Capturing groups: 1=LinkText, 2=BoldText, 3=ItalicText
+    const parts = text.split(/(\[.*?\]\(.*?\))|(\*\*.*?\*\*)|(\*[^*]+?\*)/g);
 
     return (
         <>
@@ -109,6 +109,11 @@ const InlineTextRenderer = ({ text }: { text: string }) => {
                 // Handle Bold: **Text**
                 if (part.startsWith('**') && part.endsWith('**')) {
                     return <strong key={i} className="font-semibold text-foreground">{part.slice(2, -2)}</strong>;
+                }
+
+                // Handle Italic: *Text*
+                if (part.startsWith('*') && part.endsWith('*')) {
+                    return <span key={i} className="italic text-muted-foreground">{part.slice(1, -1)}</span>;
                 }
 
                 return <span key={i}>{part}</span>;

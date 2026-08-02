@@ -25,6 +25,7 @@
             "labLink": "https://ais.seoultech.ac.kr/",
             "thesisTitle": "Spatial Understanding for Camera-based Autonomous Driving Perception and 3D Visual Grounding",
             "thesisLink": "https://snut.dcollection.net/srch/srchDetail/200000955484",
+            "thesisAdvisor": "Prof. Jong-Eun Ha",
             "period": "Mar. 2024 - Feb. 2026",
             "description": "Total GPA: 3.81 / 4.5",
             "status": "current"
@@ -50,7 +51,8 @@
         ],
         "ML/DL Frameworks": [
             "PyTorch",
-            "MMCV"
+            "MMCV",
+            "PaddlePaddle"
         ],
         "Robotics & Sim": [
             "ROS2",
@@ -83,6 +85,7 @@
             "id": 1,
             "role": "Graduate Student Researcher (Master's Program)",
             "organization": "AIS Lab (SeoulTech)",
+            "advisor": "Prof. Jong-Eun Ha",
             "period": "2024.03 - 2026.02",
             "descriptionItems": [
                 "Achieved a <strong>3.54%</strong> (Nr3D) and <strong>6.74%</strong> (ScanRefer) accuracy improvement in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>.",
@@ -92,19 +95,22 @@
         },
         {
             "id": 2,
-            "role": "Undergraduate Researcher",
-            "organization": "Dept. of Future Automotive Engineering (Shinhan Univ.)",
-            "period": "2022.06 - 2023.12",
+            "role": "Field Practicum Trainee",
+            "organization": "Ways1 Inc.",
+            "supervisor": "Jin-woo Kim",
+            "website": "https://www.ways1.com/eng/",
+            "period": "Jun. 2025 (5 days)",
             "descriptionItems": [
-                "Authored <strong>4 conference papers</strong> (IEIE, ITFE) regarding robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
-                "Proposed an <strong>Occlusion Removal</strong> technique utilizing <strong>DeepLab-V3+</strong> to significantly improve lane recognition stability.",
-                "Implemented <strong>Real-time Obstacle Avoidance</strong> using <strong>LiDAR ROI Filtering</strong> and <strong>Pure-Pursuit</strong> on <strong>low-compute</strong> platforms."
+                "Prototyped a <strong>GAT-based E2E state estimation model</strong> to replace the Kalman filter.",
+                "Built a large-scale data cleaning and <strong>PyTorch Geometric</strong> training pipeline handling a <strong>large-scale spatial database</strong>.",
+                "Keywords: Graph Attention Networks (GAT), E2E State Estimation, PyTorch Geometric"
             ]
         },
         {
             "id": 3,
             "role": "Founder & Vision Team Leader",
             "organization": "Autonomous Driving Club 'S.D.S'",
+            "advisor": "Prof. Yong-Soo Choi",
             "period": "2022.03 - 2024.02",
             "actionLink": "/activity",
             "actionLabel": "View Activity Details",
@@ -113,20 +119,57 @@
                 "Architected a full-stack perception system for <strong>ERP-42 EV</strong>, encompassing robust <strong>Lane Detection</strong> and <strong>Traffic Sign Recognition</strong>.",
                 "Curated a custom dataset of <strong>3,500 images</strong> for South Korean traffic environments and optimized the end-to-end training pipeline."
             ]
+        },
+        {
+            "id": 4,
+            "role": "Undergraduate Researcher",
+            "organization": "Dept. of Future Automotive Engineering (Shinhan Univ.)",
+            "advisor": "Prof. Yong-Soo Choi",
+            "period": "2022.06 - 2023.12",
+            "descriptionItems": [
+                "Authored <strong>4 conference papers</strong> (IEIE, ITFE) regarding robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
+                "Proposed an <strong>Occlusion Removal</strong> technique utilizing <strong>DeepLab-V3+</strong> to significantly improve lane recognition stability.",
+                "Implemented <strong>Real-time Obstacle Avoidance</strong> using <strong>LiDAR ROI Filtering</strong> and <strong>Pure-Pursuit</strong> on <strong>low-compute</strong> platforms."
+            ]
+        }
+    ],
+    "teaching": [
+        {
+            "id": 1,
+            "role": "Teaching Assistant",
+            "organization": "SeoulTech",
+            "instructor": "Prof. Su-Ryong Lee",
+            "period": "Fall 2024 - Fall 2025",
+            "course": "Automotive Structure, Basic Lab, and Automotive Combustion Engineering",
+            "descriptionItems": []
+        }
+    ],
+    "awards": [
+        {
+            "id": 1,
+            "title": "Research Publication Grant (SCOPUS Paper)",
+            "issuer": "SeoulTech",
+            "date": "Jul. 2025",
+            "description": "Awarded a research grant in recognition of successfully publishing UniAD model lightweighting research in a SCOPUS-indexed journal."
+        },
+        {
+            "id": 2,
+            "title": "National Advanced Robotics Training Fellowship",
+            "issuer": "MOTIE & KIAT",
+            "date": "Jun. 2024 - Feb. 2026",
+            "description": "Selected for the national talent development program hosted by the Ministry of Trade, Industry and Energy (MOTIE) and the Korea Institute for Advancement of Technology (KIAT), receiving monthly research stipends while fulfilling academic milestones and project presentation requirements."
+        },
+        {
+            "id": 3,
+            "title": "Future Talent Scholarship for Research Excellence",
+            "issuer": "SeoulTech",
+            "date": "Jul. 2024",
+            "description": "Awarded a competitive institutional graduate scholarship recognizing outstanding research report performance and high academic potential."
         }
     ],
     "certifications": [
         {
             "id": 1,
-            "title": "Development of E2E DL-based State Estimation Algorithm to Replace Kalman Filter",
-            "issuer": "Ways1 Inc.",
-            "date": "June 2024",
-            "type": "Field Practicum",
-            "description": "Participated in corporate field training program focused on deep learning state estimation. (Total 40 Hours)",
-            "link": "https://www.ways1.com/eng/"
-        },
-        {
-            "id": 2,
             "title": "Deep Learning Stage 1: Neural Networks and Deep Learning",
             "issuer": "NAVER Connect Foundation (Boostcourse)",
             "date": "Oct. 04, 2023",
@@ -135,7 +178,7 @@
             "link": "https://www.boostcourse.org/ai215"
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "Electric Vehicle Maintenance Plus Course",
             "issuer": "Gyeonggi Jobs Foundation",
             "date": "Sept. 18, 2023",
@@ -144,7 +187,7 @@
             "link": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=151204&search="
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Electric Vehicle High Voltage Safety Training Level 1",
             "issuer": "TÜV SÜD Korea",
             "date": "Aug. 09, 2023",
@@ -153,7 +196,7 @@
             "link": "https://www.tuvsud.com/en"
         },
         {
-            "id": 5,
+            "id": 4,
             "title": "Industrial Engineer Motor Vehicles Maintenance",
             "issuer": "HRD Korea (Human Resources Development Service of Korea)",
             "date": "June 03, 2022",
