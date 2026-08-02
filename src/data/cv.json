@@ -89,8 +89,8 @@
             "period": "Mar. 2024 - Feb. 2026",
             "descriptionItems": [
                 "Achieved a <strong>3.54%</strong> (Nr3D) and <strong>6.74%</strong> (ScanRefer) accuracy improvement in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>.",
-                "Optimized <strong>UniAD</strong> for edge-device deployment, reducing <strong>memory footprint</strong> by <strong>~80%</strong> via advanced <strong>model lightweighting</strong> techniques.",
-                "Engineered an <strong>Object Mask Module</strong> for ViewFormer to enhance <strong>3D Occupancy Prediction</strong> within complex urban environments."
+                "Engineered an <strong>Object Mask Module</strong> for ViewFormer to enhance <strong>3D Occupancy Prediction</strong> within complex urban environments.",
+                "Optimized <strong>UniAD</strong> for edge-device deployment, reducing <strong>memory footprint</strong> by <strong>~80%</strong> via advanced <strong>model lightweighting</strong> techniques."
             ]
         },
         {
@@ -203,6 +203,21 @@
             "type": "National Technical Qualification",
             "description": "Certified by Ministry of Land, Infrastructure and Transport.",
             "link": "https://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&gId=&jmCd=2070&jmNm=&jobSearch=N#none"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Dynamic Scene Understanding via Integration of Neural Rendering and Transformers",
+            "type": "Ongoing Lab Project",
+            "organization": "SeoulTech University",
+            "advisor": "Prof. Jong-Eun Ha",
+            "period": "Mar. 2024 - Feb. 2026",
+            "funding": "Mid-Career Research Program, National Research Foundation of Korea (NRF), Ministry of Science and ICT (MSIT)",
+            "descriptionItems": [
+                "Engineered edge-device model optimization and lightweighting techniques for end-to-end autonomous driving perception (UniAD).",
+                "Researched multi-view 3D occupancy perception based on Transformer architectures (ViewFormer) for dynamic scene understanding."
+            ]
         }
     ]
 }

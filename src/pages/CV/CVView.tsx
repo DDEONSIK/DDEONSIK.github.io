@@ -1,4 +1,4 @@
-import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText, User, ExternalLink, Building2, ArrowRight } from 'lucide-react';
+import { Calendar, Briefcase, GraduationCap, Award, Code2, Cpu, FileText, User, ExternalLink, Building2, ArrowRight, FileCheck, Workflow } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import cvData from '@/data/cv.json';
 // @ts-ignore
@@ -290,6 +290,60 @@ const CVView: React.FC = () => {
                              </div>
                          </section>
 
+                        {/* Research Projects */}
+                        {/* @ts-ignore */}
+                        {cvData.projects && cvData.projects.length > 0 && (
+                            <section>
+                                <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
+                                    <Workflow className="mr-3 text-primary" /> Projects
+                                </h2>
+                                <div className="space-y-6">
+                                    {/* @ts-ignore */}
+                                    {cvData.projects.map((proj) => (
+                                        <div key={proj.id} className="group bg-card border border-border rounded-xl p-6 hover-card">
+                                            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                                                <div>
+                                                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors pr-4">{proj.title}</h3>
+                                                </div>
+                                                <div className="flex items-center text-sm font-mono text-muted-foreground bg-secondary px-3 py-1 rounded-md mt-2 md:mt-0 shrink-0 whitespace-nowrap">
+                                                    <Calendar size={14} className="mr-2" />
+                                                    {proj.period}
+                                                </div>
+                                            </div>
+                                            <div className="text-lg text-muted-foreground flex items-center gap-1.5 mt-1 mb-3">
+                                                <Building2 size={16} className="text-muted-foreground opacity-70 shrink-0" />
+                                                <span>{proj.organization}</span>
+                                            </div>
+                                            {/* Advisor */}
+                                            {/* @ts-ignore */}
+                                            {proj.advisor && (
+                                                <div className="text-sm italic text-muted-foreground mb-3">
+                                                    Advisor: {proj.advisor}
+                                                </div>
+                                            )}
+                                            {/* Funding */}
+                                            {/* @ts-ignore */}
+                                            {proj.funding && (
+                                                <div className="text-md text-muted-foreground mb-3">
+                                                    {proj.funding}
+                                                </div>
+                                            )}
+                                            {/* Description Items */}
+                                            {/* @ts-ignore */}
+                                            {proj.descriptionItems && proj.descriptionItems.length > 0 && (
+                                                <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed mt-3 border-t border-border/50 pt-3">
+                                                    {/* @ts-ignore */}
+                                                    {proj.descriptionItems.map((item, index) => (
+                                                        <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
+
                         {/* Teaching Experiences */}
                         {/* @ts-ignore */}
                         {cvData.teaching && cvData.teaching.length > 0 && (
@@ -374,7 +428,7 @@ const CVView: React.FC = () => {
                         {/* Certifications & Awards */}
                         <section>
                             <h2 className="flex items-center text-3xl font-bold mb-8 text-foreground">
-                                <Award className="mr-3 text-primary" /> Certifications & Training
+                                <FileCheck className="mr-3 text-primary" /> Certifications & Training
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* @ts-ignore */}
