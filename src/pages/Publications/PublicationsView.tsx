@@ -171,9 +171,16 @@ const PublicationsView = () => {
                     <p className="text-lg text-muted-foreground">
                         Research contributions in 3D Computer Vision and Autonomous Systems.
                     </p>
-                    <p className="text-sm text-muted-foreground/80 mt-2">
-                        * Click on a publication to view a detailed summary.
-                    </p>
+                    <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/50 rounded-xl text-yellow-600 dark:text-yellow-400 max-w-xl">
+                        <div className="flex items-start gap-3">
+                            <div className="shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg>
+                            </div>
+                            <div className="text-sm font-medium leading-relaxed">
+                                Click on a publication to view a detailed summary, abstract, and figures.
+                            </div>
+                        </div>
+                    </div>
                 </motion.header>
 
                 {/* Main Content Area - Split View */}

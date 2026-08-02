@@ -215,8 +215,8 @@
             "period": "Mar. 2024 - Feb. 2026",
             "funding": "Mid-Career Research Program, National Research Foundation of Korea (NRF), Ministry of Science and ICT (MSIT)",
             "descriptionItems": [
-                "Engineered edge-device model optimization and lightweighting techniques for end-to-end autonomous driving perception (UniAD).",
-                "Researched multi-view 3D occupancy perception based on Transformer architectures (ViewFormer) for dynamic scene understanding."
+                "Participated in the research project by developing advanced Transformer-based 3D perception and edge-optimized model structures.",
+                "Contributed key technologies including ViewFormer-based 3D occupancy prediction and UniAD-based end-to-end model lightweighting."
             ]
         }
     ]
