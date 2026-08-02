@@ -86,7 +86,7 @@
             "role": "Graduate Student Researcher (Master's Program)",
             "organization": "AIS Lab (SeoulTech)",
             "advisor": "Prof. Jong-Eun Ha",
-            "period": "2024.03 - 2026.02",
+            "period": "Mar. 2024 - Feb. 2026",
             "descriptionItems": [
                 "Achieved a <strong>3.54%</strong> (Nr3D) and <strong>6.74%</strong> (ScanRefer) accuracy improvement in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>.",
                 "Optimized <strong>UniAD</strong> for edge-device deployment, reducing <strong>memory footprint</strong> by <strong>~80%</strong> via advanced <strong>model lightweighting</strong> techniques.",
@@ -111,7 +111,7 @@
             "role": "Founder & Vision Team Leader",
             "organization": "Autonomous Driving Club 'S.D.S'",
             "advisor": "Prof. Yong-Soo Choi",
-            "period": "2022.03 - 2024.02",
+            "period": "Mar. 2022 - Feb. 2024",
             "actionLink": "/activity",
             "actionLabel": "View Activity Details",
             "descriptionItems": [
@@ -125,7 +125,7 @@
             "role": "Undergraduate Researcher",
             "organization": "Dept. of Future Automotive Engineering (Shinhan Univ.)",
             "advisor": "Prof. Yong-Soo Choi",
-            "period": "2022.06 - 2023.12",
+            "period": "Jun. 2022 - Dec. 2023",
             "descriptionItems": [
                 "Authored <strong>4 conference papers</strong> (IEIE, ITFE) regarding robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
                 "Proposed an <strong>Occlusion Removal</strong> technique utilizing <strong>DeepLab-V3+</strong> to significantly improve lane recognition stability.",
@@ -181,9 +181,9 @@
             "id": 2,
             "title": "Electric Vehicle Maintenance Plus Course",
             "issuer": "Gyeonggi Jobs Foundation",
-            "date": "Sept. 18, 2023",
+            "date": "Sep. 18, 2023",
             "type": "Certificate",
-            "description": "Specialized training in EV maintenance and diagnostics. (July - Sept 2023)",
+            "description": "Specialized training in EV maintenance and diagnostics. (Jul. - Sep. 2023)",
             "link": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=151204&search="
         },
         {
@@ -199,7 +199,7 @@
             "id": 4,
             "title": "Industrial Engineer Motor Vehicles Maintenance",
             "issuer": "HRD Korea (Human Resources Development Service of Korea)",
-            "date": "June 03, 2022",
+            "date": "Jun. 03, 2022",
             "type": "National Technical Qualification",
             "description": "Certified by Ministry of Land, Infrastructure and Transport.",
             "link": "https://www.q-net.or.kr/crf005.do?id=crf00501&gSite=Q&gId=&jmCd=2070&jmNm=&jobSearch=N#none"
