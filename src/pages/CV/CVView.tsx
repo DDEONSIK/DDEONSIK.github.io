@@ -124,7 +124,6 @@ const CVView: React.FC = () => {
                                         </h3>
                                          {/* Department */}
                                          <div className="text-md font-medium text-muted-foreground mt-1 flex items-center gap-1.5">
-                                             <Building2 size={15} className="text-muted-foreground opacity-70 shrink-0 mt-[1px]" />
                                              {edu.department}
                                          </div>
                                          {/* Thesis Advisor [NEW] */}
