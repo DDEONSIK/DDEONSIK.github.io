@@ -1,11 +1,11 @@
 {
     "intro": {
-        "title": "BRIDGING PERCEPTION AND ACTION THROUGH ENGINEERING RIGOR",
-        "subtitle": "Hyun-Sik Jeon: A Proactive Pioneer in AI Technology",
-        "description": "**I aspire to develop AI that mirrors human perception and judgment.** I am dedicated to realizing **Embodied Intelligence** that transcends mere recognition, intuitively understanding and interacting with the complex physical world much like a human does. As a researcher, I strive to provide the **most logical and safe solutions** even in uncertain environments. In the rapidly evolving landscape of AI, I am committed to being a **Pioneer** rather than a follower, relentlessly pursuing **creative and fundamental solutions** through rigorous inquiry.",
+        "title": "BRIDGING PERCEPTION AND SPATIAL REASONING",
+        "subtitle": "About",
+        "description": "**I aspire to develop AI that mirrors human perception and judgment.** My work focuses on **spatial reasoning**: enabling models to infer *where* objects are and how they relate, not merely *what* they are. I approach this through **camera-based 3D perception** and **vision-language models**. I care about how systems behave when their inputs are degraded or ambiguous. I am drawn to problems where existing methods break down, and I prefer to understand why they fail before proposing alternatives.",
         "tags": [
             {
-                "label": "Challenging",
+                "label": "Challenge-Driven",
                 "icon": "Zap"
             },
             {
@@ -31,18 +31,18 @@
         "values": [
             {
                 "icon": "Search",
-                "title": "Penetrating Insight into Fundamentals",
-                "description": "I prioritize exploring **fundamental causes** over superficial phenomena. Through an analysis of early autonomous driving technologies, I gained the critical insight that **'AI is not merely code, but a system that fundamentally interacts with the physical world'**—a realization that has served as the bedrock of my research."
+                "title": "Working from Fundamentals",
+                "description": "I prioritize **root causes** over surface symptoms. When my object masking module degraded ViewFormer's performance, I traced it to **unstable mask supervision** rather than accepting the negative result—and found the same architecture **outperformed the baseline** under single-GPU training."
             },
             {
                 "icon": "Puzzle",
                 "title": "Strategic Tenacity",
-                "description": "While I possess a deep-seated inclination for intense immersion in specific problems, I remain vigilant against the potential narrowness of losing the broader perspective. To mitigate this, I deliberately incorporate **'Research Sprints'** and **'Peer Code Reviews'** into my workflow. This conscious effort ensures that my tenacity manifests not as mere stubbornness, but as a catalyst for **exceptional outcomes**."
+                "description": "I tend to immerse myself deeply in a single problem, which can narrow my perspective. To mitigate this, I set **time-boxed checkpoints** and review code with **lab colleagues**. This keeps my persistence from turning into stubbornness."
             },
             {
                 "icon": "Hammer",
                 "title": "Pragmatic Innovation",
-                "description": "I aim for robust technologies capable of navigating **real-world edge cases**, moving beyond algorithms that function only within the confines of a controlled laboratory. I constantly strive for a continuous equilibrium between **theoretical rigor** and **practical feasibility**."
+                "description": "I aim for robust technologies capable of navigating **real-world edge cases**, not just algorithms that work in a controlled lab. I try to keep **theoretical rigor** and **practical feasibility** in balance."
             }
         ]
     },
@@ -52,17 +52,17 @@
             {
                 "icon": "Cpu",
                 "title": "Hardware-Aware AI",
-                "description": "I possess an in-depth understanding of automotive hardware mechanisms alongside software proficiency. My hands-on experience handling high-voltage electric vehicle (EV) systems and performing vehicle maintenance provides a unique, differentiated perspective for **On-Device AI research**, where optimizing performance within stringent resource constraints is essential."
+                "description": "I possess an in-depth understanding of automotive hardware mechanisms alongside software proficiency. My hands-on experience with high-voltage EV systems and vehicle maintenance shapes how I approach **On-Device AI**. I validated RDT on a **single RTX 3090** using a **7B VLM** in place of the original 72B model, adding only 2.4GB of VRAM."
             },
             {
                 "icon": "Users",
-                "title": "Tailored Leadership",
-                "description": "Serving as the team leader of an autonomous driving organization, I exercised **'Tailored Leadership'** meticulously adapted to each member’s unique capabilities and motivations. I inspired those lacking drive by **leading by example** and cultivated a **culture of collective growth** by mentoring and studying alongside those needing technical support, ultimately orchestrating the **successful completion of the project**."
+                "title": "Team Leadership",
+                "description": "Serving as the team leader of an autonomous driving organization, I adapted my approach to each member’s unique capabilities and motivations. I led by example and cultivated a **culture of collective growth** by mentoring and studying alongside those needing technical support, and we completed the project together."
             },
             {
                 "icon": "ShieldCheck",
                 "title": "Robust Logic Design",
-                "description": "I prioritize **reliable algorithms that ensure safety under any circumstance** over purely theoretical ideals. My experience in developing fail-safe logic—specifically detecting wrong-way driving relative to the centerline to address edge cases of lane occlusion—epitomizes the **'Safety-First'** philosophy that permeates my entire research career."
+                "description": "I prioritize **algorithms that stay reliable when inputs degrade** over purely theoretical ideals. My experience in developing fail-safe logic—specifically detecting wrong-way driving relative to the centerline to address edge cases of lane occlusion—reflects how I approach safety-critical components."
             }
         ]
     },
@@ -72,27 +72,27 @@
             {
                 "year": "Origin",
                 "title": "Mechanical Understanding and Intellectual Curiosity",
-                "description": "I built the **foundations of automotive systems** by directly designing and assembling vehicle frames in the undergraduate student-built vehicle organization. This experience allowed me to understand cars not just as moving vehicles, but as complex **systems where hardware and software are organically integrated**."
+                "description": "I built the foundations of automotive systems by assembling vehicle chassis in an undergraduate student-built vehicle organization. This experience allowed me to understand cars not just as moving vehicles, but as complex **systems where hardware and software are organically integrated**."
             },
             {
                 "year": "Awakening",
                 "title": "Witnessing the Potential of Autonomous Driving",
-                "description": "Experiencing Tesla's **early autonomous driving** technology firsthand deeply inspired me regarding the potential of vision-centric perception. By analyzing how technologies previously confined to research papers translate into real-world decision-making and control on actual roads, I became convinced that the future of AI hinges upon **'Advanced Perceptual Intelligence.'**"
+                "description": "Experiencing Tesla's **early autonomous driving** technology firsthand convinced me of the potential of vision-centric perception. By analyzing how technologies previously confined to research papers translate into real-world decision-making and control on actual roads, I became convinced that the future of AI depends on how well machines perceive **space**, not just objects."
             },
             {
                 "year": "Action",
                 "title": "Proactive Leadership and Collaborative Execution",
-                "description": "I spearheaded the founding of **'S.D.S,'** an autonomous driving organization, by rallying like-minded colleagues. Serving as the Vision Team Leader, I developed core algorithms for **Lane Detection** and **Traffic Sign Recognition**, while cultivating practical expertise in anticipating potential failure modes and engineering **robust safety logic**."
+                "description": "I founded S.D.S, a student autonomous driving team. Serving as the Vision Team Leader, I developed core algorithms for **Lane Detection** and **Traffic Sign Recognition**, while cultivating practical expertise in anticipating potential failure modes and engineering **robust safety logic**."
             },
             {
                 "year": "Expertise",
                 "title": "Advancing into Scholarly Depth",
-                "description": "Driven by a commitment to solving complex, real-world challenges, I pursued graduate studies to immerse myself in State-of-the-Art (SOTA) research. I have spearheaded initiatives to optimize AI architectures, including proposing the **Relational Depth Text (RDT)** methodology to transcend the limitations of **SeeGround**, designing an **'Object Mask Module'** to enhance small object detection in **ViewFormer**, and conducting lightweighting research on **UniAD**. Through these rigorous academic pursuits, I have evolved into an **AI researcher** capable of architecting high-performance, efficient systems."
+                "description": "Driven by a commitment to solving complex, real-world challenges, I pursued graduate studies to immerse myself in State-of-the-Art (SOTA) research. I began with **model lightweighting** on **UniAD**, then designed an **Object Mask Module** for **ViewFormer** to strengthen object representation in **BEV space**—a negative result I traced to **unstable mask supervision** under distributed training. Building on this, I proposed **Relational Depth Text (RDT)**, which improves zero-shot 3D visual grounding by **3.54%p** on Nr3D while running on a **7B VLM**, roughly ten times smaller than the original model."
             }
         ]
     },
     "vision": {
-        "title": "Future Vision: Toward General-purpose Autonomous Intelligence",
-        "description": "I am now charting a course toward **Vision-Language-Action (VLA)** models that transcend simple perception to actively comprehend and interact with the physical world. By integrating monocular vision with Large Language Models (LLMs) to achieve sophisticated **Scene Understanding**—specifically through reasoning about spatial relationships and depth—I aim to realize **General-purpose Autonomous Intelligence**. My ultimate goal is to engineer foundational systems that empower not only the automotive sector but also robotics and AI agents to navigate and act within the world with human-like intuition."
+        "title": "Future Vision: Making Spatial Reasoning Reliable",
+        "description": "My next step is to make **spatial reasoning** reliable enough to act on. Current vision-language models describe scenes well but still fail on relative depth and occlusion—the exact gap my work on **depth-aware grounding** addresses. I want to close it before moving toward **Vision-Language-Action (VLA)** models. My ultimate goal is to engineer foundational systems that empower not only the automotive sector but also robotics and AI agents to navigate and act within the world with human-like intuition."
     }
 }

@@ -2,14 +2,22 @@
     "id": "kang2026robust",
     "author": "Seong-Hui Kang, **Hyun-Sik Jeon**, Jong-Eun Ha*",
     "citation-key": "kang2026robust",
-    "container-title": "in submission",
-    "title": "Robust Zero-shot 3D Visual Grounding via Structural Query Decomposition and Dynamic Viewpoint Selection",
+    "container-title": "Multimedia Tools and Applications",
+    "title": "Robust Zero-Shot 3D Visual Grounding via Structural Query Decomposition and Dynamic Viewpoint Selection",
     "short_description": "in submission",
     "type": "article-journal",
     "category": "international-journal",
     "year": 2026,
-    "venue": "in submission",
+    "venue": "Multimedia Tools and Applications",
+    "status": "in submission",
+    "URL": "https://link.springer.com/journal/11042",
     "language": "En",
+    "organizations": [
+        {
+            "name": "MTAP",
+            "url": "https://link.springer.com/journal/11042"
+        }
+    ],
     "abstract": "in submission",
     "media": []
 }

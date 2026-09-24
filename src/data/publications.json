@@ -3,7 +3,7 @@
         "id": "jeon2026spatial",
         "author": "Jeon, Hyun-Sik, Ha, Jong-Eun",
         "citation-key": "jeon2026spatial",
-        "container-title": "in submission",
+        "container-title": "Robotics and Autonomous Systems",
         "issued": {
             "date-parts": [
                 [
@@ -11,18 +11,20 @@
                 ]
             ]
         },
-        "title": "Enhancing Spatial Reasoning in VLMs through Saliency-Aware SpatialRGPT",
+        "title": "Enhancing Spatial Reasoning of SpatialRGPT Through a Visual Saliency Branch",
         "type": "article-journal",
         "category": "international-journal",
         "year": 2026,
-        "venue": "in submission",
-        "note": "SCIE"
+        "venue": "Robotics and Autonomous Systems",
+        "status": "in submission",
+        "URL": "https://www.sciencedirect.com/journal/robotics-and-autonomous-systems",
+        "short_description": "in submission"
     },
     {
         "id": "kang2026robust",
         "author": "Kang, Seong-Hui, Jeon, Hyun-Sik, Ha, Jong-Eun",
         "citation-key": "kang2026robust",
-        "container-title": "in submission",
+        "container-title": "Multimedia Tools and Applications",
         "issued": {
             "date-parts": [
                 [
@@ -30,12 +32,14 @@
                 ]
             ]
         },
-        "title": "Robust Zero-shot 3D Visual Grounding via Structural Query Decomposition and Dynamic Viewpoint Selection",
+        "title": "Robust Zero-Shot 3D Visual Grounding via Structural Query Decomposition and Dynamic Viewpoint Selection",
         "type": "article-journal",
         "category": "international-journal",
         "year": 2026,
-        "venue": "in submission",
-        "note": "SCIE"
+        "venue": "Multimedia Tools and Applications",
+        "status": "in submission",
+        "URL": "https://link.springer.com/journal/11042",
+        "short_description": "in submission"
     },
     {
         "id": "jeon2026enhancing",

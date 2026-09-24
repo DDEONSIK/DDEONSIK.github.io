@@ -22,7 +22,7 @@
     },
     "page": "24–25",
     "source": "www.earticle.net",
-    "title": "A method for improving lane recognition by adaptive removing vehicle elements",
+    "title": "A Method for Improving Lane Recognition by Adaptive Removing Vehicle Elements",
     "short_description": "Proposed a lane detection method robust to vehicle occlusions by integrating DeepLabV3+ for vehicle removal and ROI-based Hough Transform.",
     "notice": "This paper is recorded under 'Hyun-Soo Kim' due to a registration information error; however, I (Hyun-Sik Jeon) am the **3rd author** and served as the **presenter**.",
     "abstract": "• **Problem**: Ensuring stable lane detection is challenging when lanes are occluded by other vehicles in urban environments. Even with ROI and HSV color space filtering, vehicle noise often leads to unstable detection.\n• **Solution**: We proposed a method to improve lane recognition accuracy by **adaptively removing vehicle elements**. We utilized **DeepLab-V3+** to segment and remove vehicle regions within the ROI before applying lane detection. Features such as lane boundaries were then detected using **Hough Transform** on the processed image.\n• **Result**: The proposed method successfully removed vehicle noise and detected lanes more stably compared to using Hough Transform alone in congested environments. However, errors persisted in cases where lanes were completely obscured by external factors like shadows or large obstacles, suggesting the need for further research on exploiting road boundary features.",

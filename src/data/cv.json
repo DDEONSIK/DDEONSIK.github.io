@@ -1,7 +1,7 @@
 {
     "header": {
         "title": "Curriculum Vitae",
-        "subtitle": "Autonomous Perception Engineer & Researcher"
+        "subtitle": "3D Perception & Vision-Language Researcher"
     },
     "personalInfo": {
         "nameEn": "Hyun-Sik Jeon",
@@ -43,11 +43,14 @@
     ],
     "skills": {
         "Domain Knowledge": [
+            "Vision-Language Models",
+            "Spatial Reasoning",
             "3D Visual Grounding",
             "3D Occupancy Prediction",
             "BEV Perception",
             "Multi-Modal",
-            "Model Lightweighting"
+            "Model Lightweighting",
+            "Parameter-Efficient Fine-Tuning"
         ],
         "ML/DL Frameworks": [
             "PyTorch",
@@ -88,9 +91,9 @@
             "advisor": "Prof. Jong-Eun Ha",
             "period": "Mar. 2024 - Feb. 2026",
             "descriptionItems": [
-                "Achieved a <strong>3.54%</strong> (Nr3D) and <strong>6.74%</strong> (ScanRefer) accuracy improvement in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>.",
-                "Engineered an <strong>Object Mask Module</strong> for ViewFormer to enhance <strong>3D Occupancy Prediction</strong> within complex urban environments.",
-                "Optimized <strong>UniAD</strong> for edge-device deployment, reducing <strong>memory footprint</strong> by <strong>~80%</strong> via advanced <strong>model lightweighting</strong> techniques."
+                "Achieved a <strong>3.54%p</strong> Acc@0.25 gain on Nr3D in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>, running on a <strong>7B VLM</strong> (~10x smaller than the 72B baseline).",
+                "Engineered an <strong>Object Mask Module</strong> for ViewFormer to strengthen object representation in <strong>BEV space</strong>, and traced the resulting performance drop to unstable mask supervision.",
+                "Lightweighted <strong>UniAD</strong> for single-GPU training, cutting Stage-1 memory by <strong>79.9%</strong> (52.3→10.5GB), and found that <strong>progressive resolution expansion</strong> recovers feature extraction lost to compression."
             ]
         },
         {

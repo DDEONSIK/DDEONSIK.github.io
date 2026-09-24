@@ -9,7 +9,7 @@
             ]
         ]
     },
-    "author": "Jae-wook Lee, **Hyun-Sik Jeon**, Yong-Soo Choi*",
+    "author": "Jae-Wook Lee, **Hyun-Sik Jeon**, Yong-Soo Choi*",
     "citation-key": "ijaeug2023lidara",
     "container-title": "대한전자공학회 학술대회",
     "issued": {
@@ -22,7 +22,7 @@
     },
     "page": "2434–2436",
     "source": "www.dbpia.co.kr",
-    "title": "Using a LiDAR sensor for autonomous driving in a low-end environment",
+    "title": "Using a LiDAR Sensor for Autonomous Driving in a Low-end Environment",
     "short_description": "Developed a real-time static obstacle avoidance system using ROI-based LiDAR processing and Pure-Pursuit on a low-spec Windows platform.",
     "abstract": "• **Problem**: As autonomous driving technology advances, the importance of sensors increases. However, most research relies on high-spec CPUs and extensive datasets for object recognition using LiDAR.\n• **Solution**: This study focuses on avoiding small static obstacles (traffic cones) in a **low-spec environment** (Windows 10, Python 3.9.6) to improve accessibility. We utilized the **WeGo ERP42 platform** and **Velodyne VLP-42 LiDAR**. By applying **ROI processing** to remove unnecessary coordinates and using **Voxel Grid Filter** algorithm, we optimized data processing speed and recognized traffic cones as unified objects. A **linear regression** model was used to generate a driving path based on the slopes of the left and right cones, followed by **Pure-pursuit** and **Ackermann steering** control.\n• **Result**: The implemented algorithm successfully verified real-time obstacle recognition and avoidance steering between traffic cones, confirming that autonomous driving can be implemented even in low-spec environments to enhance accessibility.",
     "media": [

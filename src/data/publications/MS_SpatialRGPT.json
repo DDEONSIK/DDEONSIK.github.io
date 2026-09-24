@@ -2,14 +2,22 @@
     "id": "jeon2026spatial",
     "author": "**Hyun-Sik Jeon**, Jong-Eun Ha*",
     "citation-key": "jeon2026spatial",
-    "container-title": "in submission",
-    "title": "Enhancing Spatial Reasoning in VLMs through Saliency-Aware SpatialRGPT",
+    "container-title": "Robotics and Autonomous Systems",
+    "title": "Enhancing Spatial Reasoning of SpatialRGPT Through a Visual Saliency Branch",
     "short_description": "in submission",
     "type": "article-journal",
     "category": "international-journal",
     "year": 2026,
-    "venue": "in submission",
+    "venue": "Robotics and Autonomous Systems",
+    "status": "in submission",
+    "URL": "https://www.sciencedirect.com/journal/robotics-and-autonomous-systems",
     "language": "En",
+    "organizations": [
+        {
+            "name": "RAS",
+            "url": "https://www.sciencedirect.com/journal/robotics-and-autonomous-systems"
+        }
+    ],
     "abstract": "in submission",
     "media": []
 }

@@ -119,13 +119,13 @@ const PublicationsView = () => {
                 doi: pub.doi,
                 type: pub.category === 'international-journal' ? 'journal' : 'conference'
             },
-            links: pub.URL ? [{ url: pub.URL, label: "View Paper" }] : []
+            links: (pub.URL && pub.status !== 'in submission') ? [{ url: pub.URL, label: "View Paper" }] : []
         })) as BaseItem[];
 
         const ms = pubs.filter(p => (Number(p.year) || 0) >= 2024).sort((a, b) => {
             const getMsPriority = (title: string) => {
                 if (title.includes("SpatialRGPT") || title.includes("Spatial Reasoning")) return 1;
-                if (title.includes("Zero-shot")) return 2;
+                if (title.includes("Zero-shot") || title.includes("Zero-Shot")) return 2;
                 if (title.includes("SeeGround")) return 3;
                 if (title.includes("ViewFormer") || title.includes("Object Mask Module")) return 4;
                 if (title.includes("UniAD")) return 5;
@@ -171,9 +171,9 @@ const PublicationsView = () => {
                     <p className="text-lg text-muted-foreground">
                         Research contributions in 3D Computer Vision and Autonomous Systems.
                     </p>
-                    <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/50 rounded-xl text-yellow-600 dark:text-yellow-400 max-w-xl">
+                    <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/50 rounded-xl text-black max-w-xl">
                         <div className="flex items-start gap-3">
-                            <div className="shrink-0 mt-0.5">
+                            <div className="shrink-0 mt-0.5 text-yellow-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg>
                             </div>
                             <div className="text-sm font-medium leading-relaxed">
@@ -331,9 +331,9 @@ const PublicationsView = () => {
 
                                         {/* Notice Section */}
                                         {selectedItem.itemData?.notice && (
-                                            <div className="mb-6 p-4 bg-yellow-500/10 border border-yellow-500/50 rounded-xl text-yellow-600 dark:text-yellow-400">
+                                            <div className="mb-6 p-4 bg-yellow-500/10 border border-yellow-500/50 rounded-xl text-black">
                                                 <div className="flex items-start gap-3">
-                                                    <div className="shrink-0 mt-1">
+                                                    <div className="shrink-0 mt-1 text-yellow-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
                                                     </div>
                                                     <div className="text-sm font-medium leading-relaxed">

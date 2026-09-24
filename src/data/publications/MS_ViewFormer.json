@@ -41,7 +41,7 @@
         }
     ],
     "doi": "10.5302/J.ICROS.2025.25.0168",
-    "abstract": "• **Problem**: ViewFormer effectively captures spatiotemporal information but **underperforms on small objects** such as pedestrians and bicycles.\n• **Solution**: Designed a **SegFormer-based object masking module** that estimates object probabilities from BEV features and concatenates them as an additional feature channel.\n• **Result**: Experimental evaluations on the nuScenes dataset revealed an **unexpected performance decline** in overall metrics, and subsequent analysis indicated **weak mask activation and instability** during initial training, highlighting the need for **structural adjustments and improved training strategies** in future work.",
+    "abstract": "• **Problem**: ViewFormer effectively captures spatiotemporal information but **underperforms on small objects** such as pedestrians and bicycles.\n• **Solution**: Designed a **SegFormer-based object masking module** that estimates object probabilities from BEV features and concatenates them as an additional feature channel.\n• **Result**: On nuScenes the module caused an **unexpected performance decline**, traced to **weak mask activation and instability** in early training. Under **single-GPU** training, however, the same architecture **outperformed the baseline** (mIoU 28.28 vs 27.36), suggesting the drop stems from distributed-training interaction rather than the design itself.",
     "media": [
         {
             "type": "image",

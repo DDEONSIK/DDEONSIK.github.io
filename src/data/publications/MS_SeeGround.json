@@ -43,7 +43,7 @@
         }
     ],
     "doi": "10.3390/app16020652",
-    "abstract": "• **Problem**: Traditional 3D visual grounding (e.g., SeeGround) struggles with distinguishing objects based on relative depth due to implicit depth representation in 2D views.\n• **Solution**: Proposed **Relational Depth Text (RDT)**, which explicitly converts relative depth relationships (e.g., 'behind', 'in front of') into natural language using Monocular Depth Estimation and K-NN.\n• **Result**: Achieved **3.54% accuracy improvement** on Nr3D and **6.74% boost** in Unique cases on ScanRefer, enhancing spatial reasoning in complex 3D scenes.",
+    "abstract": "• **Problem**: Traditional 3D visual grounding (e.g., SeeGround) struggles with distinguishing objects based on relative depth due to implicit depth representation in 2D views.\n• **Solution**: Proposed **Relational Depth Text (RDT)**, which explicitly converts relative depth relationships (e.g., 'behind', 'in front of') into natural language using Monocular Depth Estimation and K-NN.\n• **Result**: **+3.54%p** on Nr3D (Acc@0.25) with consistent gains across all subsets, and **+6.74%p** in ScanRefer **Unique** cases — but **−1.70%p** in **Multiple** cases, a spatial bias that appears when attribute-based discrimination matters more than geometry.",
     "media": [
         {
             "type": "image",
@@ -57,7 +57,7 @@
         }
     ],
     "table": {
-        "caption": "Comparison with state-of-the-art zero-shot methods on Nr3D and ScanRefer benchmarks. (Unit: %).",
+        "caption": "Comparison with state-of-the-art zero-shot methods on Nr3D and ScanRefer (Unit: %). † = cited from the original papers. SeeGround (Baseline) and Ours were reproduced in our environment on a 7B backbone.",
         "columns": [
             "Method",
             "Backbone (Size)",

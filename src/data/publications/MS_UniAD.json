@@ -41,7 +41,7 @@
         }
     ],
     "doi": "10.5302/J.ICROS.2025.24.0249",
-    "abstract": "• **Problem**: The original UniAD framework's **complex transformer structure requires substantial computational resources**, limiting accessibility.\n• **Solution**: Proposed a **lightweight version** by reducing dimensions, queries, and BEV resolution, and **optimized memory** through limited sampling queries and page-locked settings.\n• **Result**: Achieved **significant memory reductions** (up to 79.92% in Stage 1) and identified that **progressive resolution expansion** enhances feature extraction during low-resolution phases.",
+    "abstract": "• **Problem**: The original UniAD framework's **complex transformer structure requires substantial computational resources**, limiting accessibility.\n• **Solution**: Proposed a **lightweight version** by reducing dimensions, queries, and BEV resolution, and **optimized memory** through limited sampling queries and page-locked settings.\n• **Result**: Cut memory by **79.92% in Stage 1** (52.3→10.5GB) and **38.81% in Stage 2**, at the cost of overall accuracy. Found that **progressive resolution expansion** (DV-2) recovers part of that loss compared with fixed resolution (DV-1).",
     "media": [
         {
             "type": "image",
@@ -222,7 +222,7 @@
                         "label": "AMOTP ↓"
                     },
                     {
-                        "label": "mIDS ↓"
+                        "label": "IDS ↓"
                     },
                     {
                         "label": "IoU-lane ↑"

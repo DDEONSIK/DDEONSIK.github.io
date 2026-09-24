@@ -8,15 +8,19 @@ import aboutData from '@/data/about.json';
 // Asset imports
 import profileImg from '@/assets/profile/cv_id.webp';
 
-// Helper for rendering **bold** text
+// Helper for rendering **bold** and *italic* text
 const HighlightText = ({ text, className = "" }: { text: string, className?: string }) => {
     if (!text) return null;
-    const parts = text.split(/(\*\*.*?\*\*)/g);
+    const parts = text.split(/(\*\*.*?\*\*|\*[^*]+?\*)/g);
     return (
         <span className={className}>
             {parts.map((part, i) => {
+                if (!part) return null;
                 if (part.startsWith('**') && part.endsWith('**')) {
                     return <strong key={i} className="font-bold text-foreground">{part.slice(2, -2)}</strong>;
+                }
+                if (part.startsWith('*') && part.endsWith('*')) {
+                    return <em key={i} className="italic text-foreground">{part.slice(1, -1)}</em>;
                 }
                 return <span key={i}>{part}</span>;
             })}
