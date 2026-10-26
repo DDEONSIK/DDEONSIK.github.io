@@ -119,7 +119,7 @@ const PublicationsView = () => {
                 doi: pub.doi,
                 type: pub.category === 'international-journal' ? 'journal' : 'conference'
             },
-            links: (pub.URL && pub.status !== 'in submission') ? [{ url: pub.URL, label: "View Paper" }] : []
+            links: (pub.URL && !['in submission', 'under revision'].includes(pub.status)) ? [{ url: pub.URL, label: "View Paper" }] : []
         })) as BaseItem[];
 
         const ms = pubs.filter(p => (Number(p.year) || 0) >= 2024).sort((a, b) => {
