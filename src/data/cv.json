@@ -7,8 +7,6 @@
         "nameEn": "Hyun-Sik Jeon",
         "nameKo": "전현식",
         "nationality": "Republic of Korea 🇰🇷",
-        "gender": "Male",
-        "birthDate": "Jan. 04, 2000",
         "email": "hyunsik.jeons@gmail.com",
         "military": "Republic of Korea Air Force",
         "militaryWebsite": "https://www.airforce.mil.kr/user/indexMain.action?command=&siteId=airforce-eng",
@@ -93,7 +91,7 @@
             "descriptionItems": [
                 "Achieved a <strong>3.54%p</strong> Acc@0.25 gain on Nr3D in <strong>3D Visual Grounding</strong> by proposing <strong>Relational Depth Text (RDT)</strong>, running on a <strong>7B VLM</strong> (~10x smaller than the 72B baseline).",
                 "Engineered an <strong>Object Mask Module</strong> for ViewFormer to strengthen object representation in <strong>BEV space</strong>, and traced the resulting performance drop to unstable mask supervision.",
-                "Lightweighted <strong>UniAD</strong> for single-GPU training, cutting Stage-1 memory by <strong>79.9%</strong> (52.3→10.5GB), and found that <strong>progressive resolution expansion</strong> recovers feature extraction lost to compression."
+                "Lightweighted <strong>UniAD</strong> for single-GPU training through three staged design iterations, cutting Stage-1 memory by <strong>79.9%</strong> (52.3→10.5GB), and found that <strong>progressive resolution expansion</strong> (50×50 in Stage 1, 200×200 in Stage 2) outperformed fixed-resolution training on tracking, mapping, occupancy, and planning."
             ]
         },
         {
@@ -111,14 +109,14 @@
         },
         {
             "id": 3,
-            "role": "Founder & Vision Team Leader",
+            "role": "Co-founder & Vision Team Leader",
             "organization": "Autonomous Driving Club 'S.D.S'",
             "advisor": "Prof. Yong-Soo Choi",
             "period": "Mar. 2022 - Feb. 2024",
             "actionLink": "/activity",
             "actionLabel": "View Activity Details",
             "descriptionItems": [
-                "Led the team as a finalist in the <strong>2023 University Creative Mobility Competition</strong> (Hosted by MOLIT, KATRI, and KASA).",
+                "Competed in the <strong>2023 University Creative Mobility Competition</strong> (Hosted by MOLIT, KATRI, and KASA) as the vision (camera) lead.",
                 "Architected a full-stack perception system for <strong>ERP-42 EV</strong>, encompassing robust <strong>Lane Detection</strong> and <strong>Traffic Sign Recognition</strong>.",
                 "Curated a custom dataset of <strong>3,500 images</strong> for South Korean traffic environments and optimized the end-to-end training pipeline."
             ]
@@ -130,7 +128,7 @@
             "advisor": "Prof. Yong-Soo Choi",
             "period": "Jun. 2022 - Dec. 2023",
             "descriptionItems": [
-                "Authored <strong>4 conference papers</strong> (IEIE, ITFE) regarding robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
+                "Co-authored <strong>4 conference papers</strong> (1 as first author; IEIE, ITFE) on robust lane detection and <strong>resource-constrained</strong> LiDAR control.",
                 "Proposed an <strong>Occlusion Removal</strong> technique utilizing <strong>DeepLab-V3+</strong> to significantly improve lane recognition stability.",
                 "Implemented <strong>Real-time Obstacle Avoidance</strong> using <strong>LiDAR ROI Filtering</strong> and <strong>Pure-Pursuit</strong> on <strong>low-compute</strong> platforms."
             ]

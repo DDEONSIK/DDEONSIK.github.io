@@ -55,14 +55,6 @@ const CVView: React.FC = () => {
                                         {cvData.personalInfo.nationality}
                                     </div>
                                 </div>
-                                {/* Gender / Birth Date */}
-                                <div>
-                                    <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Gender / Birth Date</h4>
-                                    <div className="text-muted-foreground font-medium flex items-center gap-2">
-                                        {/* @ts-ignore */}
-                                        {cvData.personalInfo.gender} <span className="text-border">|</span> {/* @ts-ignore */}{cvData.personalInfo.birthDate}
-                                    </div>
-                                </div>
                                 {/* Military */}
                                 <div>
                                     <h4 className="font-semibold text-sm text-foreground uppercase tracking-wider mb-1">Military Service (Mandatory)</h4>

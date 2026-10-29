@@ -32,7 +32,7 @@
             {
                 "icon": "Search",
                 "title": "Working from Fundamentals",
-                "description": "I prioritize **root causes** over surface symptoms. When my object masking module degraded ViewFormer's performance, I traced it to **unstable mask supervision** rather than accepting the negative result—and found the same architecture **outperformed the baseline** under single-GPU training."
+                "description": "I prioritize **root causes** over surface symptoms. When my object masking module degraded ViewFormer's performance, I traced it to **unstable mask supervision** rather than accepting the negative result, and an early single-GPU check at one-tenth of training showed a small gain over the baseline (mIoU 28.28 vs 27.36)."
             },
             {
                 "icon": "Puzzle",
@@ -57,7 +57,7 @@
             {
                 "icon": "Users",
                 "title": "Team Leadership",
-                "description": "Serving as the team leader of an autonomous driving organization, I adapted my approach to each member’s unique capabilities and motivations. I led by example and cultivated a **culture of collective growth** by mentoring and studying alongside those needing technical support, and we completed the project together."
+                "description": "Serving as the vision team lead of a student autonomous driving club, I adapted my approach to each member’s unique capabilities and motivations. I led by example and cultivated a **culture of collective growth** by mentoring and studying alongside those needing technical support, and we completed the project together."
             },
             {
                 "icon": "ShieldCheck",
@@ -82,12 +82,12 @@
             {
                 "year": "Action",
                 "title": "Proactive Leadership and Collaborative Execution",
-                "description": "I founded S.D.S, a student autonomous driving team. Serving as the Vision Team Leader, I developed core algorithms for **Lane Detection** and **Traffic Sign Recognition**, while cultivating practical expertise in anticipating potential failure modes and engineering **robust safety logic**."
+                "description": "I co-founded S.D.S, a student autonomous driving team. Serving as the Vision Team Leader, I developed core algorithms for **Lane Detection** and **Traffic Sign Recognition**, while cultivating practical expertise in anticipating potential failure modes and engineering **robust safety logic**."
             },
             {
                 "year": "Expertise",
                 "title": "Advancing into Scholarly Depth",
-                "description": "Driven by a commitment to solving complex, real-world challenges, I pursued graduate studies to immerse myself in State-of-the-Art (SOTA) research. I began with **model lightweighting** on **UniAD**, then designed an **Object Mask Module** for **ViewFormer** to strengthen object representation in **BEV space**—a negative result I traced to **unstable mask supervision** under distributed training. Building on this, I proposed **Relational Depth Text (RDT)**, which improves zero-shot 3D visual grounding by **3.54%p** on Nr3D while running on a **7B VLM**, roughly ten times smaller than the original model."
+                "description": "Driven by a commitment to solving complex, real-world challenges, I pursued graduate studies to immerse myself in State-of-the-Art (SOTA) research. I began with **model lightweighting** on **UniAD**, then designed an **Object Mask Module** for **ViewFormer** to strengthen object representation in **BEV space**—a negative result I traced to **unstable mask supervision**, likely amplified by distributed training. Building on this, I proposed **Relational Depth Text (RDT)**, which improves zero-shot 3D visual grounding by **3.54%p** on Nr3D while running on a **7B VLM**, roughly ten times smaller than the original model."
             }
         ]
     },
